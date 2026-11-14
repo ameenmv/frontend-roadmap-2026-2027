@@ -49,78 +49,17 @@ Every week has **one goal**, **one main source**, **one task you ship**, and **a
 
 ## The Map
 
-```mermaid
-flowchart TD
-    W0["Week 0 · Setup & How the Web Works"] --> B
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/roadmap-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/roadmap-light.svg" />
+  <img src="assets/roadmap-light.svg" width="100%" alt="The road: Week 0 setup, Level 1 Beginner (weeks 1-8, Project 1), Level 2 Intermediate (weeks 9-18, Project 2), Level 3 React or Vue (weeks 19-30, graduation project)" />
+</picture>
 
-    subgraph B["Level 1 · Beginner · Weeks 1-8"]
-        direction LR
-        B1["HTML"] --> B2["Git & GitHub"] --> B3["CSS"] --> B4["Flexbox · Grid"] --> B5["Responsive"] --> B6["Tailwind"]
-    end
+<div align="center">
 
-    B --> BP{{"Project 1 · Landing Page"}}
-    BP --> I
+<sub>Every number is a week. The big glowing ones are your 3 milestone projects. Jump in: [Week 0](#week-0) · [Level 1](01-beginner.md) · [Level 2](02-intermediate.md) · [React](03-react.md) · [Vue](03-vue.md)</sub>
 
-    subgraph I["Level 2 · Intermediate · Weeks 9-18"]
-        direction LR
-        I1["JS Basics"] --> I2["Functions · Arrays · Objects"] --> I3["DOM"] --> I4["Async · APIs"] --> I5["How JS Works"] --> I6["Tooling"] --> I7["TypeScript"]
-    end
-
-    I --> IP{{"Project 2 · API App in TS"}}
-    IP --> CHOOSE{"Pick a framework"}
-
-    CHOOSE --> R
-    CHOOSE --> V
-
-    subgraph R["Level 3 · React · Weeks 19-30"]
-        direction LR
-        R1["Components · State"] --> R2["Router"] --> R3["Redux Toolkit / Zustand"] --> R4["TanStack Query"] --> R5["Testing · Perf · a11y"] --> R6["Next.js"]
-    end
-
-    subgraph V["Level 3 · Vue · Weeks 19-30"]
-        direction LR
-        V1["Components · Reactivity"] --> V2["Vue Router"] --> V3["Pinia"] --> V4["TanStack Query"] --> V5["Testing · Perf · a11y"] --> V6["Nuxt"]
-    end
-
-    R --> F{{"Graduation Project"}}
-    V --> F
-
-    classDef zero fill:#0f172a,stroke:#64748b,color:#ffffff
-    classDef beg fill:#fff7ed,stroke:#ea580c,color:#7c2d12
-    classDef mid fill:#fefce8,stroke:#ca8a04,color:#713f12
-    classDef react fill:#ecfeff,stroke:#0891b2,color:#164e63
-    classDef vue fill:#ecfdf5,stroke:#059669,color:#064e3b
-    classDef proj fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    class W0,CHOOSE zero
-    class B1,B2,B3,B4,B5,B6 beg
-    class I1,I2,I3,I4,I5,I6,I7 mid
-    class R1,R2,R3,R4,R5,R6 react
-    class V1,V2,V3,V4,V5,V6 vue
-    class BP,IP,F proj
-```
-
-### The year at a glance
-
-```mermaid
-timeline
-    section Beginner
-        Week 0 : Setup
-        Weeks 1-2 : HTML : Git & GitHub
-        Weeks 3-5 : CSS : Flexbox : Grid
-        Weeks 6-7 : Responsive : Tailwind
-        Week 8 : Project 1
-    section Intermediate
-        Weeks 9-11 : JS basics : Arrays & Objects
-        Weeks 12-14 : DOM : Modules : Async
-        Weeks 15-17 : JS internals : Tooling : TypeScript
-        Week 18 : Project 2
-    section Advanced
-        Weeks 19-22 : Components : State : Router
-        Weeks 23-25 : Styling : State mgmt : Server state
-        Weeks 26-27 : Testing : Perf & a11y
-        Weeks 28-29 : Next.js / Nuxt : AI workflow
-        Week 30 : Graduation project
-```
+</div>
 
 ---
 
