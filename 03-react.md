@@ -1,871 +1,843 @@
+<a id="top"></a>
+
 <div align="center">
 
-<h1>المستوى التالت: React</h1>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0891B2,100:22D3EE&height=200&section=header&text=Level%203%20%C2%B7%20React&fontSize=56&fontColor=ffffff&fontAlignY=38&animation=fadeIn&desc=React%20%C2%B7%20Router%20%C2%B7%20State%20%C2%B7%20Testing%20%C2%B7%20Next.js&descSize=18&descAlignY=60" width="100%" alt="Level 3 React" />
 
-<p><strong>React · Router · State Management · TanStack Query · Testing · Performance · a11y · Next.js</strong></p>
+<img src="https://skillicons.dev/icons?i=react,ts,redux,tailwind,vitest,nextjs,vercel" alt="React TypeScript Redux Tailwind Vitest Next.js Vercel" />
 
-<p>
-  <img src="https://img.shields.io/badge/Weeks-19_→_30-0891B2?style=for-the-badge" alt="Weeks 19-30" />
-  <img src="https://img.shields.io/badge/React-19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React 19" />
-  <img src="https://img.shields.io/badge/Next.js-App_Router-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-</p>
+<br /><br />
+
+<img src="https://img.shields.io/badge/Weeks-19_→_30-0891B2?style=for-the-badge" alt="Weeks 19-30" />
+<img src="https://img.shields.io/badge/Video-~29_h-22D3EE?style=for-the-badge" alt="About 29 hours of video" />
+<img src="https://img.shields.io/badge/React-19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React 19" />
+<img src="https://img.shields.io/badge/Next.js-App_Router-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js App Router" />
+
+<br /><br />
+
+[Roadmap](README.md) · [Beginner](01-beginner.md) · [Intermediate](02-intermediate.md) · **React** · [Vue](03-vue.md) · [Tracker](TRACKER.md)
 
 </div>
 
-<div dir="rtl">
-
-> **[الرجوع للخريطة](README.md)** · [المستوى الأول](01-beginner.md) · [المستوى التاني](02-intermediate.md) · React · [Vue](03-vue.md)
-
 ---
 
-## الحكاية
+Remember week 12, updating the UI by hand every time data changed? React says: **describe what the UI looks like for this data, and I'll handle the rest.**
 
-فاكر في الأسبوع 12 لما كنت بتحدّث الـ UI بإيدك كل ما الداتا تتغير؟ React بتقولك: **إنت قولّي الـ UI شكله إيه لما الداتا تبقى كده، وأنا هتصرف.**
+You'll learn React, then the tools every real React project uses, and finish with **Next.js**, which turns React from a library into a full framework.
 
-في المستوى ده هتتعلم React، وبعدين الأدوات اللي أي مشروع React حقيقي بيستخدمها، وفي الآخر **Next.js** اللي بيحوّل React من مكتبة لـ framework كامل.
+| Week | Topic | You ship |
+| :--: | :-- | :-- |
+| [19](#week-19) | Components, JSX, props | Landing page as components |
+| [20](#week-20) | State, events, forms | A multi-step form |
+| [21](#week-21) | Context, effects, data fetching | Movies app |
+| [22](#week-22) | React Router | A multi-page app |
+| [23](#week-23) | Styling & component libraries | A mini UI kit |
+| [24](#week-24) | State management | A shopping cart |
+| [25](#week-25) | TanStack Query | An admin dashboard |
+| [26](#week-26) | Testing | Tests for the cart |
+| [27](#week-27) | Performance & accessibility | An audit, before & after |
+| [28](#week-28) | Next.js: basics & routing | A blog |
+| [29](#week-29) | Next.js: data, SEO, deploy + AI workflow | The blog, live |
+| [30](#week-30) | **Graduation project** | A complete app |
 
-| الأسبوع | الموضوع | التاسك |
-| :---: | :--- | :--- |
-| 19 | [Components و JSX و Props](#week-19) | تحويل Landing Page لـ Components |
-| 20 | [State و Events و Forms](#week-20) | Multi-step Form |
-| 21 | [Context و useEffect و Data Fetching](#week-21) | Movies App (نسخة React) |
-| 22 | [React Router](#week-22) | أبلكيشن متعدد الصفحات |
-| 23 | [Styling و Component Libraries](#week-23) | UI Kit صغير بـ Tailwind + shadcn/ui |
-| 24 | [State Management](#week-24) | Shopping Cart |
-| 25 | [TanStack Query](#week-25) | Dashboard بـ Server State |
-| 26 | [Testing](#week-26) | Tests للـ Cart |
-| 27 | [Performance و Accessibility](#week-27) | Audit وتحسين مشروع |
-| 28 | [Next.js: الأساسيات والـ Routing](#week-28) | Blog بـ Next.js |
-| 29 | [Next.js: Data و SEO و Deploy + الشغل مع الـ AI](#week-29) | تكملة الـ Blog + Deploy |
-| 30 | [**مشروع التخرج**](#week-30) | أبلكيشن كامل |
-
-> **قبل ما تبدأ:** المصدر العربي الأساسي في أغلب المستوى ده هو [كورس رياكت - أكاديمية ترميز](https://www.youtube.com/playlist?list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS). الكورس فيه أكتر من 120 درس، ومليان تحديات وحلولها. ولو في أي وقت حسيت إن الشرح فيه حاجة قديمة، **[react.dev](https://react.dev/learn)** هو المرجع الرسمي (وفيه [نسخة عربي](https://ar.react.dev/learn)).
-
-> **عن TypeScript:** من النهارده، **كل مشروع React هتعمله بـ TypeScript**. الكورسات أغلبها بـ JS، فدي فرصتك تتدرب: اتفرج بـ JS واكتب بـ TS. ولما تقف، افتح [React with TypeScript](https://react.dev/learn/typescript).
+> [!IMPORTANT]
+> **Main Arabic source:** [React course · Tarmeez Academy](https://www.youtube.com/playlist?list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS), 120+ lessons full of challenges with solutions. When something feels outdated, **[react.dev](https://react.dev/learn)** is the source of truth ([Arabic version](https://ar.react.dev/learn)).
+>
+> **From now on, every React project is TypeScript.** Courses are mostly JS: watch in JS, write in TS. Stuck? [React + TypeScript](https://react.dev/learn/typescript).
 
 ---
 
 <a id="week-19"></a>
 
-## الأسبوع 19: Components و JSX و Props
+## Week 19 · Components, JSX & Props
 
-**الهدف:** تفكر بطريقة React: كل حاجة في الصفحة component، والـ components بتتكلم مع بعض بالـ props.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=T9DTxrQ1BU0&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=3"><img src="https://img.youtube.com/vi/T9DTxrQ1BU0/mqdefault.jpg" width="320" alt="Tarmeez React lesson 1" /></a>
+<br /><sub><b>Tarmeez · React lessons 1 → 20</b> · 4 h</sub>
 
-- يعني إيه React، وليه موجودة
-- إنشاء مشروع بـ Vite (`npm create vite@latest` واختار React + TypeScript)
-- هيكل المشروع
-- **Components** و **JSX**
-- Styles و Classes في JSX
-- **Props**، و `children`
-- Conditional Rendering
-- Rendering Lists و `key`
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** think in React: everything is a component, and components talk through props.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [ترميز: كورس رياكت من الدرس 1 لـ 20](https://www.youtube.com/watch?v=T9DTxrQ1BU0&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=3) | 4 ساعات |
-| البديل | [Yehia Tech: أساسيات رياكت في 90 دقيقة](https://www.youtube.com/playlist?list=PL8q8h6vqfkSVeuw14BwrtJRIg3tAwq0ds) | مراجعة سريعة لكل اللي فوق |
-| مرجع | [Quick Start - react.dev](https://react.dev/learn) | |
-| مرجع | [Thinking in React - react.dev](https://react.dev/learn/thinking-in-react) | **أهم صفحة في الأسبوع** |
+**Topics:** why React · new project with Vite (`npm create vite@latest` → React + TS) · project structure · **components** & **JSX** · styles & classes in JSX · **props** & `children` · conditional rendering · lists & `key`
 
-> لو الكورس عمل المشروع بـ `create-react-app`، **استخدم Vite بدلها**. `create-react-app` اتوقف ومبقاش حد بيستخدمه.
+**Quick review:** [React basics in 90 min · Yehia Tech](https://www.youtube.com/playlist?list=PL8q8h6vqfkSVeuw14BwrtJRIg3tAwq0ds)
 
-### التاسك: تحويل Landing Page لـ Components
+**Read:** [Quick Start](https://react.dev/learn) · **[Thinking in React](https://react.dev/learn/thinking-in-react)** (the key read this week)
 
-خد مشروع الـ Landing Page بتاع الأسبوع 8، وحوّله لـ React + TypeScript:
+</td>
+</tr>
+</table>
 
-- قسّم الصفحة: `Navbar`، و `Hero`، و `Features`، و `FeatureCard`، و `Testimonials`، و `Footer`، ...
-- أي حاجة متكررة (كروت، testimonials، لينكات الـ navbar) تبقى **array of objects** وتترسم بـ `map`
-- كل component ليه `Props` type واضح
-- مفيش component أكبر من 80 سطر تقريبًا
+> [!NOTE]
+> If the course uses `create-react-app`, **use Vite instead.** CRA is deprecated.
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live.
+#### Task · Landing page as components
 
-### تحدي إضافي
+Rebuild your week 8 landing page in React + TypeScript:
 
-اعمل component اسمه `Button` بياخد `variant` (`"primary" | "secondary" | "ghost"`) و `size` (`"sm" | "md" | "lg"`)، واستخدمه في الصفحة كلها.
+- Split it up: `Navbar`, `Hero`, `Features`, `FeatureCard`, `Testimonials`, `Footer`...
+- Anything repeated (cards, testimonials, nav links) becomes an **array of objects** rendered with `map`
+- Every component has a clear `Props` type
+- No component much longer than ~80 lines
+
+> [!TIP]
+> **Bonus:** a `Button` with `variant` (`"primary" | "secondary" | "ghost"`) and `size` (`"sm" | "md" | "lg"`), used across the page.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف إن JSX مش HTML، وأعرف الفروق (`className`، و `htmlFor`، و `{}`، و self-closing)
-- [ ] أعرف ليه الـ `key` مهم في الـ lists، وليه مينفعش أستخدم الـ index في كل الحالات
-- [ ] أعرف إن الـ props **read-only**، ومينفعش الـ component يغيّرها
-- [ ] أقدر أبص على تصميم وأقسّمه components في دماغي
-- [ ] أعرف `children` بتستخدم في إيه
+- [ ] I know how JSX differs from HTML (`className`, `htmlFor`, `{}`, self-closing)
+- [ ] I know why `key` matters and why the index isn't always OK
+- [ ] I know props are **read-only**
+- [ ] I can look at a design and see the components
+- [ ] I know what `children` is for
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** one giant `App` component · a missing `key`, or `Math.random()` as the key · defining a component inside another component.
 
-- **component واحد اسمه `App` فيه الصفحة كلها.** قسّم.
-- **إنك تنسى `key` أو تحط `Math.random()`.** الـ key لازم يبقى ثابت ومميز، زي `id`.
-- **إنك تعمل الـ component الجديد جوا component تاني.** كل component يتعرّف برا، في ملفه.
+> [!NOTE]
+> **Mentor tip:** read *Thinking in React* twice. That page alone separates people who write React from people who understand it.
 
-> **نصيحة منتور:** اقرا صفحة **Thinking in React** مرتين. الصفحة دي لوحدها بتفرق بين حد بيكتب React وحد فاهم React.
+<div align="right"><a href="#top">Top ↑</a> · <a href="#week-20">Week 20 →</a></div>
 
 ---
 
 <a id="week-20"></a>
 
-## الأسبوع 20: State و Events و Forms
+## Week 20 · State, Events & Forms
 
-**الهدف:** تخلي الـ components تفتكر حاجات وتتغير لما المستخدم يتفاعل.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=rnVI3UKcKQA&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=25"><img src="https://img.youtube.com/vi/rnVI3UKcKQA/mqdefault.jpg" width="320" alt="Tarmeez React lesson 21" /></a>
+<br /><sub><b>Tarmeez · React lessons 21 → 40</b> · 3.5 h</sub>
 
-- يعني إيه State، وليه المتغير العادي مش بيكفي
-- إزاي React بيعمل re-render (Virtual DOM)
-- **`useState`**
-- Events و Event Handlers
-- **Forms:** Controlled Inputs، و Select و Radio و Checkbox
-- **Immutability:** تحديث Objects و Arrays في الـ State صح
-- Updater function: `setCount(c => c + 1)`
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** make components remember things and react to the user.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [ترميز: كورس رياكت من الدرس 21 لـ 40](https://www.youtube.com/watch?v=rnVI3UKcKQA&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=25) | 3.5 ساعة |
-| تطبيق | [ترميز: المشروع الأول، Loan Application Form (الدروس 41 لـ 43)](https://www.youtube.com/watch?v=hFrOluMFZxA&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=45) | 1.5 ساعة، **اختياري** لو التاسك واخد وقتك |
-| مرجع | [Adding Interactivity - react.dev](https://react.dev/learn/adding-interactivity) | |
+**Topics:** why a normal variable isn't enough · how React re-renders · **`useState`** · events & handlers · **forms**: controlled inputs, select, radio, checkbox · **immutability** for objects & arrays · updater functions `setCount(c => c + 1)`
 
-> كورس ترميز فيه **تحدي بعد كل جزء، وبعده فيديو الحل**. حل التحدي بنفسك الأول، وبعدين اتفرج على الحل. ولو حليته صح، تقدر تتفرج على الحل بسرعة 1.5x.
-| مرجع | [Managing State - react.dev](https://react.dev/learn/managing-state) | |
+**Optional build:** [Tarmeez · Loan Application Form project, lessons 41 → 43](https://www.youtube.com/watch?v=hFrOluMFZxA&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=45) · 1.5 h
 
-### التاسك: Multi-step Form
+**Read:** [Adding Interactivity](https://react.dev/learn/adding-interactivity) · [Managing State](https://react.dev/learn/managing-state)
 
-اعمل فورم تسجيل على 3 خطوات (زي فورم التقديم على كورس):
+</td>
+</tr>
+</table>
 
-1. **البيانات الشخصية:** الاسم، والإيميل، والموبايل
-2. **البيانات الأكاديمية:** الكلية، والسنة، والتراك (Radio)، والمهارات (Checkboxes)
-3. **المراجعة:** عرض كل البيانات + زرار Submit
+> [!TIP]
+> Tarmeez has **a challenge after each part, then a solution video.** Solve it first. If you got it right, watch the solution at 1.5x.
 
-- Progress bar بيوضح إنت في أنهي خطوة
-- **Validation** لكل خطوة قبل ما تروح للي بعدها، والأخطاء تظهر تحت كل input
-- تقدر ترجع لخطوة قبلها والبيانات **متضيعش**
-- State واحد للفورم كله (object)، وبتحدّثه **immutably**
-- بعد الـ Submit: رسالة نجاح والفورم يتصفّر
+#### Task · Multi-step form
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live.
+A 3-step course application form:
 
-### تحدي إضافي
+1. **Personal:** name, email, phone
+2. **Academic:** college, year, track (radio), skills (checkboxes)
+3. **Review:** all data + submit
 
-احفظ الفورم في Local Storage أثناء ما المستخدم بيكتب، فلو قفل الصفحة بالغلط يلاقي بياناته لما يرجع.
+- A progress bar for the current step
+- **Validation** per step before moving on, errors under each input
+- Going back keeps the data
+- **One** state object for the whole form, updated **immutably**
+- After submit: success message, form resets
+
+> [!TIP]
+> **Bonus:** save the form to Local Storage as the user types, so closing the tab by accident loses nothing.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف ليه `count = count + 1` مش بتغيّر حاجة في الصفحة
-- [ ] أعرف ليه `state.push(item)` غلط، وإيه الصح
-- [ ] أعرف إن تحديث الـ State مش بيحصل في نفس اللحظة (batching)
-- [ ] أعرف إمتى أستخدم الـ updater function `prev => ...`
-- [ ] أعرف الفرق بين Controlled و Uncontrolled input
+- [ ] I know why `count = count + 1` changes nothing on screen
+- [ ] I know why `state.push(item)` is wrong and what to do instead
+- [ ] I know state updates aren't instant (batching)
+- [ ] I know when to use `prev => ...`
+- [ ] I know controlled vs uncontrolled inputs
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** state for things you can compute (`total` from `items`) · mutating state directly (`user.name = "x"`) · `onClick={handleClick()}`, which runs immediately.
 
-- **State لحاجة ممكن تتحسب.** لو عندك `items` و `total`، الـ `total` مش state، احسبه من `items`.
-- **إنك تغيّر الـ object جوا الـ state مباشرة** (`user.name = "x"`). لازم object جديد: `{ ...user, name: "x" }`.
-- **`onClick={handleClick()}`** بدل `onClick={handleClick}`. الأولى بتنفذ الـ function فورًا.
+> [!NOTE]
+> **Mentor tip:** before `useState`, ask: "does this change? can I compute it from something I already have?" Half of beginner state isn't needed.
 
-> **نصيحة منتور:** قبل ما تعمل `useState`، اسأل نفسك: "هل ده بيتغير؟ وهل ممكن أحسبه من حاجة موجودة؟" نص الـ state اللي المبتدئين بيعملوه مش محتاجينه.
+<div align="right"><a href="#week-19">← Week 19</a> · <a href="#top">Top ↑</a> · <a href="#week-21">Week 21 →</a></div>
 
 ---
 
 <a id="week-21"></a>
 
-## الأسبوع 21: Context و useEffect و Data Fetching
+## Week 21 · Context, Effects & Data Fetching
 
-**الهدف:** تشارك داتا بين components بعيدة عن بعض، وتجيب داتا من API.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=nalt9TkgOlE&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=48"><img src="https://img.youtube.com/vi/nalt9TkgOlE/mqdefault.jpg" width="320" alt="Tarmeez React lesson 44" /></a>
+<br /><sub><b>Tarmeez · React lessons 44 → 51</b> · 1.5 h</sub>
 
-- Communication بين الـ components: Props و Lifting State Up
-- **Prop Drilling** والمشكلة بتاعته
-- **`useContext`**
-- **`useEffect`**: إمتى بيشتغل، والـ Dependencies، والـ **Cleanup**
-- **API Requests** في React
-- Loading و Error States
-- i18n وتغيير اتجاه الصفحة (RTL / LTR)
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** share data between distant components and load data from an API.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [ترميز: الدروس من 44 لـ 51 (Props و Context)](https://www.youtube.com/watch?v=nalt9TkgOlE&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=48) | 1.5 ساعة |
-| الأساسي | [ترميز: الدروس من 97 لـ 109 (API و useEffect و مشروع الطقس)](https://www.youtube.com/watch?v=EJ7-xQ1l5-c&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=102) | 2.5 ساعة |
-| مرجع | [Synchronizing with Effects - react.dev](https://react.dev/learn/synchronizing-with-effects) | |
-| مرجع | [You Might Not Need an Effect - react.dev](https://react.dev/learn/you-might-not-need-an-effect) | **اقراها**، وهتوفر عليك bugs كتير |
+**Topics:** lifting state up · prop drilling · **`useContext`** · **`useEffect`**: timing, dependencies, **cleanup** · API requests · loading & error states · i18n and switching RTL / LTR
 
-### التاسك: Movies App (نسخة React)
+**Also watch:** [Tarmeez · API & useEffect, weather project, lessons 97 → 109](https://www.youtube.com/watch?v=EJ7-xQ1l5-c&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=102) · 2.5 h
 
-لو عملت Movies Explorer في مشروع المستوى التاني، اعمله تاني بـ React. ولو عملت حاجة تانية، اعمله دلوقتي باستخدام [TMDB API](https://www.themoviedb.org/documentation/api) أو [DummyJSON](https://dummyjson.com/):
+**Read:** [Synchronizing with Effects](https://react.dev/learn/synchronizing-with-effects) · **[You Might Not Need an Effect](https://react.dev/learn/you-might-not-need-an-effect)** (saves you many bugs)
 
-- لستة أفلام أو منتجات من الـ API، وبحث بـ debounce
-- **Custom Hook** اسمه `useFetch<T>(url)` بيرجع `{ data, isLoading, error }`
-- **ThemeContext** للـ Dark Mode
-- **FavoritesContext** للمفضلة (بتتحفظ في Local Storage)
-- الـ Cleanup صح: لو المستخدم كتب بسرعة، متعرضش نتيجة request قديم (`AbortController`)
+</td>
+</tr>
+</table>
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live.
+#### Task · Movies app
 
-### تحدي إضافي
+If your Project 2 was a movies app, rebuild it in React. Otherwise build one now with [TMDB](https://www.themoviedb.org/documentation/api) or [DummyJSON](https://dummyjson.com/):
 
-اعمل اللغة عربي و إنجليزي بزرار، والصفحة تقلب RTL و LTR (زي ما اتعمل في مشروع الطقس في كورس ترميز).
+- A list from the API with debounced search
+- A **custom hook** `useFetch<T>(url)` returning `{ data, isLoading, error }`
+- **ThemeContext** for dark mode
+- **FavoritesContext**, persisted in Local Storage
+- Proper cleanup: fast typing never shows a stale result (`AbortController`)
+
+> [!TIP]
+> **Bonus:** an Arabic / English toggle that flips the page between RTL and LTR, like Tarmeez's weather project.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف الفرق بين `useEffect(fn)`، و `useEffect(fn, [])`، و `useEffect(fn, [x])`
-- [ ] أعرف إمتى الـ cleanup function بتشتغل، وليه مهمة
-- [ ] أعرف ليه الـ Effect بيشتغل مرتين في Development (Strict Mode)
-- [ ] أعرف إمتى أستخدم Context، وإمتى props عادية أحسن
-- [ ] أقدر أكتب Custom Hook
+- [ ] I know `useEffect(fn)` vs `useEffect(fn, [])` vs `useEffect(fn, [x])`
+- [ ] I know when cleanup runs and why it matters
+- [ ] I know why effects run twice in development (Strict Mode)
+- [ ] I know when Context fits and when plain props are better
+- [ ] I can write a custom hook
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** an effect to compute derived values (just compute during render) · infinite loops (setting state that's in the deps) · Context for everything. It's a *delivery* mechanism, not state management, and every change re-renders all consumers.
 
-- **`useEffect` عشان تحسب حاجة من الـ state.** ده مش محتاج effect، احسبها وقت الـ render.
-- **Infinite loop:** effect بيعمل `setState` وفي نفس الوقت الـ state ده في الـ dependencies.
-- **Context لكل حاجة.** Context مش State Management، هو طريقة **توصيل** بس. وأي تغيير فيه بيعمل re-render لكل اللي بيستخدمه.
+> [!NOTE]
+> **Mentor tip:** **an effect means syncing with something outside React** (API, timer, DOM, storage). Nothing outside React? You probably don't need one.
 
-> **نصيحة منتور:** `useEffect` هو أكتر hook بيتستخدم غلط في React. القاعدة: **Effect = مزامنة مع حاجة برا React** (API، و timer، و DOM، و Local Storage). لو مفيش حاجة برا React، غالبًا مش محتاج effect.
+<div align="right"><a href="#week-20">← Week 20</a> · <a href="#top">Top ↑</a> · <a href="#week-22">Week 22 →</a></div>
 
 ---
 
 <a id="week-22"></a>
 
-## الأسبوع 22: React Router
+## Week 22 · React Router
 
-**الهدف:** تعمل أبلكيشن فيه صفحات كتير من غير ما الصفحة تعمل reload.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=bkj8obp1XmA&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=55"><img src="https://img.youtube.com/vi/bkj8obp1XmA/mqdefault.jpg" width="320" alt="Tarmeez React lesson 52" /></a>
+<br /><sub><b>Tarmeez · React lessons 52 → 58</b> · 1.5 h</sub>
 
-- يعني إيه SPA، والفرق بين CSR و SSR
-- تسطيب React Router
-- Routes و `Link` و `NavLink`
-- **Dynamic Routes** و `useParams`
-- صفحة 404
-- **Nested Routes** و Layouts و `Outlet`
-- `useNavigate` و `useSearchParams`
-- Protected Routes
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** build a multi-page app with no full page reloads.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [ترميز: الدروس من 52 لـ 58](https://www.youtube.com/watch?v=bkj8obp1XmA&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=55) | 1.5 ساعة |
-| مرجع | [React Router Docs](https://reactrouter.com/home) | |
-| مرجع | [React Router: Declarative Mode Installation](https://reactrouter.com/start/declarative/installation) | |
+**Topics:** SPA · CSR vs SSR · routes, `Link`, `NavLink` · **dynamic routes** & `useParams` · 404 page · **nested routes**, layouts, `Outlet` · `useNavigate` & `useSearchParams` · protected routes
 
-> React Router v7 فيه 3 modes. استخدم **Declarative Mode**، لأنه الأقرب للي في الكورس والأبسط للبداية.
+**Read:** [React Router docs](https://reactrouter.com/home) · [Declarative mode install](https://reactrouter.com/start/declarative/installation)
 
-### التاسك: أبلكيشن متعدد الصفحات
+</td>
+</tr>
+</table>
 
-كمّل على Movies App (أو اعمل مشروع جديد) وضيف:
+> [!NOTE]
+> React Router v7 has 3 modes. Use **Declarative mode**: it's closest to the course and simplest to start with.
 
-- `/`: الرئيسية
-- `/movies`: اللستة، والبحث والفلتر **في الـ URL** (`?q=batman&genre=action`) بـ `useSearchParams`
-- `/movies/:id`: صفحة التفاصيل
-- `/favorites`: المفضلة
-- `/login`: صفحة login وهمية (بتحط user في Context)
-- `/profile`: **Protected**، ولو مش عامل login يرجعك لـ `/login`
-- صفحة 404 محترمة
-- Layout مشترك فيه Navbar و Footer، و `NavLink` بيوضح إنت في أنهي صفحة
+#### Task · Multi-page app
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live.
+Extend your movies app (or start fresh):
 
-> **مهم في الـ Deploy:** لو عملت refresh على `/movies/5` على Netlify أو Vercel وطلعلك 404، دوّر على "SPA redirect rules" للمنصة اللي بتستخدمها.
+- `/` home · `/movies` list with search & filter **in the URL** (`?q=batman&genre=action`) · `/movies/:id` details · `/favorites`
+- `/login` (fake login sets a user in Context) · `/profile` **protected**, redirects to `/login`
+- A proper 404 page
+- A shared layout with navbar and footer; `NavLink` highlights the current page
 
-### تحدي إضافي
+> [!IMPORTANT]
+> Refresh on `/movies/5` after deploying gives a 404? Look up "SPA redirect rules" for Netlify or Vercel.
 
-**Lazy Loading** للصفحات: كل صفحة تتحمّل لما تروحلها بس (`React.lazy` + `Suspense`).
+> [!TIP]
+> **Bonus:** lazy-load each page with `React.lazy` + `Suspense`.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف الفرق بين `<a>` و `<Link>`
-- [ ] أعرف الفرق بين `useParams` و `useSearchParams`
-- [ ] أعرف ليه ممكن أحط الـ state في الـ URL بدل `useState`
-- [ ] أقدر أعمل Protected Route
-- [ ] أعرف ليه الـ refresh بيدّي 404 على السيرفر في الـ SPA وإزاي أحلها
+- [ ] I know `<a>` vs `<Link>`
+- [ ] I know `useParams` vs `useSearchParams`
+- [ ] I know why the URL can be better than `useState`
+- [ ] I can build a protected route
+- [ ] I know why SPAs 404 on refresh and how to fix it
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** `<a href>` instead of `<Link>` (full reload, state lost) · forgetting `<Outlet />` in a layout.
 
-- **`<a href>` بدل `<Link>`.** الصفحة هتعمل reload كامل وكل الـ state هتضيع.
-- **إنك تنسى `<Outlet />`** في الـ layout، والصفحات الداخلية متظهرش.
+> [!NOTE]
+> **Mentor tip:** the URL is the web's oldest and best state manager. Anything a user might share (search, filters, page) belongs in it.
 
-> **نصيحة منتور:** الـ URL هو أقدم وأحسن State Management في الويب. أي حاجة المستخدم ممكن يحب يبعتها لحد (بحث، أو فلتر، أو صفحة)، حطها في الـ URL.
+<div align="right"><a href="#week-21">← Week 21</a> · <a href="#top">Top ↑</a> · <a href="#week-23">Week 23 →</a></div>
 
 ---
 
 <a id="week-23"></a>
 
-## الأسبوع 23: Styling و Component Libraries
+## Week 23 · Styling & Component Libraries
 
-**الهدف:** تعرف الطرق المختلفة لعمل styles في React، وتستخدم component library بذكاء.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=T9iM1LVNKec&list=PLdnrjoDUmGZ8Q9Dq9ebR9v1xEgqJ6tcfx&index=11"><img src="https://img.youtube.com/vi/T9iM1LVNKec/mqdefault.jpg" width="320" alt="React 19 and Tailwind 4 landing page" /></a>
+<br /><sub><b>Triangles · React 19 + Tailwind 4 landing page → Vercel</b> · 1 h</sub>
 
-- طرق الـ Styling: CSS عادي، و CSS Modules، و **Tailwind**
-- Tailwind مع React: الـ classes الـ conditional (`clsx`)
-- **Component Libraries:** يعني إيه، وإمتى تستخدمها
-- **shadcn/ui** (الأكثر استخدامًا حاليًا مع Tailwind)
-- Material UI (MUI): Theme، و Icons، و Layout
-- Icons (`lucide-react`)
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** know the ways to style React, and use a component library wisely.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [ترميز: الدروس من 59 لـ 64 (Material UI)](https://www.youtube.com/watch?v=qwtcYDWf1EU&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=62) | 57 دقيقة |
-| الأساسي | [Triangles: Landing Page بـ React 19 + Tailwind 4 ونشرها على Vercel](https://www.youtube.com/watch?v=T9iM1LVNKec&list=PLdnrjoDUmGZ8Q9Dq9ebR9v1xEgqJ6tcfx&index=11) | ساعة |
-| الأساسي | [shadcn/ui Docs](https://ui.shadcn.com/docs) | إنجليزي، اقرا Introduction و Installation (Vite) |
-| تطبيق | [ترميز: مشروع قائمة المهام (الدروس 65 لـ 84)](https://www.youtube.com/watch?v=nRsXnEIyPog&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=68) | 4 ساعات، **اختياري** |
+**Topics:** plain CSS · CSS Modules · **Tailwind** in React & conditional classes (`clsx`) · what component libraries are and when to use one · **shadcn/ui** · Material UI · icons (`lucide-react`)
 
-### التاسك: UI Kit صغير
+**Also watch:** [Tarmeez · Material UI, lessons 59 → 64](https://www.youtube.com/watch?v=qwtcYDWf1EU&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=62) · 57 min
 
-اعمل صفحة "**Component Gallery**" فيها components إنت عاملها بـ **Tailwind** + **shadcn/ui**:
+**Optional build:** [Tarmeez · To-do project, lessons 65 → 84](https://www.youtube.com/watch?v=nRsXnEIyPog&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=68) · 4 h
 
-- `Button` (variants و sizes و loading state)
-- `Input` مع label و error message
-- `Card`
-- `Modal` أو `Dialog`
-- `Toast` (رسالة بتظهر وتختفي)
-- `Tabs`
-- `Dropdown Menu`
-- كله بيدعم **Dark Mode**
+**Read:** [shadcn/ui docs](https://ui.shadcn.com/docs): Introduction + Vite installation
 
-وبعدين استخدمهم في Movies App بدل الـ styles القديمة.
+</td>
+</tr>
+</table>
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live.
+#### Task · Mini UI kit
 
-### تحدي إضافي
+A "**Component Gallery**" page built with **Tailwind + shadcn/ui**:
 
-اعمل `Toast` system كامل بـ Context: `const { toast } = useToast()` من أي component، و `toast.success("تم الحفظ")`.
+- `Button` (variants, sizes, loading) · `Input` with label and error · `Card` · `Modal` / `Dialog` · `Toast` · `Tabs` · `Dropdown Menu`
+- All support **dark mode**
+- Then swap them into your movies app
+
+> [!TIP]
+> **Bonus:** a full toast system on Context: `const { toast } = useToast()` → `toast.success("Saved")` from anywhere.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف الفرق بين component library زي MUI، و shadcn/ui اللي بينسخ الكود عندك
-- [ ] أعرف إزاي أعمل class شرطي في Tailwind بشكل نضيف
-- [ ] أعرف إمتى أستخدم library وإمتى أعمل الـ component بنفسي
-- [ ] الـ components بتاعتي شغالة بالكيبورد (Tab و Enter و Escape)
+- [ ] I know a library like MUI vs shadcn/ui, which copies code into your project
+- [ ] I can write conditional Tailwind classes cleanly
+- [ ] I know when to use a library and when to build it myself
+- [ ] My components work with the keyboard (Tab, Enter, Escape)
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** three component libraries in one project · using a library you can't customize. If you can't change the button color, you don't control your app.
 
-- **إنك تسطب 3 component libraries في نفس المشروع.** اختار واحدة.
-- **إنك تستخدم library ومتعرفش تعدّل فيها.** لو مش عارف تغيّر لون الزرار، يبقى إنت مش متحكم في المشروع.
+> [!NOTE]
+> **Mentor tip:** at work you'll rarely build a modal or dropdown from scratch (their accessibility is hard). But build one once, so you know what the library is doing for you.
 
-> **نصيحة منتور:** في الشغل الحقيقي نادرًا ما هتبني Modal أو Dropdown من الصفر، لأن الـ accessibility بتاعتهم صعبة جدًا. بس لازم تكون **بنيت واحد مرة** عشان تفهم الـ library بتعمل إيه.
+<div align="right"><a href="#week-22">← Week 22</a> · <a href="#top">Top ↑</a> · <a href="#week-24">Week 24 →</a></div>
 
 ---
 
 <a id="week-24"></a>
 
-## الأسبوع 24: State Management
+## Week 24 · State Management
 
-**الهدف:** تدير State معقدة ومشتركة في أبلكيشن كبير.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=G3jSV8p9li0&list=PLxRKoQzM5m3J6gDMz-_eqLvxIR6UH0Pf7&index=1"><img src="https://img.youtube.com/vi/G3jSV8p9li0/mqdefault.jpg" width="320" alt="Redux Toolkit in Arabic" /></a>
+<br /><sub><b>Simple Arab Code · Redux Toolkit 1 → 13</b> · 2.5 h</sub>
 
-- إمتى `useState` و Context مش كفاية
-- **`useReducer`**: Actions و Reducer، و Reducer + Context
-- **Redux Toolkit:** Store، و Slices، و `useSelector`، و `useDispatch`، و Async Thunks، و DevTools
-- **Zustand:** البديل الأخف والأبسط
-- Client State vs Server State (مقدمة للأسبوع الجاي)
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** manage complex, shared state in a large app.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [ترميز: useReducer (الدروس من 91 لـ 94)](https://www.youtube.com/watch?v=_IOM9XtJAvE&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=95) | ساعتين |
-| الأساسي | [Simple Arab Code: Redux Toolkit من 1 لـ 13](https://www.youtube.com/watch?v=G3jSV8p9li0&list=PLxRKoQzM5m3J6gDMz-_eqLvxIR6UH0Pf7&index=1) | 2.5 ساعة |
-| البديل | [ترميز: Redux (الدروس من 110 لـ 124)](https://www.youtube.com/watch?v=7bPnRc_BDe8&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=115) | 3.5 ساعة |
-| الأساسي | [Zustand: Introduction](https://zustand.docs.pmnd.rs/learn/getting-started/introduction) | إنجليزي، قصير جدًا |
-| مرجع | [Scaling Up with Reducer and Context - react.dev](https://react.dev/learn/scaling-up-with-reducer-and-context) | |
-| مرجع | [Redux Toolkit Quick Start](https://redux-toolkit.js.org/tutorials/quick-start) | |
+**Topics:** when `useState` and Context aren't enough · **`useReducer`**, reducer + context · **Redux Toolkit**: store, slices, `useSelector`, `useDispatch`, async thunks, DevTools · **Zustand**, the lighter alternative · client vs server state
 
-### التاسك: Shopping Cart
+**Also watch:** [Tarmeez · useReducer, lessons 91 → 94](https://www.youtube.com/watch?v=_IOM9XtJAvE&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=95) · 2 h
 
-اعمل متجر صغير بـ [DummyJSON Products](https://dummyjson.com/):
+**Alternative:** [Tarmeez · Redux, lessons 110 → 124](https://www.youtube.com/watch?v=7bPnRc_BDe8&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=115) · 3.5 h
 
-- صفحة منتجات، وصفحة منتج، وصفحة Cart
-- **Cart بـ Redux Toolkit:** إضافة، وحذف، وتغيير الكمية، والإجمالي، والخصم بكوبون
-- **UI State بـ Zustand:** Sidebar مفتوح ولا مقفول، و Theme
-- الـ Cart بيتحفظ في Local Storage
-- أيقونة الـ Cart في الـ Navbar فيها عدد المنتجات
+**Read:** [Zustand intro](https://zustand.docs.pmnd.rs/learn/getting-started/introduction) (very short) · [Reducer + Context](https://react.dev/learn/scaling-up-with-reducer-and-context) · [RTK Quick Start](https://redux-toolkit.js.org/tutorials/quick-start)
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live.
+</td>
+</tr>
+</table>
 
-### تحدي إضافي
+#### Task · Shopping cart
 
-اعمل نفس الـ Cart بـ Zustand بس، وقارن: كام سطر في كل نسخة؟ وأنهي أسهل في القراية؟ اكتب رأيك في الـ README.
+A small store on [DummyJSON products](https://dummyjson.com/):
+
+- Products, product details, and cart pages
+- **Cart in Redux Toolkit:** add, remove, change quantity, total, coupon discount
+- **UI state in Zustand:** sidebar open/closed, theme
+- Cart persists in Local Storage
+- Cart icon in the navbar shows the item count
+
+> [!TIP]
+> **Bonus:** build the same cart in Zustand only. Compare line counts and readability, and write your verdict in the README.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف إمتى أحتاج State Management library، وإمتى مش محتاجها
-- [ ] أعرف الفرق بين `useState` و `useReducer`، وإمتى أستخدم كل واحد
-- [ ] أفهم الـ Redux flow: Action، و Reducer، و Store، و UI
-- [ ] أعرف ليه Redux Toolkit بيسمحلي أكتب `state.items.push()` (Immer)
-- [ ] أعرف الفرق بين Redux و Zustand
+- [ ] I know when I need a state library and when I don't
+- [ ] I know `useState` vs `useReducer`
+- [ ] I understand the Redux flow: action → reducer → store → UI
+- [ ] I know why RTK lets me write `state.items.push()` (Immer)
+- [ ] I know Redux vs Zustand
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** everything in Redux (form input state belongs in `useState`) · API data in Redux. That's **server state**: next week.
 
-- **كل حاجة في Redux.** الـ state بتاعة input في فورم مكانها `useState`، مش الـ global store.
-- **داتا الـ API في Redux.** دي **Server State**، ومكانها الأسبوع الجاي.
+> [!NOTE]
+> **Mentor tip:** Redux Toolkit is still everywhere in Egyptian companies, so know it. In new projects, Zustand + TanStack Query cover most needs with far less code.
 
-> **نصيحة منتور:** Redux Toolkit لسه موجود في مشاريع وشركات كتير جدًا في مصر، فلازم تعرفه. بس في المشاريع الجديدة، Zustand + TanStack Query بيغطّوا أغلب الاحتياجات بكود أقل بكتير.
+<div align="right"><a href="#week-23">← Week 23</a> · <a href="#top">Top ↑</a> · <a href="#week-25">Week 25 →</a></div>
 
 ---
 
 <a id="week-25"></a>
 
-## الأسبوع 25: TanStack Query
+## Week 25 · TanStack Query
 
-**الهدف:** تتعامل مع داتا السيرفر بالطريقة الاحترافية: Caching، و Refetching، و Mutations.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=KIS-MJfuPDY&list=PLejc1JbD4ZFRubkv6hV2D3r3eDoXTGHcF&index=1"><img src="https://img.youtube.com/vi/KIS-MJfuPDY/mqdefault.jpg" width="320" alt="TanStack Query in Arabic" /></a>
+<br /><sub><b>kimz codes · TanStack Query 1 → 19</b> · 2 h</sub>
 
-- Server State vs Client State
-- ليه `useEffect` + `fetch` مش كفاية في المشاريع الكبيرة
-- `useQuery`: Query Keys، و `staleTime`، و Caching
-- DevTools
-- Dependent و Enabled Queries
-- Pagination
-- Prefetching
-- **`useMutation`** و Invalidate Queries
-- Optimistic Updates
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** handle server data professionally: caching, refetching, mutations.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [kimz codes: TanStack Query بالعربي من 1 لـ 19](https://www.youtube.com/watch?v=KIS-MJfuPDY&list=PLejc1JbD4ZFRubkv6hV2D3r3eDoXTGHcF&index=1) | ساعتين |
-| تكملة | [kimz codes: Optimistic Updates من 20 لـ 22](https://www.youtube.com/watch?v=9M6A2tfis-g&list=PLejc1JbD4ZFRubkv6hV2D3r3eDoXTGHcF&index=20) | 28 دقيقة |
-| مرجع | [TanStack Query: Overview](https://tanstack.com/query/latest/docs/framework/react/overview) | |
+**Topics:** server vs client state · why `useEffect` + `fetch` doesn't scale · `useQuery`, query keys, `staleTime`, caching · DevTools · dependent & enabled queries · pagination · prefetching · **`useMutation`** & invalidation · optimistic updates
 
-### التاسك: Dashboard بـ Server State
+**Continue:** [Optimistic updates, 20 → 22](https://www.youtube.com/watch?v=9M6A2tfis-g&list=PLejc1JbD4ZFRubkv6hV2D3r3eDoXTGHcF&index=20) · 28 min
 
-اعمل Admin Dashboard لإدارة منتجات أو Posts باستخدام [DummyJSON](https://dummyjson.com/):
+**Read:** [TanStack Query overview](https://tanstack.com/query/latest/docs/framework/react/overview)
 
-- جدول فيه البيانات مع **Pagination** و بحث
-- صفحة تفاصيل لكل عنصر
-- **Add و Edit و Delete** بـ `useMutation`
-- بعد أي تعديل، الجدول يتحدث (`invalidateQueries`)
-- Skeleton Loading بدل الـ spinner
-- **مفيش ولا `useEffect` لجلب داتا** في المشروع كله
+</td>
+</tr>
+</table>
 
-> **ملاحظة:** DummyJSON بيعمل simulation للـ add و edit و delete بس مش بيحفظهم فعلًا. ده كويس للتدريب، وهتشوف التغيير في الـ response.
+#### Task · Admin dashboard
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live.
+Manage products or posts on [DummyJSON](https://dummyjson.com/):
 
-### تحدي إضافي
+- A table with **pagination** and search
+- A details page per item
+- **Add, edit, delete** with `useMutation`
+- The table refreshes after changes (`invalidateQueries`)
+- Skeleton loading instead of spinners
+- **Not one `useEffect` for fetching** in the whole project
 
-**Optimistic Delete:** العنصر يختفي من الجدول فورًا، ولو الـ request فشل يرجع تاني مع رسالة خطأ.
+> [!NOTE]
+> DummyJSON simulates writes without saving them. Fine for practice: you'll see the change in the response.
+
+> [!TIP]
+> **Bonus:** **optimistic delete**: the row disappears instantly and comes back with an error if the request fails.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف الفرق بين Server State و Client State
-- [ ] أعرف يعني إيه `staleTime`، والفرق بينه وبين `gcTime`
-- [ ] أعرف ليه الـ Query Key لازم يحتوي على كل المتغيرات (`['products', page, search]`)
-- [ ] أقدر أعمل mutation وأحدّث الداتا بعدها
-- [ ] بستخدم React Query DevTools وفاهم بيوريني إيه
+- [ ] I know server state vs client state
+- [ ] I know `staleTime` vs `gcTime`
+- [ ] I know why query keys include every variable (`['products', page, search]`)
+- [ ] I can run a mutation and refresh data after it
+- [ ] I use React Query DevTools and understand what it shows
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** a static query key (`['products']`) while the page changes · copying query data into `useState`.
 
-- **Query Key ثابت** (`['products']`) والصفحة بتتغير. الداتا مش هتتحدث.
-- **إنك تنسخ داتا الـ query في `useState`.** استخدمها مباشرة من `useQuery`.
+> [!NOTE]
+> **Mentor tip:** after TanStack Query you won't go back to `useEffect` + `fetch`. It shows in code review.
 
-> **نصيحة منتور:** بعد ما تجرب TanStack Query، مش هترجع لـ `useEffect` + `fetch` تاني. ودي حاجة بتبان جدًا في الـ code review.
+<div align="right"><a href="#week-24">← Week 24</a> · <a href="#top">Top ↑</a> · <a href="#week-26">Week 26 →</a></div>
 
 ---
 
 <a id="week-26"></a>
 
-## الأسبوع 26: Testing
+## Week 26 · Testing
 
-**الهدف:** تكتب tests بتتأكد إن الكود شغال، وتمسك أي حاجة تبوظ لما تعدّل بعدين.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=hDZjJPPsWJw&list=PLDQ11FgmbqQOFLSRv-Ya39CchDjP1BLju&index=2"><img src="https://img.youtube.com/vi/hDZjJPPsWJw/mqdefault.jpg" width="320" alt="React Testing in Arabic" /></a>
+<br /><sub><b>Index Academy · React Testing 01 → 15</b> · 2.5 h</sub>
 
-- ليه نكتب Tests، وأنواعها: Unit، و Integration، و E2E
-- **Vitest:** `describe`، و `it`، و `expect`، و Matchers
-- **React Testing Library:** `render`، و `screen`، و Queries (`getByRole`، و `getByText`، ...)
-- User Events
-- Async Tests
-- Mocking (functions و API calls)
-- TDD (مقدمة)
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** write tests that prove your code works and catch what breaks when you change it later.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [Index Academy: React Testing بالعربي من 01 لـ 15](https://www.youtube.com/watch?v=hDZjJPPsWJw&list=PLDQ11FgmbqQOFLSRv-Ya39CchDjP1BLju&index=2) | 2.5 ساعة |
-| مرجع | [Vitest: Getting Started](https://vitest.dev/guide/) | |
-| مرجع | [React Testing Library: Intro](https://testing-library.com/docs/react-testing-library/intro/) | |
-| مرجع | [Playwright: Installation](https://playwright.dev/docs/intro) | للتحدي الإضافي |
+**Topics:** why test · unit, integration, E2E · **Vitest**: `describe`, `it`, `expect`, matchers · **React Testing Library**: `render`, `screen`, queries (`getByRole`...) · user events · async tests · mocking functions & API calls · intro to TDD
 
-> **عن Jest و Vitest:** الكورس العربي بيستخدم **Jest**. إحنا هنستخدم **Vitest** لأنه شغال مع Vite من غير أي ظبط. الكتابة **تقريبًا نفسها بالظبط** (`describe`، و `it`، و `expect`)، والفرق إنك هتكتب `vi.fn()` بدل `jest.fn()`. فاتفرج على الكورس، واكتب بـ Vitest.
+**Read:** [Vitest guide](https://vitest.dev/guide/) · [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) · [Playwright](https://playwright.dev/docs/intro) (for the bonus)
 
-### التاسك: Tests للـ Cart
+</td>
+</tr>
+</table>
 
-ارجع لمشروع الـ Shopping Cart (الأسبوع 24) واكتب:
+> [!NOTE]
+> The Arabic course uses **Jest**; we use **Vitest** because it works with Vite out of the box. The code is nearly identical (`describe`, `it`, `expect`); you write `vi.fn()` instead of `jest.fn()`.
 
-- **Unit tests** للـ reducer أو الـ slice: إضافة، وحذف، وتغيير الكمية، والإجمالي، والكوبون (5 tests على الأقل)
-- **Unit tests** لأي utility functions (تنسيق السعر مثلًا)
-- **Component tests** بـ React Testing Library:
-  - `ProductCard`: بيعرض الاسم والسعر، والضغط على "Add to Cart" بيستدعي الـ function
-  - `CartPage`: بيعرض "Cart فاضي" لو مفيش حاجة، وبيعرض الإجمالي صح
-- **Mock** للـ API في test واحد على الأقل
-- `npm run test` كله أخضر
+#### Task · Test the cart
 
-**التسليم:** على الداشبورد: لينك الـ Repo + Screenshot لنتيجة الـ tests.
+On your week 24 shopping cart:
 
-### تحدي إضافي
+- **Unit tests** for the slice: add, remove, quantity, total, coupon (5+ tests)
+- **Unit tests** for utilities (e.g. price formatting)
+- **Component tests:** `ProductCard` shows name and price and "Add to Cart" calls the handler · `CartPage` shows an empty state and the correct total
+- At least one test with a **mocked API**
+- `npm run test` all green
 
-اكتب **E2E test واحد** بـ Playwright: يفتح الموقع، ويضيف منتج للـ Cart، ويروح لصفحة الـ Cart، ويتأكد إن المنتج موجود.
+**Submit** the repo and a screenshot of the test results.
+
+> [!TIP]
+> **Bonus:** one **Playwright E2E test**: open the site, add a product, open the cart, check it's there.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف الفرق بين Unit و Integration و E2E
-- [ ] أعرف ليه `getByRole` أحسن من `getByTestId` في أغلب الحالات
-- [ ] أعرف الفرق بين `getBy`، و `queryBy`، و `findBy`
-- [ ] أقدر أعمل mock لـ function وأتأكد إنها اتنادت
-- [ ] بكتب tests بتختبر **اللي المستخدم بيشوفه**، مش تفاصيل الكود
+- [ ] I know unit vs integration vs E2E
+- [ ] I know why `getByRole` beats `getByTestId` in most cases
+- [ ] I know `getBy` vs `queryBy` vs `findBy`
+- [ ] I can mock a function and assert it was called
+- [ ] My tests check **what users see**, not implementation details
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** testing implementation (state names, render counts) · tests that always pass. Break the code on purpose: does the test fail?
 
-- **إنك تختبر الـ implementation** (اسم state، أو عدد re-renders). اختبر اللي المستخدم بيشوفه ويعمله.
-- **Tests بتعدّي دايمًا.** جرّب تبوّظ الكود وشوف الـ test بيفشل ولا لأ. لو مش بيفشل، يبقى مش بيختبر حاجة.
+> [!NOTE]
+> **Mentor tip:** you don't need 100% coverage. Start with what would hurt most if it broke: calculations, cart, auth.
 
-> **نصيحة منتور:** مش لازم 100% coverage. ابدأ بـ test للحاجات اللي **لو باظت هتعمل مشكلة كبيرة**: الحسابات، والـ cart، والـ auth.
+<div align="right"><a href="#week-25">← Week 25</a> · <a href="#top">Top ↑</a> · <a href="#week-27">Week 27 →</a></div>
 
 ---
 
 <a id="week-27"></a>
 
-## الأسبوع 27: Performance و Accessibility
+## Week 27 · Performance & Accessibility
 
-**الهدف:** تخلي الأبلكيشن سريع، وكل الناس تقدر تستخدمه.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=lVpbayS9UUM&list=PLNknCqb-phEjLVnCbtVTJnWYml0zRvt5Y&index=1"><img src="https://img.youtube.com/vi/lVpbayS9UUM/mqdefault.jpg" width="320" alt="Web Accessibility 101" /></a>
+<br /><sub><b>Ahmed Saber · Web Accessibility 101</b> · 2.5 h</sub>
 
-**Performance:**
-- إزاي React بيعمل re-render، وإمتى ده يبقى مشكلة
-- React DevTools Profiler
-- `memo` و `useMemo` و `useCallback`، و**إمتى مش محتاجهم**
-- **React Compiler**: بيعمل الـ memoization لوحده
-- Code Splitting و `lazy`
-- Core Web Vitals: LCP، و INP، و CLS
-- Lighthouse
-- الصور: `loading="lazy"`، و الأحجام، و WebP و AVIF
-- حجم الـ Bundle
+</td>
+<td valign="top">
 
-**Accessibility:**
-- ليه الـ a11y مهمة
-- Semantic HTML في React
-- الكيبورد و Focus Management
-- ARIA (وإمتى **متستخدموش**)
-- Color Contrast
-- Screen Readers
+**Goal:** make your app fast, and usable by everyone.
 
-### المصادر
+**Performance:** what triggers a re-render · React DevTools Profiler · `memo`, `useMemo`, `useCallback`, and **when not to** · **React Compiler** (auto-memoization) · code splitting & `lazy` · Core Web Vitals (LCP, INP, CLS) · Lighthouse · images (lazy loading, sizing, WebP / AVIF) · bundle size
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [ترميز: Caching The Computations Using useMemo (الدرس 86)](https://www.youtube.com/watch?v=5xWJIRJDQXM&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=89) | 16 دقيقة |
-| الأساسي | [Ahmed Saber: Web Accessibility 101](https://www.youtube.com/playlist?list=PLNknCqb-phEjLVnCbtVTJnWYml0zRvt5Y) | 2.5 ساعة |
-| الأساسي | [Learn Performance - web.dev](https://web.dev/learn/performance) | إنجليزي، اختار الأجزاء اللي محتاجها |
-| مرجع | [memo](https://react.dev/reference/react/memo) · [useMemo](https://react.dev/reference/react/useMemo) · [lazy](https://react.dev/reference/react/lazy) - react.dev | |
-| مرجع | [React Compiler - react.dev](https://react.dev/learn/react-compiler) | |
-| مرجع | [Web Vitals - web.dev](https://web.dev/articles/vitals) | |
-| مرجع | [Learn Accessibility - web.dev](https://web.dev/learn/accessibility) | |
-| أداة | [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) · [WAVE](https://wave.webaim.org/) | |
+**Accessibility:** semantic HTML in React · keyboard & focus management · ARIA (and when **not** to use it) · color contrast · screen readers
 
-### التاسك: Audit وتحسين مشروع
+**Also watch:** [Tarmeez · useMemo, lesson 86](https://www.youtube.com/watch?v=5xWJIRJDQXM&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=89) · 16 min
 
-اختار أكبر مشروع عملته في المستوى ده (غالبًا الـ Dashboard أو الـ Cart):
+**Read:** [Learn Performance · web.dev](https://web.dev/learn/performance) · [memo](https://react.dev/reference/react/memo) · [useMemo](https://react.dev/reference/react/useMemo) · [lazy](https://react.dev/reference/react/lazy) · [React Compiler](https://react.dev/learn/react-compiler) · [Web Vitals](https://web.dev/articles/vitals) · [Learn Accessibility](https://web.dev/learn/accessibility)
 
-1. شغّل **Lighthouse** (Mobile) وخد Screenshot **قبل**
-2. شغّل **React DevTools Profiler** ودوّر على re-renders ملهاش لازمة
-3. اعمل **Code Splitting** للصفحات
-4. حسّن الصور
-5. **a11y:** جرّب الأبلكيشن بالكيبورد بس، وصلّح أي حاجة مش شغالة. شغّل WAVE وصلّح الأخطاء
-6. خد Screenshot **بعد**
-7. اكتب في الـ README جدول: **المشكلة، و عملت إيه، و النتيجة قبل وبعد**
+**Tools:** [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) · [WAVE](https://wave.webaim.org/)
 
-**التسليم:** على الداشبورد: لينك الـ Repo (فيه الـ README بالجدول) + Screenshots قبل وبعد.
+</td>
+</tr>
+</table>
 
-### تحدي إضافي
+#### Task · Audit & improve
 
-شغّل الأبلكيشن بـ **Screen Reader** (NVDA على Windows، أو VoiceOver على Mac، أو TalkBack على Android) وحاول تستخدمه وعينك مقفولة لمدة 5 دقايق. اكتب إيه اللي حسيت بيه.
+On your biggest project from this level:
+
+1. Run **Lighthouse** (mobile) and save a **before** screenshot
+2. Use the **Profiler** to find pointless re-renders
+3. Add **code splitting** for pages
+4. Optimize images
+5. **a11y:** use the app keyboard-only and fix what breaks; run WAVE and fix its errors
+6. Save an **after** screenshot
+7. In the README, a table: **problem → fix → before / after**
+
+> [!TIP]
+> **Bonus:** use your app with a **screen reader** (NVDA, VoiceOver, or TalkBack) for 5 minutes with your eyes closed. Write down how it felt.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف إيه اللي بيعمل re-render لـ component في React
-- [ ] أعرف إمتى `useMemo` و `useCallback` بيفيدوا، وإمتى بيضرّوا
-- [ ] أعرف يعني إيه LCP و INP و CLS
-- [ ] أقدر أقرا تقرير Lighthouse وأعرف أبدأ منين
-- [ ] الأبلكيشن بتاعي شغال بالكيبورد كله
-- [ ] أعرف إن "**No ARIA is better than bad ARIA**"
+- [ ] I know what makes a React component re-render
+- [ ] I know when `useMemo` / `useCallback` help and when they hurt
+- [ ] I know what LCP, INP, and CLS mean
+- [ ] I can read a Lighthouse report and know where to start
+- [ ] My app works fully with the keyboard
+- [ ] I know "**no ARIA is better than bad ARIA**"
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** `useMemo` on everything (memoization has a cost; measure first) · `<div onClick>` instead of `<button>` (no keyboard, invisible to screen readers).
 
-- **`useMemo` على كل حاجة.** الـ memoization ليها تكلفة. استخدمها لما تقيس وتلاقي مشكلة فعلًا.
-- **`<div onClick>` بدل `<button>`.** مش هيشتغل بالكيبورد، والـ Screen Reader مش هيعرف إنه زرار.
+> [!NOTE]
+> **Mentor tip:** **measure before you optimize.** Most beginner performance problems are huge images and code that loads before it's needed, not re-renders.
 
-> **نصيحة منتور:** **قيس قبل ما تحسّن.** أغلب مشاكل الـ performance اللي بتشوفها في مشاريع المبتدئين جاية من صور كبيرة وحاجات بتتحمّل مش محتاجينها، مش من re-renders.
+<div align="right"><a href="#week-26">← Week 26</a> · <a href="#top">Top ↑</a> · <a href="#week-28">Week 28 →</a></div>
 
 ---
 
 <a id="week-28"></a>
 
-## الأسبوع 28: Next.js، الأساسيات والـ Routing
+## Week 28 · Next.js: Basics & Routing
 
-**الهدف:** تفهم Next.js بيضيف إيه على React، وتبني صفحات بالـ App Router.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=P6n44p4k9U8&list=PLSDhifuM5C420tyw98jx-ZesncZVtOyPB&index=1"><img src="https://img.youtube.com/vi/P6n44p4k9U8/mqdefault.jpg" width="320" alt="Next.js course 2026" /></a>
+<br /><sub><b>Saad Al-Sattouf · Next.js 2026, 1 → 12</b> · 1.5 h</sub>
 
-- يعني إيه Meta-framework، وليه Next.js
-- CSR vs SSR vs SSG
-- إنشاء مشروع وفهم هيكل الملفات
-- **App Router:** الـ routing بالفولدرات
-- `Link` والتنقل
-- Dynamic Routes و Nested Routes
-- **Layouts** و Nested Layouts
-- Params في الـ dynamic routes
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** understand what Next.js adds to React and build pages with the App Router.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [سعد السطوف: كورس Next.js كامل 2026 من 1 لـ 12](https://www.youtube.com/watch?v=P6n44p4k9U8&list=PLSDhifuM5C420tyw98jx-ZesncZVtOyPB&index=1) | 1.5 ساعة |
-| الأساسي | [Learn Next.js](https://nextjs.org/learn) | الكورس الرسمي، إنجليزي، تفاعلي ومجاني |
-| مرجع | [Next.js Docs](https://nextjs.org/docs) | |
+**Topics:** what a meta-framework is · CSR vs SSR vs SSG · project setup & file structure · **App Router**, folder-based routing · `Link` · dynamic & nested routes · **layouts** & nested layouts · route params
 
-### التاسك: Blog بـ Next.js
+**Course:** **[Learn Next.js](https://nextjs.org/learn)** (official, interactive, free)
 
-ابدأ مشروع Blog (هتكمله الأسبوع الجاي):
+**Read:** [Next.js docs](https://nextjs.org/docs)
 
-- `/`: الرئيسية، فيها آخر البوستات
-- `/blog`: كل البوستات
-- `/blog/[slug]`: صفحة البوست
-- `/about`
-- Layout رئيسي فيه Navbar و Footer، و Layout مختلف لصفحات الـ blog فيه sidebar
-- البوستات حاليًا في ملف `data.ts` (array of objects)
-- TypeScript و Tailwind
+</td>
+</tr>
+</table>
 
-**التسليم:** على الداشبورد: لينك الـ Repo.
+#### Task · A blog in Next.js
 
-### تحدي إضافي
+Start a blog (you'll finish it next week):
 
-اكتب البوستات كملفات **Markdown** واعرضها (دوّر على MDX في Next.js docs).
+- `/` latest posts · `/blog` all posts · `/blog/[slug]` a post · `/about`
+- A root layout with navbar and footer, and a blog layout with a sidebar
+- Posts in `data.ts` for now
+- TypeScript + Tailwind
+
+> [!TIP]
+> **Bonus:** write posts as **Markdown** files and render them (see MDX in the Next.js docs).
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف الفرق بين CSR و SSR و SSG، وإمتى كل واحد مناسب
-- [ ] أعرف إزاي الفولدرات بتتحول لـ routes في الـ App Router
-- [ ] أعرف `page.tsx` و `layout.tsx` الفرق بينهم إيه
-- [ ] أقدر أعمل dynamic route وآخد الـ params
+- [ ] I know CSR vs SSR vs SSG and when each fits
+- [ ] I know how folders become routes in the App Router
+- [ ] I know `page.tsx` vs `layout.tsx`
+- [ ] I can build a dynamic route and read its params
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** following a **Pages Router** (`pages/`) tutorial. We use the **App Router** (`app/`) · `"use client"` at the top of every file (more on that next week).
 
-- **إنك تتفرج على كورس بيستخدم الـ Pages Router (`pages/`).** إحنا بنستخدم **App Router (`app/`)**، وده الحالي والـ default.
-- **إنك تحط `"use client"` في أول كل ملف.** ده موضوع الأسبوع الجاي، بس باختصار: متعملش كده.
+> [!NOTE]
+> **Mentor tip:** Next.js feels like relearning React at first. It isn't. Everything you know still works; Next.js adds *where* things render: server or client.
 
-> **نصيحة منتور:** Next.js في الأول هيحسسك إنك بتتعلم React من جديد، بس ده مش حقيقي. كل اللي اتعلمته شغال زي ما هو، Next.js بس بيضيف **إنت بترندر فين** (Server ولا Client).
+<div align="right"><a href="#week-27">← Week 27</a> · <a href="#top">Top ↑</a> · <a href="#week-29">Week 29 →</a></div>
 
 ---
 
 <a id="week-29"></a>
 
-## الأسبوع 29: Next.js، Data و SEO و Deploy + الشغل مع الـ AI
+## Week 29 · Next.js: Data, SEO & Deploy + AI Workflow
 
-**الهدف:** تكمّل الـ Blog بداتا حقيقية و SEO وترفعه، وتتعلم إزاي تستخدم الـ AI كأداة شغل حقيقية.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=cTNbmYbEa9w&list=PLSDhifuM5C420tyw98jx-ZesncZVtOyPB&index=13"><img src="https://img.youtube.com/vi/cTNbmYbEa9w/mqdefault.jpg" width="320" alt="Next.js course 2026 part 2" /></a>
+<br /><sub><b>Saad Al-Sattouf · Next.js 2026, 13 → 20</b> · 1 h</sub>
 
-**Next.js:**
-- **Server Components vs Client Components** و `"use client"`
-- Data Fetching في Server Components
-- Route Handlers (API Routes)
-- `loading.tsx` و `error.tsx` و `not-found.tsx`
-- **Metadata و SEO**
-- `next/image` و `next/font`
-- Deploy على Vercel
+</td>
+<td valign="top">
 
-**الشغل مع الـ AI:**
-- إزاي تكتب prompt كويس لمهمة برمجية (السياق، والقيود، والمطلوب بالظبط)
-- استخدامه في: الـ boilerplate، والـ tests، وشرح كود مش فاهمه، و code review
-- **إزاي تراجع كود الـ AI:** متقبلش حاجة مش فاهمها، واختبر كل حاجة
-- الحاجات اللي الـ AI بيغلط فيها كتير: APIs قديمة، و packages مش موجودة، وحلول أعقد من اللازم
+**Goal:** finish the blog with real data and SEO, ship it, and learn to use AI as a real work tool.
 
-### المصادر
+**Next.js:** **Server vs Client Components** & `"use client"` · fetching in Server Components · route handlers · `loading.tsx`, `error.tsx`, `not-found.tsx` · **metadata & SEO** · `next/image` & `next/font` · deploy on Vercel
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [سعد السطوف: كورس Next.js من 13 لـ 20](https://www.youtube.com/watch?v=cTNbmYbEa9w&list=PLSDhifuM5C420tyw98jx-ZesncZVtOyPB&index=13) | ساعة |
-| تكملة | [سعد السطوف: المستوى التاني (Auth و Middleware و Deploy) من 21 لـ 30](https://www.youtube.com/watch?v=ZzDG94HAEgM&list=PLSDhifuM5C420tyw98jx-ZesncZVtOyPB&index=21) | ساعتين، **اختياري** |
-| مرجع | [Learn Next.js](https://nextjs.org/learn) | كمّل الفصول اللي فاتتك |
-| مرجع | [GitHub Copilot Docs](https://docs.github.com/en/copilot) | |
+**AI workflow:** prompts with context, constraints, and a precise ask · AI for boilerplate, tests, explanations, reviews · **reviewing AI code**: never accept what you don't understand · common AI failures: outdated APIs, packages that don't exist, overcomplicated solutions
 
-### التاسك: تكملة الـ Blog + Deploy
+**Optional:** [Level 2: auth, middleware, deploy, 21 → 30](https://www.youtube.com/watch?v=ZzDG94HAEgM&list=PLSDhifuM5C420tyw98jx-ZesncZVtOyPB&index=21) · 2 h
 
-- البوستات تيجي من API (مثلًا [DummyJSON Posts](https://dummyjson.com/)) في **Server Component**
-- زرار Like و Comment form يبقوا **Client Components** (وده المكان الوحيد اللي فيه `"use client"`)
-- Route Handler واحد على الأقل (`/api/...`)
-- `loading.tsx` بـ skeleton، و `error.tsx`، و `not-found.tsx`
-- **Metadata** لكل صفحة، و dynamic metadata لصفحة البوست (العنوان والوصف من البوست نفسه)
-- كل الصور بـ `next/image`، والخط بـ `next/font`
-- **Deploy على Vercel**
-- Lighthouse SEO و Performance **90+**
+**Read:** [Learn Next.js](https://nextjs.org/learn) · [GitHub Copilot docs](https://docs.github.com/en/copilot)
 
-**مهمة الـ AI:**
-استخدم أي أداة AI عشان:
-1. تكتب tests لـ component واحد
-2. تعمل review لملف من ملفاتك
-3. تشرحلك حاجة في Next.js مكنتش فاهمها
+</td>
+</tr>
+</table>
 
-واكتب في ملف `AI_LOG.md`: كتبت إيه بالظبط (الـ prompt)، وهو رد بإيه، و**إيه اللي كان غلط أو محتاج تعديل في رده**.
+#### Task · Ship the blog
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live + ملف `AI_LOG.md`.
+- Posts from an API (e.g. [DummyJSON posts](https://dummyjson.com/)) in a **Server Component**
+- Like button and comment form as **Client Components** (the only `"use client"` files)
+- At least one route handler (`/api/...`)
+- `loading.tsx` with skeletons, `error.tsx`, `not-found.tsx`
+- **Metadata** on every page; dynamic metadata on posts
+- `next/image` for all images, `next/font` for fonts
+- **Deployed on Vercel**, Lighthouse SEO & Performance **90+**
+
+**AI task:** use any AI tool to (1) write tests for one component, (2) review one of your files, (3) explain a Next.js concept you didn't get. In `AI_LOG.md`, record the exact prompt, the answer, and **what was wrong or needed fixing**.
+
+**Submit** the repo, live link, and `AI_LOG.md`.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف الفرق بين Server Component و Client Component، وإمتى أحتاج `"use client"`
-- [ ] أعرف ليه مينفعش أستخدم `useState` في Server Component
-- [ ] أقدر أجيب داتا في Server Component من غير `useEffect`
-- [ ] أعرف إزاي أعمل Metadata ديناميك
-- [ ] رفعت مشروع Next.js على Vercel
-- [ ] بقدر أراجع كود الـ AI وأمسك غلطه
+- [ ] I know Server vs Client Components and when I need `"use client"`
+- [ ] I know why `useState` can't be used in a Server Component
+- [ ] I can fetch data in a Server Component without `useEffect`
+- [ ] I can generate dynamic metadata
+- [ ] I deployed a Next.js app on Vercel
+- [ ] I can review AI-written code and catch its mistakes
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** `"use client"` in the root layout makes the whole app client-side · asking AI to "build me a Next.js blog" with no context gets you old versions or the Pages Router. Give it the version, the router, the file, and the exact ask.
 
-- **`"use client"` في الـ layout.** كده كل الأبلكيشن بقى Client، وضاعت فايدة Next.js.
-- **إنك تطلب من الـ AI "اعملّي blog بـ Next.js".** هيطلعلك كود ممكن يكون بنسخة قديمة أو بالـ Pages Router. ادّيله سياق: النسخة، والـ App Router، والملف اللي إنت فيه، والمطلوب بالظبط.
+> [!NOTE]
+> **Mentor tip:** AI won't take your job. A developer who uses AI *well* might. The difference is catching its mistakes, which takes the fundamentals you spent 28 weeks building.
 
-> **نصيحة منتور:** الـ AI مش هياخد شغلك. **المبرمج اللي بيعرف يستخدم الـ AI كويس** هو اللي ممكن ياخده. والفرق إن الأول بيعرف يمسك أغلاطه، لأنه فاهم الأساسيات اللي إنت قضيت 28 أسبوع تتعلمها.
+<div align="right"><a href="#week-28">← Week 28</a> · <a href="#top">Top ↑</a> · <a href="#week-30">Week 30 →</a></div>
 
 ---
 
 <a id="week-30"></a>
 
-## الأسبوع 30: مشروع التخرج
+## Week 30 · Graduation Project
 
-**الهدف:** تبني أبلكيشن كامل يبقى **أقوى حاجة في الـ Portfolio بتاعك**.
+<div align="center">
 
-### المشروع: اختار فكرة
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0891B2,50:6366F1,100:A855F7&height=100&text=Graduation%20Project&fontSize=38&fontColor=ffffff&animation=twinkling" width="100%" alt="Graduation Project" />
 
-| الفكرة | تفاصيل |
-| :--- | :--- |
-| **E-commerce** | منتجات، وفلاتر، وبحث، وCart، وCheckout (وهمي)، وصفحة طلبات |
-| **Admin Dashboard** | Charts، وجداول بـ Pagination و Sort و Filter، و CRUD كامل، و Dark Mode |
-| **Learning Platform** | كورسات، ودروس، وتقدّم المستخدم، وكويزات |
-| **Job Board** | وظايف، وفلاتر، وصفحة شركة، وحفظ الوظايف، وتقديم |
-| **Event Platform لـ CIS** | إيفنتات، وتسجيل، وتذاكر بـ QR Code، وصفحة للأدمن |
-| **فكرتك إنت** | اتكلم مع المنتور الأول |
+</div>
 
-### المتطلبات
+**Goal:** build the strongest piece in your portfolio.
 
-| المتطلب | التفاصيل |
-| :--- | :--- |
-| **التقنيات** | **Next.js** (App Router) أو **React + Vite**، و TypeScript (`strict`)، و Tailwind |
-| **الصفحات** | 5 صفحات على الأقل، منهم dynamic routes |
-| **State** | Zustand أو Redux Toolkit للـ Client State، و TanStack Query (أو Server Components في Next.js) للـ Server State |
-| **Auth** | Login و Register (ممكن وهمي أو بـ API زي DummyJSON)، و Protected Routes |
-| **Forms** | فورم واحد معقد على الأقل بـ validation |
-| **Testing** | 10 tests على الأقل (Unit + Component) |
-| **Performance** | Lighthouse **90+** في الأربع خانات |
-| **Accessibility** | شغال بالكيبورد بالكامل |
-| **Responsive** | Mobile First |
-| **Git** | Branches و Pull Requests، و commits واضحة |
-| **Deploy** | Live على Vercel |
-| **README** | Screenshots أو GIF، ولينك Live، والتقنيات وليه اخترتها، وإزاي تشغّله، والتحديات اللي قابلتك، وإيه اللي هتضيفه لو عندك وقت |
+| Idea | Scope |
+| :-- | :-- |
+| **E-commerce** | Products, filters, search, cart, mock checkout, orders |
+| **Admin dashboard** | Charts, sortable / filterable / paginated tables, full CRUD, dark mode |
+| **Learning platform** | Courses, lessons, progress tracking, quizzes |
+| **Job board** | Jobs, filters, company pages, saved jobs, applications |
+| **CIS event platform** | Events, registration, QR tickets, admin panel |
+| **Your idea** | Pitch it to your mentor first |
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live + فيديو Demo (2-3 دقايق) بتشرح فيه المشروع.
+| Requirement | Details |
+| :-- | :-- |
+| **Stack** | **Next.js** (App Router) or **React + Vite**, TypeScript `strict`, Tailwind |
+| **Pages** | 5+, including dynamic routes |
+| **State** | Zustand or RTK for client state; TanStack Query or Server Components for server state |
+| **Auth** | Login & register (mock or DummyJSON), protected routes |
+| **Forms** | At least one complex validated form |
+| **Testing** | 10+ tests (unit + component) |
+| **Performance** | Lighthouse **90+** in all four |
+| **Accessibility** | Fully keyboard-usable |
+| **Responsive** | Mobile first |
+| **Git** | Branches, PRs, clear commits |
+| **Deploy** | Live on Vercel |
+| **README** | Screenshots or GIF, live link, stack & why, setup, challenges, what's next |
+
+**Submit** the repo, live link, and a **2-3 minute demo video**.
 
 <details>
-<summary><b>Checklist آخر الرودماب</b></summary>
+<summary><b>Final exit checklist</b></summary>
 
 <br />
 
-- [ ] أقدر أبني أبلكيشن React أو Next.js كامل من الصفر لوحدي
-- [ ] بكتب TypeScript بشكل طبيعي
-- [ ] بعرف أختار الأداة الصح للمشكلة (State، و Fetching، و Styling)
-- [ ] بكتب tests للحاجات المهمة
-- [ ] بفكر في الـ Performance والـ Accessibility من الأول، مش في الآخر
-- [ ] GitHub بتاعي فيه 3 مشاريع كبيرة على الأقل Live، وبـ README محترم
-- [ ] بستخدم الـ AI كأداة، وبعرف أمسك أغلاطه
+- [ ] I can build a full React or Next.js app from scratch on my own
+- [ ] TypeScript feels natural
+- [ ] I pick the right tool for each problem (state, fetching, styling)
+- [ ] I test what matters
+- [ ] I think about performance and accessibility from the start
+- [ ] My GitHub has 3+ big, live projects with proper READMEs
+- [ ] I use AI as a tool and catch its mistakes
 
 </details>
 
-> **نصيحة منتور:** مشروع واحد **كامل ومتعوب عليه** أحسن من 10 مشاريع tutorial. لما تقدّم على شغل، الـ interviewer هيفتح المشروع ده، وهيسألك "ليه عملت كده؟" في كل حتة. فخليك عارف إجابة كل سؤال.
+> [!NOTE]
+> **Mentor tip:** one **finished, polished** project beats ten tutorial clones. Interviewers will open it and ask "why did you do it this way?" everywhere. Know every answer.
+
+<div align="right"><a href="#week-29">← Week 29</a> · <a href="#top">Top ↑</a></div>
 
 ---
 
-## خلصت الرودماب. إيه بعد كده؟
+<div align="center">
 
-**مبروك.** إنت عملت حاجة أغلب الناس اللي بيبدأوا بيبطّلوا في نصها.
+## You finished the roadmap.
 
-الخطوات الجاية:
+You did what most people who start quit halfway through.
 
-1. **Portfolio:** اعمل موقع شخصي بـ Next.js فيه مشاريعك
-2. **Open Source:** دوّر على issues عليها `good first issue` في مشاريع بتستخدمها
-3. **اتعلم Backend بسيط:** Node.js و Express، أو Route Handlers في Next.js مع Database، عشان تفهم الصورة كاملة
-4. **قدّم على Internships** حتى لو حاسس إنك مش جاهز. إنت جاهز أكتر ما إنت فاكر.
-5. **علّم غيرك:** اكتب بوست عن حاجة اتعلمتها، أو ساعد حد في المستوى الأول. **مفيش طريقة تتعلم بيها أحسن من إنك تشرح.**
+</div>
 
-**[الرجوع للخريطة](README.md)**
+| Next | |
+| :-- | :-- |
+| **Portfolio** | Build a personal site in Next.js showing your projects |
+| **Open source** | Look for `good first issue` in projects you use |
+| **Some backend** | Node.js + Express, or Next.js route handlers with a database |
+| **Apply** | Internships, even if you don't feel ready. You're more ready than you think. |
+| **Teach** | Write about what you learned, or help someone in Level 1. Nothing teaches like explaining. |
+
+<div align="center">
+
+<a href="README.md"><img src="https://img.shields.io/badge/←_Back_to_the_Roadmap-6366F1?style=for-the-badge" alt="Back to the roadmap" /></a>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:22D3EE,100:0891B2&height=110&section=footer" width="100%" alt="" />
 
 </div>

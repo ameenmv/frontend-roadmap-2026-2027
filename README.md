@@ -1,50 +1,53 @@
+<a id="top"></a>
+
 <div align="center">
 
-<h1>Frontend Roadmap · 2026–2027</h1>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0EA5E9,50:6366F1,100:A855F7&height=230&section=header&text=Frontend%20Roadmap&fontSize=64&fontColor=ffffff&fontAlignY=38&animation=fadeIn&desc=CIS%20Team%20%C2%B7%202026%E2%80%932027&descSize=22&descAlignY=60" width="100%" alt="Frontend Roadmap 2026-2027" />
 
-<p><strong>من أول سطر HTML لحد ما تطلّع أبلكيشن حقيقي على النت</strong></p>
+<a href="#the-map"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=900&color=6366F1&center=true&vCenter=true&width=640&lines=From+your+first+%3Cdiv%3E+to+a+live+app.;31+weeks.+6-8+hours+a+week.;HTML+%E2%86%92+JavaScript+%E2%86%92+React+or+Vue.;Ship+something+every+single+week." alt="From your first div to a live app" /></a>
 
-<p>
-  <img src="https://img.shields.io/badge/Duration-30_Weeks_+_Week_0-0EA5E9?style=for-the-badge" alt="30 Weeks" />
-  <img src="https://img.shields.io/badge/Time-6--8_hrs/week-10B981?style=for-the-badge" alt="6-8 hours per week" />
-  <img src="https://img.shields.io/badge/Language-Arabic-F59E0B?style=for-the-badge" alt="Arabic" />
-  <img src="https://img.shields.io/badge/Tracks-React_|_Vue-6366F1?style=for-the-badge" alt="React or Vue" />
-</p>
+<br />
 
-<p>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML" />
-  <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css&logoColor=white" alt="CSS" />
-  <img src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/Vue-35495E?style=flat-square&logo=vuedotjs&logoColor=4FC08D" alt="Vue" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/Nuxt-00DC82?style=flat-square&logo=nuxt&logoColor=white" alt="Nuxt" />
-</p>
+<img src="https://skillicons.dev/icons?i=html,css,tailwind,git,github,js,ts,vite,react,redux,vue,nextjs,nuxtjs,vitest&perline=14" alt="Tech stack" />
+
+<br /><br />
+
+<img src="https://img.shields.io/badge/Weeks-0_→_30-0EA5E9?style=for-the-badge" alt="31 weeks" />
+<img src="https://img.shields.io/badge/Pace-6--8_h%2Fweek-10B981?style=for-the-badge" alt="6-8 hours per week" />
+<img src="https://img.shields.io/badge/Projects-3_Milestones-A855F7?style=for-the-badge" alt="3 projects" />
+<img src="https://img.shields.io/badge/Tracks-React_%7C_Vue-6366F1?style=for-the-badge" alt="React or Vue" />
+
+<br /><br />
+
+**[The Map](#the-map)** · **[Levels](#levels)** · **[How a Week Works](#how-a-week-works)** · **[AI Rules](#ai-rules)** · **[Week 0](#week-0)** · **[Tracker](TRACKER.md)** · **[Resources](RESOURCES.md)** · **[FAQ](#faq)**
 
 </div>
 
-<div dir="rtl">
+---
+
+## Why this roadmap
+
+Not a list of links. A **week-by-week plan** for a full academic year.
+
+Every week has **one goal**, **one main source**, **one task you ship**, and **a checklist** that tells you if you actually got it. You start not knowing what a `<div>` is. You finish with real, tested, deployed apps on your GitHub.
+
+> [!IMPORTANT]
+> **The golden rule:** a video shows you something exists. **Code you type yourself** teaches you how to use it. Watch for 1 hour, code for 2.
+
+<table>
+<tr>
+<td align="center" width="25%"><h2>31</h2><sub>weeks, Week 0 included</sub></td>
+<td align="center" width="25%"><h2>60-75 h</h2><sub>of hand-picked video, mostly Arabic</sub></td>
+<td align="center" width="25%"><h2>30</h2><sub>weekly tasks you ship</sub></td>
+<td align="center" width="25%"><h2>3</h2><sub>portfolio-ready projects</sub></td>
+</tr>
+</table>
 
 ---
 
-## الحكاية باختصار
+<a id="the-map"></a>
 
-كل موقع بتفتحه، كل زرار بتدوس عليه، كل صفحة بتتحرك قدامك بنعومة، وراها حد اشتغل **Frontend**.
-
-الرودماب دي مش لستة لينكات وخلاص. دي **خطة أسبوع بأسبوع** على مدار سنة دراسية كاملة. كل أسبوع فيه هدف واضح، ومصدر واحد تمشي عليه، وتاسك تسلّمه، وChecklist تقولك إنت فعلاً فهمت ولا لأ.
-
-هتبدأ وإنت مش عارف يعني إيه `<div>`، وهتخلص وعندك على GitHub مشاريع حقيقية **شغالة Live**، ومكتوبة بـ TypeScript و React أو Vue، ومتيستة، ومرفوعة على النت.
-
-> **القاعدة الذهبية:** الفيديو بيعلّمك إن الحاجة موجودة. **الكود اللي بتكتبه بإيدك** هو اللي بيعلّمك إزاي تستخدمها. فلو اتفرجت ساعة، اكتب كود ساعتين.
-
----
-
-## الخريطة
-
-</div>
+## The Map
 
 ```mermaid
 flowchart TD
@@ -63,8 +66,8 @@ flowchart TD
         I1["JS Basics"] --> I2["Functions · Arrays · Objects"] --> I3["DOM"] --> I4["Async · APIs"] --> I5["How JS Works"] --> I6["Tooling"] --> I7["TypeScript"]
     end
 
-    I --> IP{{"Project 2 · API App with TS"}}
-    IP --> CHOOSE{"Choose your framework"}
+    I --> IP{{"Project 2 · API App in TS"}}
+    IP --> CHOOSE{"Pick a framework"}
 
     CHOOSE --> R
     CHOOSE --> V
@@ -79,7 +82,7 @@ flowchart TD
         V1["Components · Reactivity"] --> V2["Vue Router"] --> V3["Pinia"] --> V4["TanStack Query"] --> V5["Testing · Perf · a11y"] --> V6["Nuxt"]
     end
 
-    R --> F{{"Final Project"}}
+    R --> F{{"Graduation Project"}}
     V --> F
 
     classDef zero fill:#0f172a,stroke:#64748b,color:#ffffff
@@ -96,249 +99,339 @@ flowchart TD
     class BP,IP,F proj
 ```
 
-<div dir="rtl">
+### The year at a glance
+
+```mermaid
+timeline
+    section Beginner
+        Week 0 : Setup
+        Weeks 1-2 : HTML : Git & GitHub
+        Weeks 3-5 : CSS : Flexbox : Grid
+        Weeks 6-7 : Responsive : Tailwind
+        Week 8 : Project 1
+    section Intermediate
+        Weeks 9-11 : JS basics : Arrays & Objects
+        Weeks 12-14 : DOM : Modules : Async
+        Weeks 15-17 : JS internals : Tooling : TypeScript
+        Week 18 : Project 2
+    section Advanced
+        Weeks 19-22 : Components : State : Router
+        Weeks 23-25 : Styling : State mgmt : Server state
+        Weeks 26-27 : Testing : Perf & a11y
+        Weeks 28-29 : Next.js / Nuxt : AI workflow
+        Week 30 : Graduation project
+```
 
 ---
 
-## المستويات
+<a id="levels"></a>
 
-| المستوى | الأسابيع | هتتعلم إيه | هتخرج بإيه |
-| :--- | :---: | :--- | :--- |
-| **[Week 0: التمهيد](#week-0)** | 0 | النت بيشتغل إزاي، تجهيز الجهاز، إزاي تذاكر وتسأل صح | جهاز جاهز ودماغ فاهمة اللعبة ماشية إزاي |
-| **[المستوى الأول: Beginner](01-beginner.md)** | 1 - 8 | HTML · Git & GitHub · CSS · Flexbox · Grid · Responsive · Tailwind | Landing Page Responsive مرفوعة Live |
-| **[المستوى التاني: Intermediate](02-intermediate.md)** | 9 - 18 | JavaScript من الصفر · DOM · Async · APIs · إزاي JS شغالة من جوا · npm و Vite · TypeScript | أبلكيشن بيكلم API ومكتوب بـ TypeScript |
-| **[المستوى التالت: React](03-react.md)** | 19 - 30 | React · Router · State Management · TanStack Query · Testing · Performance · a11y · Next.js | مشروع تخرج كامل بـ Next.js |
-| **[المستوى التالت: Vue](03-vue.md)** | 19 - 30 | Vue 3 · Vue Router · Pinia · TanStack Query · Testing · Performance · a11y · Nuxt | مشروع تخرج كامل بـ Nuxt |
+## Levels
 
-### React ولا Vue؟
+<table>
+<tr>
+<td width="25%" valign="top">
 
-الاتنين ممتازين، والأهم إنك **تختار واحد وتكمّل فيه**، ومتنطّش بينهم.
+<a href="01-beginner.md"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:EA580C,100:F59E0B&height=70&text=Beginner&fontSize=26&fontColor=ffffff" width="100%" alt="Beginner" /></a>
+
+**Weeks 1-8** · ~23 h video
+
+HTML · Git · CSS · Flexbox · Grid · Responsive · Tailwind
+
+**Ship:** a responsive landing page, live.
+
+</td>
+<td width="25%" valign="top">
+
+<a href="02-intermediate.md"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:CA8A04,100:EAB308&height=70&text=Intermediate&fontSize=26&fontColor=ffffff" width="100%" alt="Intermediate" /></a>
+
+**Weeks 9-18** · ~23 h video
+
+JavaScript · DOM · Async · JS internals · npm · Vite · TypeScript
+
+**Ship:** an API-driven app in TypeScript.
+
+</td>
+<td width="25%" valign="top">
+
+<a href="03-react.md"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:0891B2,100:22D3EE&height=70&text=React&fontSize=26&fontColor=ffffff" width="100%" alt="React" /></a>
+
+**Weeks 19-30** · ~29 h video
+
+React · Router · Redux Toolkit · Zustand · TanStack Query · Vitest · Next.js
+
+**Ship:** a full Next.js app.
+
+</td>
+<td width="25%" valign="top">
+
+<a href="03-vue.md"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:059669,100:34D399&height=70&text=Vue&fontSize=26&fontColor=ffffff" width="100%" alt="Vue" /></a>
+
+**Weeks 19-30** · ~15 h video
+
+Vue 3 · Vue Router · Pinia · TanStack Query · Vitest · Nuxt
+
+**Ship:** a full Nuxt app.
+
+</td>
+</tr>
+</table>
+
+<details>
+<summary><b>React or Vue?</b></summary>
+
+<br />
 
 | | React | Vue |
-| :--- | :--- | :--- |
-| **سوق الشغل** | الأكثر طلبًا في مصر والخليج وبرا | مطلوب، خصوصًا مع شركات Laravel وفي آسيا وأوروبا |
-| **منحنى التعلم** | محتاج JavaScript قوية لأن كل حاجة JS | أسهل في البداية، والـ template قريب من HTML |
-| **الـ Ecosystem** | ضخم جدًا، وكل مشكلة ليها 10 حلول | أصغر بس منظم، وأغلب الأدوات رسمية |
-| **الـ Meta-framework** | Next.js | Nuxt |
-| **اختاره لو** | عاوز أكبر عدد فرص | عاوز تجربة أنضف وأسرع في البداية، أو شغال مع Laravel |
+| :-- | :-- | :-- |
+| **Jobs** | Most in demand in Egypt, the Gulf, and remote | Solid demand, very common with Laravel shops |
+| **Learning curve** | Needs strong JS; everything is JS | Gentler; templates feel like HTML |
+| **Ecosystem** | Huge, many ways to do everything | Smaller, mostly official tools |
+| **Meta-framework** | Next.js | Nuxt |
 
-> مش متأكد؟ **اختار React.** ولو حبيت Vue بعدين، هتتعلمه في أسبوعين لأن المفاهيم واحدة.
+Not sure? **Pick React.** You can learn Vue in two weeks later; the ideas carry over. Just don't switch midway.
 
----
-
-## شكل كل أسبوع
-
-كل أسبوع في الرودماب ماشي بنفس الترتيب، فهتتعود عليه بسرعة:
-
-| الجزء | يعني إيه |
-| :--- | :--- |
-| **الهدف** | جملة واحدة: آخر الأسبوع هتكون قادر تعمل إيه |
-| **المواضيع** | الكلام اللي هيتشرح |
-| **المصادر** | **مصدر أساسي** تمشي عليه (عربي غالبًا)، و**بديل** لو مرتحتش للأساسي، و**مرجع** ترجعله وقت ما تحتاج |
-| **التاسك** | الحاجة اللي **لازم** تعملها وتسلّمها على الداشبورد |
-| **تحدي إضافي** | لو خلصت بدري وعاوز تزوّد، وده مش إجباري |
-| **Checklist آخر الأسبوع** | أسئلة تسألها لنفسك؛ لو جاوبت عليها كلها من غير ما تبص، تبقى خلصت الأسبوع |
-| **أخطاء شائعة** | الغلطات اللي كل الناس بتقع فيها، عشان متقعش فيها إنت كمان |
-| **نصيحة منتور** | حاجة اتعلمناها بالطريقة الصعبة |
-
-### توزيع الـ 6-8 ساعات في الأسبوع
-
-ده اقتراح، مش قانون:
-
-| اليوم | تعمل إيه | الوقت |
-| :--- | :--- | :---: |
-| يوم 1 | فيديوهات + كتابة كل كود في الفيديو بإيدك | 1.5 - 2 ساعة |
-| يوم 2 | باقي الفيديوهات + تكليفات Elzero لو موجودة | 1.5 - 2 ساعة |
-| يوم 3 | قراءة المرجع (MDN / Docs) في الحاجات اللي مكانتش واضحة | ساعة |
-| يوم 4 | التاسك | 1.5 - 2 ساعة |
-| يوم 5 | تكملة التاسك + الـ Checklist + رفع على GitHub والتسليم | ساعة |
-
-> **مدة الفيديوهات:** جنب كل مصدر هتلاقي مدته الحقيقية. لو فيديوهات الأسبوع أكتر من 3.5 ساعة، اتفرج بسرعة **1.25x**، ولو حاجة مش واضحة رجّعها بالسرعة العادية.
-
-> **تكليفات Elzero:** كورسات Elzero ليها تكليفات على [elzero.org](https://elzero.org) لكل مجموعة دروس، وهتلاقي لينكها في كل أسبوع. حلها **قبل** التاسك، لأنها التسخين.
+</details>
 
 ---
 
-## الـ AI في الرودماب دي
+<a id="how-a-week-works"></a>
 
-الـ AI (ChatGPT, Claude, Copilot, Cursor...) أداة قوية جدًا، بس لو استخدمتها غلط في الأول **هتطلع مبرمج مش عارف يكتب سطر لوحده**. عشان كده عندنا قواعد بتتغير مع كل مستوى:
+## How a week works
 
-| المستوى | المسموح | الممنوع |
-| :--- | :--- | :--- |
-| **Beginner** | تسأله "يعني إيه X؟" أو "اشرحلي الفرق بين X و Y" زي ما تسأل مدرس | إنه يكتبلك كود. اقفل الـ Copilot والـ autocomplete بتاع الـ AI في VS Code خالص |
-| **Intermediate** | تديله الكود **بتاعك** ويقولك الغلط فين، وتطلب منه يشرحلك error | إنه يكتب حل التاسك. لو كتبلك كود، اقفله واكتبه إنت من دماغك |
-| **Advanced** | تستخدمه كأداة شغل: يكتب boilerplate، ويقترح tests، ويعمل review للكود بتاعك. فيه أسبوع كامل عن إزاي تشتغل معاه زي الـ Pro | إنك تسلّم كود مش فاهم كل سطر فيه. لو المنتور سألك "السطر ده بيعمل إيه؟" ومعرفتش، يبقى التاسك مرفوض |
+Every week follows the same layout:
 
-> **الاختبار البسيط:** لو قفلنا النت دلوقتي، تقدر تكتب الكود ده تاني؟ لو الإجابة لأ، يبقى إنت لسه متعلمتوش.
+| Block | What it is |
+| :-- | :-- |
+| **Video card** | The main video to start with. Click the thumbnail. |
+| **Goal** | What you can do by the end of the week |
+| **Topics** | What gets covered |
+| **Practice / Read** | Elzero assignments, docs, interactive games |
+| **Task** | What you build and submit on the dashboard. Required. |
+| **Bonus** | Optional, for when you finish early |
+| **Exit checklist** | If you can answer all of it without looking, you're done |
+| **Pitfalls** | The mistakes everyone makes |
+| **Mentor tip** | Things we learned the hard way |
+
+### A suggested week (6-8 h)
+
+| Day | Do | Time |
+| :--: | :-- | :--: |
+| 1 | Videos. Type every line of code yourself. | 1.5-2 h |
+| 2 | Remaining videos + Elzero assignments | 1.5-2 h |
+| 3 | Read the docs on what wasn't clear | 1 h |
+| 4 | The task | 1.5-2 h |
+| 5 | Finish the task, run the checklist, push, submit | 1 h |
+
+> [!TIP]
+> Each source shows its real length. If a week's videos run past 3.5 h, watch at **1.25x** and slow down where it gets tricky.
+
+---
+
+<a id="ai-rules"></a>
+
+## AI rules
+
+ChatGPT, Claude, Copilot and Cursor are powerful. Used too early, they leave you unable to write a line on your own. The rules change with your level:
+
+| Level | Allowed | Not allowed |
+| :-- | :-- | :-- |
+| **Beginner** | Asking it to *explain* a concept, like a teacher | Writing code for you. Turn off AI autocomplete in VS Code. |
+| **Intermediate** | Explaining an error, reviewing *your* code | Writing your task solution |
+| **Advanced** | A real work tool: boilerplate, tests, reviews. Week 29 covers working with it like a pro. | Submitting code you can't explain line by line |
+
+> [!CAUTION]
+> **The test:** if the internet went off right now, could you write it again? If not, you haven't learned it yet.
 
 ---
 
 <a id="week-0"></a>
 
-## Week 0: التمهيد
+## Week 0 · Setup & How the Web Works
 
-**الهدف:** تفهم إيه اللي بيحصل لما تكتب `google.com` في المتصفح، ويبقى جهازك جاهز تكتب عليه كود.
+<table>
+<tr>
+<td width="340" valign="top">
 
-الأسبوع ده مش محسوب من الـ 30، وهو اللي بيفرق بين حد بيحفظ وحد فاهم.
+<a href="https://www.youtube.com/watch?v=TnMNDQHB33Q"><img src="https://img.youtube.com/vi/TnMNDQHB33Q/mqdefault.jpg" width="320" alt="How the internet works" /></a>
+<br /><sub><b>How the Internet Works</b> · Ghareeb Elshaikh · 13 min</sub>
 
-### المواضيع
+</td>
+<td valign="top">
 
-- يعني إيه Frontend و Backend و Full Stack، وإيه دور كل واحد
-- الإنترنت شغال إزاي: Client و Server، و HTTP، و DNS، و IP
-- إيه اللي بيحصل من ساعة ما تكتب URL لحد ما الصفحة تظهر
-- المتصفح بيعمل إيه بالـ HTML و CSS و JS
-- تسطيب وتظبيط VS Code
-- أساسيات الـ Terminal: `cd`, `ls`, `mkdir`, `touch`
-- Chrome DevTools: Elements و Console و Network
-- إزاي تذاكر صح، وإزاي تسأل سؤال تقني كويس
+**Goal:** understand what happens when you type `google.com`, and get your machine ready to code.
 
-### المصادر
+**Topics:** Frontend vs Backend · Client & Server · HTTP · DNS · How browsers render · VS Code · Terminal basics · DevTools · How to ask good questions
 
-| النوع | المصدر | ملاحظات |
-| :--- | :--- | :--- |
-| الأساسي | [كيف يعمل الإنترنت؟ - غريب الشيخ](https://www.youtube.com/watch?v=TnMNDQHB33Q) | 13 دقيقة |
-| الأساسي | [شرح DNS بالعربي - IT Dose](https://www.youtube.com/watch?v=s-9143t3cHA) | 7 دقايق |
-| إضافي | [What happens when you type a URL into your browser? - ByteByteGo](https://www.youtube.com/watch?v=AlkDbnbv7dk) | 5 دقايق، إنجليزي بس الرسومات بتوضح كل حاجة |
-| الأساسي | [الفرق بين Front end و Back end - أحمد محمود](https://www.youtube.com/watch?v=vwvPFuh7ZDs) | 7 دقايق |
-| الأساسي | [حوّل VS Code زي المحترفين - غريب الشيخ](https://www.youtube.com/watch?v=0u53L0GaPFc) | 12 دقيقة |
-| الأساسي | [Learn Command Line - Elzero](https://www.youtube.com/playlist?list=PLDoPjvoNmBAxzNO8ixW83Sf8FnLy_MkUT) | ساعة |
-| الأساسي | [استخدام Chrome DevTools - Elzero](https://www.youtube.com/watch?v=_IKTGQosYMo) | 12 دقيقة |
-| مرجع | [How the web works - MDN](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works) | مقال قصير |
-| مرجع | [An overview of HTTP - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview) | ارجعله لما تيجي في Async |
-| مرجع | [Chrome DevTools Overview](https://developer.chrome.com/docs/devtools/overview) | |
+**Not counted in the 30 weeks.** It's what separates memorizing from understanding.
 
-### التاسك
+</td>
+</tr>
+</table>
 
-1. سطّب **VS Code** و **Google Chrome** (أو أي متصفح Chromium) و **Git**.
-2. سطّب الإضافات دي في VS Code: `Live Server`، و `Prettier`، و `Error Lens`، و `Auto Rename Tag`.
-3. اعمل أكونت على **[GitHub](https://github.com)** بإيميل حقيقي، واسم احترافي (`ahmed-ali` مش `a7med_elgamed_2005`).
-4. اكتب في ملف `week-0.md` إجابتك **بأسلوبك** على السؤال ده: "إيه اللي بيحصل من ساعة ما أكتب `facebook.com` لحد ما الصفحة تظهر؟" (من 10 لـ 15 سطر، و ممنوع تنسخ من AI).
-5. افتح أي موقع بتحبه، وافتح DevTools، وغيّر أي نص في الصفحة من تاب Elements، وخد Screenshot.
+| | Source | Length |
+| :-- | :-- | :--: |
+| Watch | [What is DNS? · IT Dose](https://www.youtube.com/watch?v=s-9143t3cHA) | 7 min |
+| Watch | [Frontend vs Backend · Ahmed Mahmoud](https://www.youtube.com/watch?v=vwvPFuh7ZDs) | 7 min |
+| Watch | [VS Code like a pro · Ghareeb Elshaikh](https://www.youtube.com/watch?v=0u53L0GaPFc) | 12 min |
+| Watch | [Learn Command Line · Elzero](https://www.youtube.com/playlist?list=PLDoPjvoNmBAxzNO8ixW83Sf8FnLy_MkUT) | 1 h |
+| Watch | [Chrome DevTools · Elzero](https://www.youtube.com/watch?v=_IKTGQosYMo) | 12 min |
+| Extra | [What happens when you type a URL · ByteByteGo](https://www.youtube.com/watch?v=AlkDbnbv7dk) | 5 min · English |
+| Read | [How the web works · MDN](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works) · [HTTP overview · MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview) | |
 
-**التسليم:** على الداشبورد: لينك أكونت GitHub + الملف + الـ Screenshot.
+#### Task · Get set up
 
-### تحدي إضافي
+1. Install **VS Code**, **Chrome**, **Git**, and **[Node.js LTS](https://nodejs.org)**.
+2. VS Code extensions: `Live Server`, `Prettier`, `Error Lens`, `Auto Rename Tag`.
+3. Create a **[GitHub](https://github.com)** account with a professional username.
+4. In `week-0.md`, explain in 10-15 lines, **in your own words**: what happens between typing `facebook.com` and seeing the page? No AI.
+5. Open any site, edit some text through DevTools → Elements, take a screenshot.
 
-افتح تاب **Network** في DevTools واعمل Refresh لأي موقع. اكتب: كام Request اتبعتوا؟ وإيه أكبر ملف اتحمّل؟ وإيه أنواع الملفات اللي شفتها (HTML, CSS, JS, Images, Fonts)؟
+**Submit** your GitHub profile link, the file, and the screenshot on the dashboard.
+
+> [!TIP]
+> **Bonus:** open DevTools → **Network** and refresh a site. How many requests? What's the biggest file? Which file types did you see?
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أقدر أشرح الفرق بين Frontend و Backend لحد مش بتاع برمجة
-- [ ] أعرف يعني إيه Client و Server و Request و Response
-- [ ] أعرف الـ DNS بيعمل إيه، وليه محتاجينه
-- [ ] أقدر أفتح Terminal وأتنقل بين الفولدرات وأعمل فولدر جديد
-- [ ] أقدر أفتح DevTools وأعدّل في الصفحة وأشوف الـ Console
-- [ ] VS Code متسطب ومتظبط، و Live Server شغال
+- [ ] I can explain Frontend vs Backend to a non-programmer
+- [ ] I know what Client, Server, Request, and Response mean
+- [ ] I know what DNS does and why we need it
+- [ ] I can navigate folders and create files from the terminal
+- [ ] I can open DevTools, edit the page, and read the Console
+- [ ] VS Code is set up and Live Server works
 
 </details>
 
-### أخطاء شائعة
+<details>
+<summary><b>How to ask a good technical question</b></summary>
 
-- **إنك تقعد أسبوعين تختار أحسن Theme وأحسن Font لـ VS Code.** الأدوات مش هي اللي بتعلّمك. ظبّط الأساسي وابدأ.
-- **إنك تسطب 40 Extension.** كل إضافة زيادة بتبطّأ المحرر وبتخبّي عنك حاجات المفروض تتعلمها.
-- **إنك تفتكر الأسبوع ده "مش مهم".** كل مشكلة هتقابلك في الـ Async والـ APIs بعد كده أصلها في الأسبوع ده.
+<br />
 
-### إزاي تسأل سؤال تقني صح
+1. **Read the error.** Most of the time the answer is in it.
+2. **Search the exact error message.**
+3. **Try for 20-30 minutes**, then ask. Don't stay stuck for 3 days.
+4. When you ask, include **what you wanted**, **what you did**, **what happened**, and **the code and error as text**, not a phone photo of your screen.
 
-لما تقف في حاجة، قبل ما تسأل المنتور أو الجروب:
+</details>
 
-1. **اقرا الـ Error كويس.** 80% من الوقت الحل مكتوب في رسالة الخطأ.
-2. **ادوّر بالـ Error نفسه** على Google.
-3. **جرّب حاجة لمدة 20-30 دقيقة.** لو فضلت واقف، اسأل، ومتقعدش 3 أيام واقف.
-4. لما تسأل، قول: **كنت عاوز أعمل إيه** + **عملت إيه** + **حصل إيه** + **الكود والـ Error كـ text مش صورة موبايل للشاشة**.
+> [!WARNING]
+> Don't spend a week picking themes and installing 40 extensions. Set up the basics and start.
 
-> **نصيحة منتور:** أكتر حاجة بتفرق بين اللي بيكمّل واللي بيقف في النص هي **الاستمرارية** مش الذكاء. ساعة كل يوم أحسن من 7 ساعات يوم الجمعة. ولو فوّت أسبوع، متبدأش من الأول. كمّل من مكانك.
+> [!NOTE]
+> **Mentor tip:** consistency beats talent. One hour a day beats seven hours on Friday. Missed a week? Don't restart. Continue from where you are.
+
+<div align="right"><a href="#top">Top ↑</a> · <a href="01-beginner.md">Level 1: Beginner →</a></div>
 
 ---
 
-## أسئلة بتتكرر
+## Extras
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [Progress Tracker](TRACKER.md)
+
+A checklist of all 31 weeks and 3 projects. Copy it into your own repo and tick off each week as you go.
+
+</td>
+<td width="50%" valign="top">
+
+### [Resources Hub](RESOURCES.md)
+
+Every main course, doc, game, and free API used in the roadmap, on one page.
+
+</td>
+</tr>
+</table>
+
+---
+
+<a id="faq"></a>
+
+## FAQ
 
 <details>
-<summary><b>محتاج لابتوب قوي؟</b></summary>
+<summary><b>Do I need a powerful laptop?</b></summary>
 
 <br />
 
-لأ. أي جهاز عليه 8GB RAM يكفي لحد آخر الرودماب. لو 4GB هيمشي في الـ Beginner والـ Intermediate، وهيتقل شوية مع React/Vue بس هيمشي.
+No. 8 GB RAM is enough for the whole roadmap. 4 GB works too, just slower once you reach React or Vue.
 
 </details>
 
 <details>
-<summary><b>لازم أكون شاطر في الماث؟</b></summary>
+<summary><b>Do I need to be good at math?</b></summary>
 
 <br />
 
-لأ. الـ Frontend محتاج **تفكير منطقي** أكتر من ماث. لو بتعرف تحل مسألة خطوة بخطوة، يبقى إنت تمام.
+No. Frontend needs logical thinking, not math.
 
 </details>
 
 <details>
-<summary><b>الإنجليزي بتاعي ضعيف، هينفع؟</b></summary>
+<summary><b>The sources are Arabic. Is my English good enough for the docs?</b></summary>
 
 <br />
 
-أيوه، وعشان كده أغلب المصادر الأساسية عربي. بس مع الوقت هتلاقي نفسك محتاج تقرا Docs إنجليزي، وده طبيعي. ابدأ بالـ Docs من أول المستوى التاني، ولو مفهمتش جملة ترجمها. بعد شهرين هتلاقي نفسك بتقرا عادي.
+Most main sources are Arabic on purpose. Start reading docs from Level 2; translate sentences you don't get. Within two months it'll feel normal.
 
 </details>
 
 <details>
-<summary><b>فاتني أسبوع أو اتنين، أعمل إيه؟</b></summary>
+<summary><b>I fell behind. What now?</b></summary>
 
 <br />
 
-متقلقش ومتبدأش من الأول. ركّز على **التاسك** و**الـ Checklist** بتوع الأسابيع اللي فاتتك، وسيب التحديات الإضافية. وكلّم المنتور بتاعك.
+Don't restart. Do the **task** and **checklist** for the weeks you missed, skip the bonuses, and talk to your mentor.
 
 </details>
 
 <details>
-<summary><b>ليه مفيش Bootstrap أو SASS؟</b></summary>
+<summary><b>Why no Bootstrap or SASS?</b></summary>
 
 <br />
 
-لأن الـ CSS الحديث بقى فيه variables و nesting، فـ SASS بقى أقل أهمية بكتير. و Tailwind أخد مكان Bootstrap في أغلب المشاريع الجديدة، خصوصًا مع React و Vue. لو اشتغلت في شركة بتستخدمهم، هتتعلمهم في يومين لأنك فاهم CSS كويس.
+Modern CSS has variables and nesting, and Tailwind replaced Bootstrap in most new projects. If a job needs them, you'll pick them up in two days because you know CSS.
 
 </details>
 
 <details>
-<summary><b>ليه TypeScript قبل React/Vue مش بعدهم؟</b></summary>
+<summary><b>Why TypeScript before React/Vue?</b></summary>
 
 <br />
 
-لأن أغلب الشركات النهارده بتكتب React و Vue بـ TypeScript. فبدل ما تتعلم الـ framework بـ JS وبعدين تتعلمه تاني بـ TS، هتدخله وإنت بتكتب TS من أول يوم، زي الشغل الحقيقي بالظبط.
+Most companies write React and Vue in TypeScript. Learn it first and you write the framework the way it's used at work from day one.
 
 </details>
 
 ---
 
-## إيه الجديد عن رودماب 2025-2026؟
+## What's new vs 2025-2026
 
 | 2025-2026 | 2026-2027 |
-| :--- | :--- |
-| لستة لينكات مقسمة بالمواضيع | خطة **أسبوع بأسبوع** بمدة ومصدر أساسي وتاسك |
-| مفيش تاسكات ولا مشاريع إلزامية | تاسك كل أسبوع + **3 مشاريع كبيرة** |
-| إنجليزي | **عربي** |
-| Webpack، و Bootstrap، و SASS، و Recoil، و MobX | **Vite**، و **Tailwind v4**، و **Zustand / Redux Toolkit**، و **Pinia** |
-| TypeScript في الآخر كـ Advanced | **TypeScript قبل الـ framework** |
-| مفيش Next.js ولا Nuxt | **أسبوعين** لـ Next.js أو Nuxt |
-| مفيش كلام عن الـ AI | **سياسة AI متدرجة** + أسبوع عن الشغل معاه |
+| :-- | :-- |
+| Topic-sorted link list | **Week-by-week plan** with goals, lengths, and tasks |
+| No tasks or projects | **30 tasks + 3 milestone projects** |
+| Webpack, Bootstrap, SASS, Recoil, MobX | **Vite, Tailwind v4, Zustand / Redux Toolkit, Pinia** |
+| TypeScript as an advanced extra | **TypeScript before the framework** |
+| No Next.js or Nuxt | **Two weeks** of Next.js or Nuxt |
+| Nothing on AI | **Level-based AI rules** + an AI workflow week |
+| Mostly English sources | **Mostly Arabic sources**, with official docs alongside |
 
-الرودماب القديمة لسه موجودة لو حبيت ترجعلها: [2025-2026 Frontend Roadmap](https://github.com/CIS-Team/2025-2026-Roadmaps/tree/main/Frontend)
-
----
-
-## ابدأ دلوقتي
-
-1. خلّص [Week 0](#week-0)
-2. افتح [المستوى الأول: Beginner](01-beginner.md)
-3. ومتنساش: **اكتب كود كل يوم**
-
-</div>
+Last year's roadmap: [2025-2026 Frontend](https://github.com/CIS-Team/2025-2026-Roadmaps/tree/main/Frontend)
 
 ---
 
 <div align="center">
+
+### Ready? Start with [Week 0](#week-0), then open [Level 1](01-beginner.md).
+
+<br />
 
 **Maintained by [Ameen MV](https://github.com/ameenmv)** · Frontend Mentor @ CIS Team
 
@@ -348,6 +441,8 @@ flowchart TD
 [![Twitter](https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/ameeen_mv)
 [![Gmail](https://img.shields.io/badge/gmail-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white)](mailto:ameeenmv@gmail.com)
 
-[All CIS Team Tracks](https://github.com/CIS-Team/2026-2027-Roadmaps)
+[CIS Team on GitHub](https://github.com/CIS-Team)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:A855F7,50:6366F1,100:0EA5E9&height=120&section=footer" width="100%" alt="" />
 
 </div>

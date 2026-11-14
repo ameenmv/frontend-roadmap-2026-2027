@@ -1,868 +1,834 @@
+<a id="top"></a>
+
 <div align="center">
 
-<h1>المستوى التالت: Vue</h1>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:059669,100:34D399&height=200&section=header&text=Level%203%20%C2%B7%20Vue&fontSize=56&fontColor=ffffff&fontAlignY=38&animation=fadeIn&desc=Vue%203%20%C2%B7%20Router%20%C2%B7%20Pinia%20%C2%B7%20Testing%20%C2%B7%20Nuxt&descSize=18&descAlignY=60" width="100%" alt="Level 3 Vue" />
 
-<p><strong>Vue 3 · Vue Router · Pinia · TanStack Query · Testing · Performance · a11y · Nuxt</strong></p>
+<img src="https://skillicons.dev/icons?i=vue,ts,pinia,tailwind,vitest,nuxtjs,vercel" alt="Vue TypeScript Pinia Tailwind Vitest Nuxt Vercel" />
 
-<p>
-  <img src="https://img.shields.io/badge/Weeks-19_→_30-059669?style=for-the-badge" alt="Weeks 19-30" />
-  <img src="https://img.shields.io/badge/Vue-3_Composition_API-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D" alt="Vue 3" />
-  <img src="https://img.shields.io/badge/Nuxt-00DC82?style=for-the-badge&logo=nuxt&logoColor=white" alt="Nuxt" />
-</p>
+<br /><br />
+
+<img src="https://img.shields.io/badge/Weeks-19_→_30-059669?style=for-the-badge" alt="Weeks 19-30" />
+<img src="https://img.shields.io/badge/Video-~15_h-34D399?style=for-the-badge" alt="About 15 hours of video" />
+<img src="https://img.shields.io/badge/Vue-3_Composition_API-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D" alt="Vue 3 Composition API" />
+<img src="https://img.shields.io/badge/Nuxt-4-00DC82?style=for-the-badge&logo=nuxt&logoColor=white" alt="Nuxt 4" />
+
+<br /><br />
+
+[Roadmap](README.md) · [Beginner](01-beginner.md) · [Intermediate](02-intermediate.md) · [React](03-react.md) · **Vue** · [Tracker](TRACKER.md)
 
 </div>
 
-<div dir="rtl">
-
-> **[الرجوع للخريطة](README.md)** · [المستوى الأول](01-beginner.md) · [المستوى التاني](02-intermediate.md) · [React](03-react.md) · Vue
-
 ---
 
-## الحكاية
+Remember week 12, updating the UI by hand every time data changed? Vue says: **just change the data, I'll update the page.** That's **reactivity**, the heart of Vue.
 
-فاكر في الأسبوع 12 لما كنت بتحدّث الـ UI بإيدك كل ما الداتا تتغير؟ Vue بتقولك: **غيّر الداتا وبس، وأنا هحدّث الصفحة لوحدي.** ده اللي اسمه **Reactivity**، وهو قلب Vue.
+Vue is known as the easiest framework to start with: templates look like the HTML you know, and its docs are some of the best anywhere. You'll finish with **Nuxt**, which turns Vue into a full framework.
 
-Vue معروفة إنها **أسهل framework تبدأ بيه**: الـ template شبه HTML اللي إنت عارفه، والـ docs بتاعتها من أحسن الـ docs في الدنيا. وفي آخر المستوى هتتعلم **Nuxt** اللي بيحوّل Vue لـ framework كامل.
+| Week | Topic | You ship |
+| :--: | :-- | :-- |
+| [19](#week-19) | Template syntax & directives | Landing page in Vue |
+| [20](#week-20) | Composition API & components | A multi-step form |
+| [21](#week-21) | Lifecycle, watchers, composables, fetching | Movies app |
+| [22](#week-22) | Vue Router | A multi-page app |
+| [23](#week-23) | Styling & component libraries | A mini UI kit |
+| [24](#week-24) | Pinia | A shopping cart |
+| [25](#week-25) | TanStack Query | An admin dashboard |
+| [26](#week-26) | Testing | Tests for the cart |
+| [27](#week-27) | Performance & accessibility | An audit, before & after |
+| [28](#week-28) | Nuxt: basics & routing | A blog |
+| [29](#week-29) | Nuxt: data, SEO, deploy + AI workflow | The blog, live |
+| [30](#week-30) | **Graduation project** | A complete app |
 
-| الأسبوع | الموضوع | التاسك |
-| :---: | :--- | :--- |
-| 19 | [Template Syntax و Directives](#week-19) | تحويل Landing Page لـ Vue |
-| 20 | [Composition API و Components](#week-20) | Multi-step Form |
-| 21 | [Lifecycle و Watchers و Composables و Data Fetching](#week-21) | Movies App (نسخة Vue) |
-| 22 | [Vue Router](#week-22) | أبلكيشن متعدد الصفحات |
-| 23 | [Styling و Component Libraries](#week-23) | UI Kit صغير |
-| 24 | [Pinia](#week-24) | Shopping Cart |
-| 25 | [TanStack Query](#week-25) | Dashboard بـ Server State |
-| 26 | [Testing](#week-26) | Tests للـ Cart |
-| 27 | [Performance و Accessibility](#week-27) | Audit وتحسين مشروع |
-| 28 | [Nuxt: الأساسيات والـ Routing](#week-28) | Blog بـ Nuxt |
-| 29 | [Nuxt: Data و SEO و Deploy + الشغل مع الـ AI](#week-29) | تكملة الـ Blog + Deploy |
-| 30 | [**مشروع التخرج**](#week-30) | أبلكيشن كامل |
-
-> **قبل ما تبدأ:** المصدر العربي الأساسي في المستوى ده هو قناة **Vuejs Wisdom**: [Vue 3 Options API](https://www.youtube.com/playlist?list=PLzjSlWqF2aTdehPN-zFc1TKcH8eNVn1JV) و [Composition API](https://www.youtube.com/playlist?list=PLzjSlWqF2aTcUoouMnE9BTCvSxfrmcaQC) و [Nuxt 3](https://www.youtube.com/playlist?list=PLzjSlWqF2aTcdEs97QvAU13E07llvv3UO). والمرجع الرسمي **[vuejs.org](https://vuejs.org/guide/introduction.html)**، ودي من أحسن الـ docs اللي ممكن تقراها في حياتك، فاقراها.
-
-> **Options API ولا Composition API؟** Vue فيها طريقتين تكتب بيهم. إحنا هنستخدم **Composition API** مع `<script setup>` لأنها الحالية والمستخدمة في المشاريع الجديدة وبتشتغل أحسن مع TypeScript. هنتفرج على أول جزء من كورس Options عشان الـ template والـ directives (وهي **نفسها بالظبط** في الطريقتين)، وبعدين نكمّل Composition.
-
-> **عن TypeScript:** من النهارده، **كل مشروع Vue هتعمله بـ TypeScript** (`<script setup lang="ts">`). الكورسات أغلبها بـ JS، فدي فرصتك تتدرب. ولما تقف، افتح [Using Vue with TypeScript](https://vuejs.org/guide/typescript/overview.html).
+> [!IMPORTANT]
+> **Main Arabic source:** the **Vuejs Wisdom** channel: [Vue 3](https://www.youtube.com/playlist?list=PLzjSlWqF2aTdehPN-zFc1TKcH8eNVn1JV), [Composition API](https://www.youtube.com/playlist?list=PLzjSlWqF2aTcUoouMnE9BTCvSxfrmcaQC), [Nuxt 3](https://www.youtube.com/playlist?list=PLzjSlWqF2aTcdEs97QvAU13E07llvv3UO). The source of truth is **[vuejs.org](https://vuejs.org/guide/introduction.html)**. Its docs read like a course, so read them.
+>
+> **Options vs Composition API:** we use **Composition API with `<script setup>`**, the modern default and best with TypeScript. We watch the start of the Options course for templates and directives (identical in both), then switch.
+>
+> **From now on, every Vue project is TypeScript** (`<script setup lang="ts">`). Stuck? [Vue + TypeScript](https://vuejs.org/guide/typescript/overview.html).
 
 ---
 
 <a id="week-19"></a>
 
-## الأسبوع 19: Template Syntax و Directives
+## Week 19 · Template Syntax & Directives
 
-**الهدف:** تفهم إزاي Vue بتربط الداتا بالـ HTML، وتستخدم الـ directives الأساسية.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=Vne-X1taBfI&list=PLzjSlWqF2aTdehPN-zFc1TKcH8eNVn1JV&index=1"><img src="https://img.youtube.com/vi/Vne-X1taBfI/mqdefault.jpg" width="320" alt="Vuejs Wisdom Vue 3 lesson 1" /></a>
+<br /><sub><b>Vuejs Wisdom · Vue 3, 1 → 15</b> · 2 h</sub>
 
-- يعني إيه Vue، وليه
-- إنشاء مشروع: `npm create vue@latest` (اختار TypeScript و Router و Pinia و Vitest و ESLint)
-- **Template Syntax:** `{{ }}` و `v-bind` (`:`)
-- **Events:** `v-on` (`@`) و Event Modifiers و Keyboard Modifiers
-- **`v-model`** (Two-way Binding)
-- Computed Properties
-- Dynamic Classes و Styles
-- **`v-if` و `v-show`**
-- **`v-for`** و `:key`
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** understand how Vue binds data to HTML, and use the core directives.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [Vuejs Wisdom: Vue 3 من 1 لـ 15](https://www.youtube.com/watch?v=Vne-X1taBfI&list=PLzjSlWqF2aTdehPN-zFc1TKcH8eNVn1JV&index=1) | ساعتين |
-| الأساسي | [Vue Tutorial (تفاعلي)](https://vuejs.org/tutorial/) | إنجليزي. **اختار Composition API و SFC من الإعدادات فوق** |
-| مرجع | [Template Syntax - vuejs.org](https://vuejs.org/guide/essentials/template-syntax.html) | |
+**Topics:** new project: `npm create vue@latest` (pick TS, Router, Pinia, Vitest, ESLint) · `{{ }}` & `v-bind` (`:`) · `v-on` (`@`) & modifiers · **`v-model`** · computed · dynamic classes & styles · **`v-if` / `v-show`** · **`v-for`** & `:key`
 
-> الكورس بيكتب الـ JS بـ Options API (`data()`، و `methods`). ركّز على **الـ template** (اللي جوا `<template>`)، لأن ده اللي هيفضل زي ما هو. الجزء اللي جوا `<script>` هتكتبه بـ Composition من الأسبوع الجاي، والـ Tutorial الرسمي هيوريك الطريقة دي من دلوقتي.
+**Interactive:** **[Official Vue tutorial](https://vuejs.org/tutorial/)**: set **Composition** + **SFC** in its settings
 
-### التاسك: تحويل Landing Page لـ Vue
+**Read:** [Template syntax](https://vuejs.org/guide/essentials/template-syntax.html)
 
-خد مشروع الـ Landing Page بتاع الأسبوع 8، وحوّله لمشروع Vue:
+</td>
+</tr>
+</table>
 
-- كل الحاجات المتكررة (كروت، و testimonials، ولينكات الـ navbar) تبقى **array of objects** في الـ script وتترسم بـ `v-for`
-- قائمة الموبايل تفتح وتقفل بـ `v-if` أو `v-show` وزرار
-- Pricing فيه Toggle بين **شهري وسنوي** والأسعار تتغير (computed)
-- فورم "اشترك في النشرة" بـ `v-model` و validation بسيط
-- لسه **component واحد** الأسبوع ده (هنقسّم الأسبوع الجاي)
+> [!NOTE]
+> The course writes JS with the Options API (`data()`, `methods`). Focus on the **`<template>`** part; that stays the same. You'll write `<script>` in Composition API from next week, and the official tutorial already shows it.
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live.
+#### Task · Landing page in Vue
 
-### تحدي إضافي
+Rebuild your week 8 landing page in Vue:
 
-خلّص الـ Vue Tutorial الرسمي كله (15 خطوة).
+- Repeated content (cards, testimonials, nav links) as **arrays of objects** rendered with `v-for`
+- A mobile menu toggled with `v-if` / `v-show`
+- Pricing with a **monthly / yearly** toggle (computed prices)
+- A newsletter form with `v-model` and simple validation
+- Still **one component** this week; we split next week
+
+> [!TIP]
+> **Bonus:** finish all 15 steps of the official tutorial.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف الفرق بين `v-if` و `v-show`، وإمتى أستخدم كل واحد
-- [ ] أعرف ليه `:key` مهم مع `v-for`
-- [ ] أعرف الفرق بين computed و method
-- [ ] أعرف `v-model` بيعمل إيه من ورا الستارة (`:value` + `@input`)
-- [ ] أعرف الـ shorthands: `:` لـ `v-bind` و `@` لـ `v-on`
+- [ ] I know `v-if` vs `v-show`
+- [ ] I know why `:key` matters with `v-for`
+- [ ] I know computed vs method
+- [ ] I know what `v-model` does underneath (`:value` + `@input`)
+- [ ] I know the shorthands: `:` and `@`
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** `v-if` and `v-for` on the same element (use `<template v-for>` or a filtered computed) · **Vue CLI**: if the course runs `vue create`, use `npm create vue@latest` instead. Vue CLI is in maintenance mode; new projects use Vite.
 
-- **`v-if` و `v-for` على نفس العنصر.** استخدم `<template v-for>` أو computed بتعمل filter.
-- **إنك تستخدم Vue CLI.** لو الكورس بيستخدم `vue create` (Vue CLI)، **استخدم `npm create vue@latest` بدلها**. Vue CLI مبقاش بيتطور، والمشاريع الجديدة كلها Vite.
+> [!NOTE]
+> **Mentor tip:** if you have time, read the docs' **Essentials** section in order. It answers almost every question you'll have.
 
-> **نصيحة منتور:** docs بتاعة Vue مكتوبة كأنها كورس. لو عندك وقت، اقرا الـ **Essentials** كلها بالترتيب. هتلاقي إجابة أي سؤال عندك فيها.
+<div align="right"><a href="#top">Top ↑</a> · <a href="#week-20">Week 20 →</a></div>
 
 ---
 
 <a id="week-20"></a>
 
-## الأسبوع 20: Composition API و Components
+## Week 20 · Composition API & Components
 
-**الهدف:** تكتب Vue بالطريقة الحديثة، وتقسم الأبلكيشن components بتتكلم مع بعض.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=scY-dpK_Sl8&list=PLzjSlWqF2aTcUoouMnE9BTCvSxfrmcaQC&index=1"><img src="https://img.youtube.com/vi/scY-dpK_Sl8/mqdefault.jpg" width="320" alt="Vuejs Wisdom Composition API lesson 1" /></a>
+<br /><sub><b>Vuejs Wisdom · Composition API 1 → 6 + 8</b> · 57 min</sub>
 
-- `<script setup>`
-- **Reactivity:** `ref` و `reactive` (والفرق بينهم)
-- Functions و `computed`
-- Template Refs
-- **Components** و Single File Components (`.vue`)
-- **Props** (بـ TypeScript: `defineProps<{...}>()`)
-- **Emits** (`defineEmits`)
-- **Slots**
-- Scoped Styles
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** write modern Vue and split the app into components that talk to each other.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [Vuejs Wisdom: Composition API من 1 لـ 6](https://www.youtube.com/watch?v=scY-dpK_Sl8&list=PLzjSlWqF2aTcUoouMnE9BTCvSxfrmcaQC&index=1)، و[8 (Emits)](https://www.youtube.com/watch?v=cTxEScjGvpU&list=PLzjSlWqF2aTcUoouMnE9BTCvSxfrmcaQC&index=8) | 57 دقيقة |
-| الأساسي | [Vuejs Wisdom: Slots (درس 29 في كورس Options)](https://www.youtube.com/watch?v=kfFkZGYKZ3w&list=PLzjSlWqF2aTdehPN-zFc1TKcH8eNVn1JV&index=29) | 11 دقيقة |
-| مرجع | [Reactivity Fundamentals - vuejs.org](https://vuejs.org/guide/essentials/reactivity-fundamentals.html) | |
-| مرجع | [Props](https://vuejs.org/guide/components/props.html) · [Events](https://vuejs.org/guide/components/events.html) · [Slots](https://vuejs.org/guide/components/slots.html) | |
+**Topics:** `<script setup>` · **reactivity**: `ref` vs `reactive` · functions & `computed` · template refs · **single-file components** · **props** (`defineProps<{...}>()`) · **emits** (`defineEmits`) · **slots** · scoped styles
 
-### التاسك: Multi-step Form
+**Also watch:** [Slots, Options course lesson 29](https://www.youtube.com/watch?v=kfFkZGYKZ3w&list=PLzjSlWqF2aTdehPN-zFc1TKcH8eNVn1JV&index=29) · 11 min
 
-اعمل فورم تسجيل على 3 خطوات (زي فورم التقديم على كورس):
+**Read:** [Reactivity fundamentals](https://vuejs.org/guide/essentials/reactivity-fundamentals.html) · [Props](https://vuejs.org/guide/components/props.html) · [Events](https://vuejs.org/guide/components/events.html) · [Slots](https://vuejs.org/guide/components/slots.html)
 
-1. **البيانات الشخصية:** الاسم، والإيميل، والموبايل
-2. **البيانات الأكاديمية:** الكلية، والسنة، والتراك (Radio)، والمهارات (Checkboxes)
-3. **المراجعة:** عرض كل البيانات + زرار Submit
+</td>
+</tr>
+</table>
 
-- كل خطوة **component منفصل**، والـ parent ماسك الداتا كلها
-- الـ components بتاخد الداتا بـ **props** وبتبلّغ بالتغيير بـ **emits**
-- `BaseInput` component بيستخدم `v-model` (`defineModel`) و يعرض الـ error
-- `StepLayout` component فيه **slot** للمحتوى، و**named slot** للأزرار
-- Progress bar و Validation لكل خطوة
+#### Task · Multi-step form
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live.
+A 3-step course application form:
 
-### تحدي إضافي
+1. **Personal:** name, email, phone
+2. **Academic:** college, year, track (radio), skills (checkboxes)
+3. **Review:** all data + submit
 
-احفظ الفورم في Local Storage أثناء ما المستخدم بيكتب (هتحتاج `watch`، فبص على الأسبوع الجاي).
+- Each step is its **own component**; the parent owns the data
+- Steps receive data through **props** and report changes through **emits**
+- A `BaseInput` using `v-model` (`defineModel`) that shows its error
+- A `StepLayout` with a default **slot** for content and a **named slot** for buttons
+- A progress bar and per-step validation
+
+> [!TIP]
+> **Bonus:** save the form to Local Storage as the user types. You'll need `watch` (peek at next week).
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف الفرق بين `ref` و `reactive`، وليه الـ docs بتنصح بـ `ref`
-- [ ] أعرف ليه محتاج `.value` في الـ script ومش محتاجه في الـ template
-- [ ] أعرف إن الـ props **read-only**، والـ child بيبلّغ الـ parent بـ emit
-- [ ] أعرف الفرق بين default slot و named slot
-- [ ] أعرف `defineModel` بيعمل إيه
+- [ ] I know `ref` vs `reactive`, and why the docs recommend `ref`
+- [ ] I know why `.value` is needed in script but not in templates
+- [ ] I know props are **read-only**; children notify parents with emits
+- [ ] I know default vs named slots
+- [ ] I know what `defineModel` does
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** destructuring a `reactive` object (reactivity lost; use `toRefs` or `ref`) · mutating a prop in a child · forgetting `.value`.
 
-- **إنك تعمل destructure لـ `reactive` object.** هيفقد الـ reactivity. استخدم `toRefs` أو `ref`.
-- **إنك تعدّل prop جوا الـ child.** ابعت emit للـ parent وهو يعدّل.
-- **إنك تنسى `.value`** في الـ script وتستغرب ليه الحاجة مش بتتغير.
+> [!NOTE]
+> **Mentor tip:** "**props down, events up**" is the foundation of every framework. Get it and React, Angular, and Svelte feel just as familiar.
 
-> **نصيحة منتور:** قاعدة "**Props down, Events up**" هي أساس أي framework. الداتا بتنزل من الأب للابن، والأحداث بتطلع من الابن للأب. لو فهمتها كويس، هتفهم React و Angular و Svelte بنفس السهولة.
+<div align="right"><a href="#week-19">← Week 19</a> · <a href="#top">Top ↑</a> · <a href="#week-21">Week 21 →</a></div>
 
 ---
 
 <a id="week-21"></a>
 
-## الأسبوع 21: Lifecycle و Watchers و Composables و Data Fetching
+## Week 21 · Lifecycle, Watchers, Composables & Fetching
 
-**الهدف:** تجيب داتا من API، وتشارك داتا بين components بعيدة، وتعمل logic تقدر تستخدمه في أكتر من مكان.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=0GO4UunMALc&list=PLzjSlWqF2aTcUoouMnE9BTCvSxfrmcaQC&index=11"><img src="https://img.youtube.com/vi/0GO4UunMALc/mqdefault.jpg" width="320" alt="Vuejs Wisdom Composition API lesson 11" /></a>
+<br /><sub><b>Vuejs Wisdom · Composition 11 → 13</b> · 24 min</sub>
 
-- **Lifecycle Hooks:** `onMounted` و `onUnmounted`
-- **`watch` و `watchEffect`**
-- **Provide / Inject**
-- `v-model` على الـ components
-- **API Requests** في Vue
-- Loading و Error States
-- **Composables:** الطريقة اللي Vue بتشارك بيها الـ logic (زي Custom Hooks في React)
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** load data from an API, share data across distant components, and write logic you can reuse.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [Vuejs Wisdom: Composition من 11 لـ 13 (Watch و Provide/Inject و Lifecycle)](https://www.youtube.com/watch?v=0GO4UunMALc&list=PLzjSlWqF2aTcUoouMnE9BTCvSxfrmcaQC&index=11) | 24 دقيقة |
-| الأساسي | [Vuejs Wisdom: v-model و HTTP Requests (من 31 لـ 35 في كورس Options)](https://www.youtube.com/watch?v=0pODnNSy4oI&list=PLzjSlWqF2aTdehPN-zFc1TKcH8eNVn1JV&index=31) | 1.5 ساعة |
-| الأساسي | [Composables - vuejs.org](https://vuejs.org/guide/reusability/composables.html) | **اقراها كلها**، فيها مثال `useFetch` |
-| مرجع | [Lifecycle Hooks](https://vuejs.org/guide/essentials/lifecycle.html) · [Watchers](https://vuejs.org/guide/essentials/watchers.html) · [Provide / Inject](https://vuejs.org/guide/components/provide-inject.html) | |
+**Topics:** **lifecycle hooks** (`onMounted`, `onUnmounted`) · **`watch` & `watchEffect`** · **provide / inject** · `v-model` on components · API requests · loading & error states · **composables**, Vue's way to share logic (like React's custom hooks)
 
-### التاسك: Movies App (نسخة Vue)
+**Also watch:** [v-model & HTTP requests, Options course 31 → 35](https://www.youtube.com/watch?v=0pODnNSy4oI&list=PLzjSlWqF2aTdehPN-zFc1TKcH8eNVn1JV&index=31) · 1.5 h
 
-لو عملت Movies Explorer في مشروع المستوى التاني، اعمله تاني بـ Vue. ولو عملت حاجة تانية، اعمله دلوقتي باستخدام [TMDB API](https://www.themoviedb.org/documentation/api) أو [DummyJSON](https://dummyjson.com/):
+**Read:** **[Composables](https://vuejs.org/guide/reusability/composables.html)** (read it all; it has a `useFetch` example) · [Lifecycle](https://vuejs.org/guide/essentials/lifecycle.html) · [Watchers](https://vuejs.org/guide/essentials/watchers.html) · [Provide / Inject](https://vuejs.org/guide/components/provide-inject.html)
 
-- لستة أفلام أو منتجات من الـ API، وبحث بـ debounce (`watch`)
-- **Composable** اسمه `useFetch<T>(url)` بيرجع `{ data, isLoading, error }`، ولو الـ url كان `ref` يعيد الـ fetch لوحده لما يتغير
-- `useTheme()` composable للـ Dark Mode
-- المفضلة بـ **provide / inject** (وبتتحفظ في Local Storage)
-- لو المستخدم كتب بسرعة، متعرضش نتيجة request قديم (`AbortController` + `onWatcherCleanup` أو الـ cleanup في `watch`)
+</td>
+</tr>
+</table>
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live.
+#### Task · Movies app
 
-### تحدي إضافي
+If your Project 2 was a movies app, rebuild it in Vue. Otherwise build one now with [TMDB](https://www.themoviedb.org/documentation/api) or [DummyJSON](https://dummyjson.com/):
 
-اعمل `useLocalStorage<T>(key, defaultValue)` composable بيرجع `ref` بيتحفظ لوحده في Local Storage كل ما يتغير.
+- A list from the API with debounced search (`watch`)
+- A **composable** `useFetch<T>(url)` returning `{ data, isLoading, error }` that refetches when a `ref` URL changes
+- A `useTheme()` composable for dark mode
+- Favorites via **provide / inject**, persisted in Local Storage
+- Fast typing never shows a stale result (`AbortController` + `onWatcherCleanup` or the `watch` cleanup)
+
+> [!TIP]
+> **Bonus:** `useLocalStorage<T>(key, defaultValue)` returning a `ref` that saves itself on every change.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف الفرق بين `watch` و `watchEffect` و `computed`
-- [ ] أعرف ليه الـ API call بيتعمل في `onMounted` أو في الـ setup نفسه
-- [ ] أعرف إمتى أستخدم provide / inject، وإمتى props عادية أحسن
-- [ ] أقدر أكتب Composable
-- [ ] بنضّف أي timer أو listener في `onUnmounted`
+- [ ] I know `watch` vs `watchEffect` vs `computed`
+- [ ] I know where API calls go (setup or `onMounted`)
+- [ ] I know when provide / inject fits and when props are better
+- [ ] I can write a composable
+- [ ] I clean up timers and listeners in `onUnmounted`
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** `watch` to derive a value (that's `computed`) · never cleaning up a `setInterval` or a `window` listener.
 
-- **`watch` عشان تحسب قيمة من قيمة تانية.** ده شغل `computed`.
-- **إنك تنسى تنضّف** `setInterval` أو event listener على `window`. هيفضل شغال حتى بعد ما الـ component يختفي.
+> [!NOTE]
+> **Mentor tip:** composables are Vue 3's superpower. Wrote the same logic in two components? Ask: "should this be a composable?"
 
-> **نصيحة منتور:** الـ Composables هي أقوى حاجة في Vue 3. أي logic بتكتبه مرتين في component، اسأل نفسك: "ينفع يبقى composable؟"
+<div align="right"><a href="#week-20">← Week 20</a> · <a href="#top">Top ↑</a> · <a href="#week-22">Week 22 →</a></div>
 
 ---
 
 <a id="week-22"></a>
 
-## الأسبوع 22: Vue Router
+## Week 22 · Vue Router
 
-**الهدف:** تعمل أبلكيشن فيه صفحات كتير من غير ما الصفحة تعمل reload.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=_Ppqm08EUfs&list=PLzjSlWqF2aTdehPN-zFc1TKcH8eNVn1JV&index=40"><img src="https://img.youtube.com/vi/_Ppqm08EUfs/mqdefault.jpg" width="320" alt="Vuejs Wisdom Vue Router" /></a>
+<br /><sub><b>Vuejs Wisdom · Vue Router 40 → 54</b> · 2 h</sub>
 
-- يعني إيه SPA
-- إنشاء Routes و `RouterLink` و `RouterView`
-- Hash Mode vs History Mode
-- Programmatic Navigation: `router.push` و `replace` و `go`
-- **Dynamic Routes** و Params و Query
-- **Nested Routes**
-- صفحة 404
-- **Navigation Guards** (`beforeEach`)
-- `useRouter` و `useRoute` في Composition API
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** build a multi-page app with no full page reloads.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [Vuejs Wisdom: Vue Router من 40 لـ 54](https://www.youtube.com/watch?v=_Ppqm08EUfs&list=PLzjSlWqF2aTdehPN-zFc1TKcH8eNVn1JV&index=40) | ساعتين |
-| الأساسي | [Vuejs Wisdom: Router و Route في Composition API](https://www.youtube.com/watch?v=snhWSqULz0Q&list=PLzjSlWqF2aTcUoouMnE9BTCvSxfrmcaQC&index=7) | 7 دقيقة |
-| مرجع | [Vue Router Guide](https://router.vuejs.org/guide/) | |
+**Topics:** SPA · routes, `RouterLink`, `RouterView` · hash vs history mode · `router.push` / `replace` / `go` · **dynamic routes**, params & query · **nested routes** · 404 page · **navigation guards** (`beforeEach`) · `useRouter` & `useRoute`
 
-### التاسك: أبلكيشن متعدد الصفحات
+**Also watch:** [Router & Route in Composition API](https://www.youtube.com/watch?v=snhWSqULz0Q&list=PLzjSlWqF2aTcUoouMnE9BTCvSxfrmcaQC&index=7) · 7 min
 
-كمّل على Movies App (أو اعمل مشروع جديد) وضيف:
+**Read:** [Vue Router guide](https://router.vuejs.org/guide/)
 
-- `/`: الرئيسية
-- `/movies`: اللستة، والبحث والفلتر **في الـ URL** (`?q=batman&genre=action`)
-- `/movies/:id`: صفحة التفاصيل
-- `/favorites`: المفضلة
-- `/login`: صفحة login وهمية
-- `/profile`: **Protected** بـ Navigation Guard، ولو مش عامل login يرجعك لـ `/login`
-- صفحة 404 محترمة
-- Layout مشترك فيه Navbar و Footer، والـ `RouterLink` الحالي واخد style مختلف (`router-link-active`)
+</td>
+</tr>
+</table>
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live.
+#### Task · Multi-page app
 
-> **مهم في الـ Deploy:** لو عملت refresh على `/movies/5` على Netlify أو Vercel وطلعلك 404، دوّر على "SPA redirect rules" للمنصة اللي بتستخدمها.
+Extend your movies app (or start fresh):
 
-### تحدي إضافي
+- `/` home · `/movies` list with search & filter **in the URL** (`?q=batman&genre=action`) · `/movies/:id` details · `/favorites`
+- `/login` (fake) · `/profile` **protected** by a navigation guard, redirects to `/login`
+- A proper 404 page
+- A shared layout; the active `RouterLink` is styled (`router-link-active`)
 
-**Lazy Loading** للصفحات: `component: () => import('./views/MovieDetails.vue')`، وشوف في تاب Network إزاي كل صفحة بتتحمل لوحدها.
+> [!IMPORTANT]
+> Refresh on `/movies/5` after deploying gives a 404? Look up "SPA redirect rules" for Netlify or Vercel.
+
+> [!TIP]
+> **Bonus:** lazy-load pages with `component: () => import('./views/MovieDetails.vue')` and watch each one load separately in the Network tab.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف الفرق بين `<a>` و `<RouterLink>`
-- [ ] أعرف الفرق بين `useRouter` و `useRoute`
-- [ ] أعرف الفرق بين params و query
-- [ ] أقدر أعمل Navigation Guard
-- [ ] أعرف الفرق بين Hash Mode و History Mode، وليه History محتاج ظبط على السيرفر
+- [ ] I know `<a>` vs `<RouterLink>`
+- [ ] I know `useRouter` vs `useRoute`
+- [ ] I know params vs query
+- [ ] I can write a navigation guard
+- [ ] I know hash vs history mode and why history needs server config
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** going from `/movies/1` to `/movies/2` **reuses** the component. If you only fetch in `onMounted`, the data won't update. Watch the param.
 
-- **إنك متعملش watch على الـ params.** لو روحت من `/movies/1` لـ `/movies/2`، الـ component **مش بيتعمل من الأول**، فالداتا مش هتتحدث لو جايبها في `onMounted` بس.
+> [!NOTE]
+> **Mentor tip:** the URL is the web's oldest and best state manager. Anything a user might share (search, filters, page) belongs in it.
 
-> **نصيحة منتور:** الـ URL هو أقدم وأحسن State Management في الويب. أي حاجة المستخدم ممكن يحب يبعتها لحد (بحث، أو فلتر، أو صفحة)، حطها في الـ URL.
+<div align="right"><a href="#week-21">← Week 21</a> · <a href="#top">Top ↑</a> · <a href="#week-23">Week 23 →</a></div>
 
 ---
 
 <a id="week-23"></a>
 
-## الأسبوع 23: Styling و Component Libraries
+## Week 23 · Styling & Component Libraries
 
-**الهدف:** تعرف الطرق المختلفة لعمل styles في Vue، وتستخدم component library بذكاء.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=QSBs0ceChnI&list=PLzjSlWqF2aTcUoouMnE9BTCvSxfrmcaQC&index=15"><img src="https://img.youtube.com/vi/QSBs0ceChnI/mqdefault.jpg" width="320" alt="Vuejs Wisdom Todo App" /></a>
+<br /><sub><b>Vuejs Wisdom · Todo App, Composition 15 → 16</b> · 54 min · optional</sub>
 
-- Scoped Styles و `lang` في `<style>`
-- CSS Modules في Vue
-- **Tailwind** مع Vue
-- **Component Libraries:** يعني إيه، وإمتى تستخدمها
-- **PrimeVue** و **shadcn-vue** و **Nuxt UI**
-- Icons
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** know the ways to style Vue, and use a component library wisely.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [Vuejs Wisdom: Scoped و Lang](https://www.youtube.com/watch?v=FDUmao2ENkU&list=PLzjSlWqF2aTdehPN-zFc1TKcH8eNVn1JV&index=24) | 6 دقيقة |
-| الأساسي | [Tailwind CSS: Installation with Vite](https://tailwindcss.com/docs/installation/using-vite) | نفس الخطوات اللي عملتها في الأسبوع 7 |
-| الأساسي | [shadcn-vue](https://www.shadcn-vue.com/) أو [PrimeVue](https://primevue.org/) | اختار واحدة واقرا الـ Installation والـ Introduction |
-| تطبيق | [Vuejs Wisdom: Todo App (Composition 15 و 16)](https://www.youtube.com/watch?v=QSBs0ceChnI&list=PLzjSlWqF2aTcUoouMnE9BTCvSxfrmcaQC&index=15) | 54 دقيقة، **اختياري** |
+**Topics:** scoped styles & `lang` · CSS Modules in Vue · **Tailwind** with Vue · what component libraries are and when to use one · **PrimeVue**, **shadcn-vue**, **Nuxt UI** · icons · `<Teleport>`
 
-### التاسك: UI Kit صغير
+**Watch:** [Scoped & lang, Options course 24](https://www.youtube.com/watch?v=FDUmao2ENkU&list=PLzjSlWqF2aTdehPN-zFc1TKcH8eNVn1JV&index=24) · 6 min
 
-اعمل صفحة "**Component Gallery**" فيها components إنت عاملها بـ **Tailwind** + library اخترتها:
+**Read:** [Tailwind with Vite](https://tailwindcss.com/docs/installation/using-vite) (same as week 7) · [shadcn-vue](https://www.shadcn-vue.com/) or [PrimeVue](https://primevue.org/): pick one, read its intro & install
 
-- `BaseButton` (variants و sizes و loading state)
-- `BaseInput` مع label و error message و `v-model`
-- `BaseCard` بـ slots (header و default و footer)
-- `BaseModal` (استخدم `<Teleport>`)
-- `Toast` (رسالة بتظهر وتختفي)
-- `Tabs`
-- `Dropdown Menu`
-- كله بيدعم **Dark Mode**
+</td>
+</tr>
+</table>
 
-وبعدين استخدمهم في Movies App بدل الـ styles القديمة.
+#### Task · Mini UI kit
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live.
+A "**Component Gallery**" page with **Tailwind** + your chosen library:
 
-### تحدي إضافي
+- `BaseButton` (variants, sizes, loading) · `BaseInput` with label, error, `v-model` · `BaseCard` with header / default / footer slots · `BaseModal` (`<Teleport>`) · `Toast` · `Tabs` · `Dropdown Menu`
+- All support **dark mode**
+- Then swap them into your movies app
 
-اعمل `useToast()` composable: `const toast = useToast()` من أي component، و `toast.success("تم الحفظ")`.
+> [!TIP]
+> **Bonus:** a `useToast()` composable: `toast.success("Saved")` from any component.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف `scoped` بيعمل إيه من ورا الستارة
-- [ ] أعرف `<Teleport>` بيحل مشكلة إيه
-- [ ] أعرف الفرق بين library زي PrimeVue، و shadcn-vue اللي بينسخ الكود عندك
-- [ ] الـ components بتاعتي شغالة بالكيبورد (Tab و Enter و Escape)
+- [ ] I know what `scoped` does under the hood
+- [ ] I know what problem `<Teleport>` solves
+- [ ] I know a library like PrimeVue vs shadcn-vue, which copies code into your project
+- [ ] My components work with the keyboard (Tab, Enter, Escape)
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** several component libraries in one project · a library you can't customize.
 
-- **إنك تسطب أكتر من component library في نفس المشروع.** اختار واحدة.
-- **إنك تستخدم library ومتعرفش تعدّل فيها.** لو مش عارف تغيّر لون الزرار، يبقى إنت مش متحكم في المشروع.
+> [!NOTE]
+> **Mentor tip:** at work you'll rarely build a modal or dropdown from scratch (their accessibility is hard). But build one once, so you know what the library does for you.
 
-> **نصيحة منتور:** في الشغل الحقيقي نادرًا ما هتبني Modal أو Dropdown من الصفر، لأن الـ accessibility بتاعتهم صعبة جدًا. بس لازم تكون **بنيت واحد مرة** عشان تفهم الـ library بتعمل إيه.
+<div align="right"><a href="#week-22">← Week 22</a> · <a href="#top">Top ↑</a> · <a href="#week-24">Week 24 →</a></div>
 
 ---
 
 <a id="week-24"></a>
 
-## الأسبوع 24: Pinia
+## Week 24 · Pinia
 
-**الهدف:** تدير State مشتركة في أبلكيشن كبير بالأداة الرسمية لـ Vue.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=0e4D2ZJRe1E&list=PLfDx4cQoUNOZgZ5Lee5Lbj6jXlmCcupsm&index=1"><img src="https://img.youtube.com/vi/0e4D2ZJRe1E/mqdefault.jpg" width="320" alt="Pinia tutorial in Arabic" /></a>
+<br /><sub><b>Algorithm Academy · Pinia 1 → 7</b> · 50 min</sub>
 
-- إمتى props و provide / inject مش كفاية
-- **Pinia:** يعني إيه Store
-- `defineStore`: State، و Getters، و Actions
-- **Setup Stores** (بنفس طريقة Composition API)
-- `storeToRefs`
-- Pinia DevTools
-- Client State vs Server State (مقدمة للأسبوع الجاي)
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** manage shared state in a large app with Vue's official store.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [Algorithm Academy: Pinia من 1 لـ 7](https://www.youtube.com/watch?v=0e4D2ZJRe1E&list=PLfDx4cQoUNOZgZ5Lee5Lbj6jXlmCcupsm&index=1) | 50 دقيقة |
-| الأساسي | [Pinia: Introduction](https://pinia.vuejs.org/introduction.html) | إنجليزي، قصير، و**شوف مثال الـ Setup Store** |
-| مرجع | [Pinia: Core Concepts](https://pinia.vuejs.org/core-concepts/) | |
+**Topics:** when props and provide / inject aren't enough · what a store is · `defineStore`: state, getters, actions · **setup stores** (Composition style) · `storeToRefs` · Pinia DevTools · client vs server state
 
-> الكورس بيكتب الـ stores بطريقة **Options Store** (`state`، و `getters`، و `actions`). جرّبها، وبعدين اكتب نفس الـ store بطريقة **Setup Store** (`ref`، و `computed`، و functions)، لأنها الأقرب لكل اللي اتعلمته.
+**Read:** **[Pinia intro](https://pinia.vuejs.org/introduction.html)** (short; see the setup store example) · [Core concepts](https://pinia.vuejs.org/core-concepts/)
 
-### التاسك: Shopping Cart
+</td>
+</tr>
+</table>
 
-اعمل متجر صغير بـ [DummyJSON Products](https://dummyjson.com/):
+> [!NOTE]
+> The course uses **options stores** (`state`, `getters`, `actions`). Try them, then rewrite the same store as a **setup store** (`ref`, `computed`, functions); it matches everything else you've learned.
 
-- صفحة منتجات، وصفحة منتج، وصفحة Cart
-- **`useCartStore`:** إضافة، وحذف، وتغيير الكمية، والإجمالي (getter)، والخصم بكوبون
-- **`useUiStore`:** Sidebar مفتوح ولا مقفول، و Theme
-- الـ Cart بيتحفظ في Local Storage
-- أيقونة الـ Cart في الـ Navbar فيها عدد المنتجات
+#### Task · Shopping cart
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live.
+A small store on [DummyJSON products](https://dummyjson.com/):
 
-### تحدي إضافي
+- Products, product details, and cart pages
+- **`useCartStore`:** add, remove, quantity, total (getter), coupon discount
+- **`useUiStore`:** sidebar open/closed, theme
+- Cart persists in Local Storage
+- Cart icon in the navbar shows the item count
 
-اعمل Pinia Plugin بسيط بيحفظ أي store في Local Storage لوحده.
+> [!TIP]
+> **Bonus:** a small Pinia plugin that persists any store to Local Storage automatically.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف إمتى أحتاج Pinia، وإمتى مش محتاجها
-- [ ] أعرف الفرق بين Options Store و Setup Store
-- [ ] أعرف ليه لازم `storeToRefs` لو هعمل destructure للـ state
-- [ ] بستخدم Vue DevTools وأشوف الـ store بيتغير
+- [ ] I know when I need Pinia and when I don't
+- [ ] I know options stores vs setup stores
+- [ ] I know why `storeToRefs` is needed for destructuring state
+- [ ] I can watch the store change in Vue DevTools
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** everything in Pinia (form input state belongs in a component `ref`) · `const { count } = useStore()` without `storeToRefs` · API data in Pinia. That's **server state**: next week.
 
-- **كل حاجة في Pinia.** الـ state بتاعة input في فورم مكانها `ref` في الـ component.
-- **`const { count } = useStore()`** من غير `storeToRefs`، فالـ reactivity بتضيع.
-- **داتا الـ API في Pinia.** دي **Server State**، ومكانها الأسبوع الجاي.
+> [!NOTE]
+> **Mentor tip:** Pinia is Vue's official store and replaced Vuex. A course or project using Vuex is outdated.
 
-> **نصيحة منتور:** Pinia هي المكتبة الرسمية لـ Vue وبديلة Vuex. لو لقيت كورس أو مشروع بيستخدم Vuex، اعرف إنه قديم.
+<div align="right"><a href="#week-23">← Week 23</a> · <a href="#top">Top ↑</a> · <a href="#week-25">Week 25 →</a></div>
 
 ---
 
 <a id="week-25"></a>
 
-## الأسبوع 25: TanStack Query
+## Week 25 · TanStack Query
 
-**الهدف:** تتعامل مع داتا السيرفر بالطريقة الاحترافية: Caching، و Refetching، و Mutations.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=KIS-MJfuPDY&list=PLejc1JbD4ZFRubkv6hV2D3r3eDoXTGHcF&index=1"><img src="https://img.youtube.com/vi/KIS-MJfuPDY/mqdefault.jpg" width="320" alt="TanStack Query concepts in Arabic" /></a>
+<br /><sub><b>kimz codes · TanStack Query concepts 1 → 19</b> · 2 h</sub>
 
-- Server State vs Client State
-- ليه `onMounted` + `fetch` مش كفاية في المشاريع الكبيرة
-- `useQuery`: Query Keys، و `staleTime`، و Caching
-- DevTools
-- Dependent و Enabled Queries
-- Pagination
-- **`useMutation`** و Invalidate Queries
-- Optimistic Updates
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** handle server data professionally: caching, refetching, mutations.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [TanStack Query: Vue Overview](https://tanstack.com/query/latest/docs/framework/vue/overview) | إنجليزي. اقرا Overview و Quick Start و Queries و Mutations و Query Invalidation |
-| المفاهيم بالعربي | [kimz codes: TanStack Query بالعربي من 1 لـ 19](https://www.youtube.com/watch?v=KIS-MJfuPDY&list=PLejc1JbD4ZFRubkv6hV2D3r3eDoXTGHcF&index=1) | ساعتين |
+**Topics:** server vs client state · why `onMounted` + `fetch` doesn't scale · `useQuery`, query keys, `staleTime`, caching · DevTools · dependent & enabled queries · pagination · **`useMutation`** & invalidation · optimistic updates
 
-> **ملاحظة:** مفيش كورس عربي لـ Vue Query تحديدًا. الكورس العربي ده بـ **React**، بس **المفاهيم هي هي بالظبط** (Query Keys، و staleTime، و Caching، و Mutations، و Invalidation)، والـ API شبه بعض جدًا (`useQuery({ queryKey, queryFn })`). اتفرج على المفاهيم، واكتب بـ Vue من الـ docs.
+**Main read:** **[TanStack Query for Vue](https://tanstack.com/query/latest/docs/framework/vue/overview)**: Overview, Quick Start, Queries, Mutations, Query Invalidation
 
-### التاسك: Dashboard بـ Server State
+</td>
+</tr>
+</table>
 
-اعمل Admin Dashboard لإدارة منتجات أو Posts باستخدام [DummyJSON](https://dummyjson.com/):
+> [!NOTE]
+> There's no Arabic course for Vue Query specifically. The Arabic course is in **React**, but **the concepts are identical** (keys, `staleTime`, caching, mutations, invalidation) and the API is nearly the same (`useQuery({ queryKey, queryFn })`). Watch for concepts, write Vue from the docs.
 
-- جدول فيه البيانات مع **Pagination** و بحث
-- صفحة تفاصيل لكل عنصر
-- **Add و Edit و Delete** بـ `useMutation`
-- بعد أي تعديل، الجدول يتحدث (`invalidateQueries`)
-- Skeleton Loading بدل الـ spinner
-- **مفيش ولا `onMounted` لجلب داتا** في المشروع كله
+#### Task · Admin dashboard
 
-> **ملاحظة:** DummyJSON بيعمل simulation للـ add و edit و delete بس مش بيحفظهم فعلًا. ده كويس للتدريب، وهتشوف التغيير في الـ response.
+Manage products or posts on [DummyJSON](https://dummyjson.com/):
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live.
+- A table with **pagination** and search
+- A details page per item
+- **Add, edit, delete** with `useMutation`
+- The table refreshes after changes (`invalidateQueries`)
+- Skeleton loading instead of spinners
+- **Not one `onMounted` fetch** in the whole project
 
-### تحدي إضافي
-
-**Optimistic Delete:** العنصر يختفي من الجدول فورًا، ولو الـ request فشل يرجع تاني مع رسالة خطأ.
+> [!TIP]
+> **Bonus:** **optimistic delete**: the row disappears instantly and comes back with an error if the request fails.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف الفرق بين Server State و Client State
-- [ ] أعرف يعني إيه `staleTime`، والفرق بينه وبين `gcTime`
-- [ ] أعرف إزاي أخلي الـ query تتحدث لوحدها لما `ref` يتغير (الـ query key يبقى reactive)
-- [ ] أقدر أعمل mutation وأحدّث الداتا بعدها
+- [ ] I know server state vs client state
+- [ ] I know `staleTime` vs `gcTime`
+- [ ] I can make a query refetch when a `ref` changes (reactive query key)
+- [ ] I can run a mutation and refresh data after it
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** putting `page.value` in the key instead of the `ref` (or a getter), so the query never updates · copying query data into another `ref`.
 
-- **Query Key مش reactive.** لو `page` عبارة عن `ref`، حطه في الـ key كـ `ref` (أو getter) مش `.value`، عشان الـ query تتحدث لما يتغير.
-- **إنك تنسخ داتا الـ query في `ref` تاني.** استخدمها مباشرة.
+> [!NOTE]
+> **Mentor tip:** after TanStack Query you won't write fetches in `onMounted` again. It shows in code review.
 
-> **نصيحة منتور:** بعد ما تجرب TanStack Query، مش هترجع تكتب fetch في `onMounted` تاني. ودي حاجة بتبان جدًا في الـ code review.
+<div align="right"><a href="#week-24">← Week 24</a> · <a href="#top">Top ↑</a> · <a href="#week-26">Week 26 →</a></div>
 
 ---
 
 <a id="week-26"></a>
 
-## الأسبوع 26: Testing
+## Week 26 · Testing
 
-**الهدف:** تكتب tests بتتأكد إن الكود شغال، وتمسك أي حاجة تبوظ لما تعدّل بعدين.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=hDZjJPPsWJw&list=PLDQ11FgmbqQOFLSRv-Ya39CchDjP1BLju&index=2"><img src="https://img.youtube.com/vi/hDZjJPPsWJw/mqdefault.jpg" width="320" alt="Testing concepts in Arabic" /></a>
+<br /><sub><b>Index Academy · Testing concepts 01 → 05</b> · 41 min</sub>
 
-- ليه نكتب Tests، وأنواعها: Unit، و Integration، و E2E
-- **Vitest:** `describe`، و `it`، و `expect`، و Matchers
-- **Vue Test Utils** و **Testing Library for Vue**: `mount` و `render`، و Queries
-- اختبار Pinia stores
-- Async Tests
-- Mocking (functions و API calls)
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** write tests that prove your code works and catch what breaks when you change it later.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| المفاهيم بالعربي | [Index Academy: Testing بالعربي من 01 لـ 05](https://www.youtube.com/watch?v=hDZjJPPsWJw&list=PLDQ11FgmbqQOFLSRv-Ya39CchDjP1BLju&index=2) | 41 دقيقة |
-| الأساسي | [Testing - vuejs.org](https://vuejs.org/guide/scaling-up/testing.html) | **ابدأ بيها**، بتشرح الصورة كلها |
-| مرجع | [Vitest: Getting Started](https://vitest.dev/guide/) | |
-| مرجع | [Vue Test Utils](https://test-utils.vuejs.org/guide/) · [Vue Testing Library](https://testing-library.com/docs/vue-testing-library/intro) | |
-| مرجع | [Playwright: Installation](https://playwright.dev/docs/intro) | للتحدي الإضافي |
+**Topics:** why test · unit, integration, E2E · **Vitest**: `describe`, `it`, `expect`, matchers · **Vue Test Utils** & **Testing Library for Vue** · testing Pinia stores · async tests · mocking
 
-> **ملاحظة:** الفيديوهات العربي بـ React و Jest، بس أول 5 فيديوهات بيشرحوا **مفاهيم الـ testing** (ليه، وأنواعه، و Jest بيعمل إيه)، ودي نفسها في أي framework. Vitest بيتكتب **تقريبًا بنفس شكل Jest بالظبط**.
+**Start here:** **[Testing · vuejs.org](https://vuejs.org/guide/scaling-up/testing.html)** (the whole picture)
 
-### التاسك: Tests للـ Cart
+**Read:** [Vitest guide](https://vitest.dev/guide/) · [Vue Test Utils](https://test-utils.vuejs.org/guide/) · [Vue Testing Library](https://testing-library.com/docs/vue-testing-library/intro) · [Playwright](https://playwright.dev/docs/intro) (for the bonus)
 
-ارجع لمشروع الـ Shopping Cart (الأسبوع 24) واكتب:
+</td>
+</tr>
+</table>
 
-- **Unit tests** للـ Cart Store: إضافة، وحذف، وتغيير الكمية، والإجمالي، والكوبون (5 tests على الأقل، استخدم `setActivePinia(createPinia())`)
-- **Unit tests** لأي utility functions (تنسيق السعر مثلًا)
-- **Component tests:**
-  - `ProductCard`: بيعرض الاسم والسعر، والضغط على "Add to Cart" بيعمل emit أو بينادي الـ store
-  - `CartPage`: بيعرض "Cart فاضي" لو مفيش حاجة، وبيعرض الإجمالي صح
-- **Mock** للـ API في test واحد على الأقل
-- `npm run test:unit` كله أخضر
+> [!NOTE]
+> The Arabic videos use React and Jest, but the first five cover **testing concepts** that apply everywhere. Vitest code looks almost exactly like Jest.
 
-**التسليم:** على الداشبورد: لينك الـ Repo + Screenshot لنتيجة الـ tests.
+#### Task · Test the cart
 
-### تحدي إضافي
+On your week 24 shopping cart:
 
-اكتب **E2E test واحد** بـ Playwright: يفتح الموقع، ويضيف منتج للـ Cart، ويروح لصفحة الـ Cart، ويتأكد إن المنتج موجود.
+- **Unit tests** for the cart store: add, remove, quantity, total, coupon (5+, use `setActivePinia(createPinia())`)
+- **Unit tests** for utilities (e.g. price formatting)
+- **Component tests:** `ProductCard` shows name and price and "Add to Cart" emits or calls the store · `CartPage` shows an empty state and the correct total
+- At least one test with a **mocked API**
+- `npm run test:unit` all green
+
+**Submit** the repo and a screenshot of the test results.
+
+> [!TIP]
+> **Bonus:** one **Playwright E2E test**: open the site, add a product, open the cart, check it's there.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف الفرق بين Unit و Integration و E2E
-- [ ] أعرف إزاي أختبر Pinia store لوحده
-- [ ] أعرف إزاي أختبر إن component عمل emit
-- [ ] أقدر أعمل mock لـ function وأتأكد إنها اتنادت
-- [ ] بكتب tests بتختبر **اللي المستخدم بيشوفه**، مش تفاصيل الكود
+- [ ] I know unit vs integration vs E2E
+- [ ] I can test a Pinia store on its own
+- [ ] I can assert that a component emitted an event
+- [ ] I can mock a function and assert it was called
+- [ ] My tests check **what users see**, not implementation details
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** testing implementation (internal ref names) · tests that always pass. Break the code on purpose: does the test fail?
 
-- **إنك تختبر الـ implementation** (اسم ref جوا الـ component). اختبر اللي المستخدم بيشوفه ويعمله.
-- **Tests بتعدّي دايمًا.** جرّب تبوّظ الكود وشوف الـ test بيفشل ولا لأ.
+> [!NOTE]
+> **Mentor tip:** you don't need 100% coverage. Start with what would hurt most if it broke: calculations, cart, auth.
 
-> **نصيحة منتور:** مش لازم 100% coverage. ابدأ بـ test للحاجات اللي **لو باظت هتعمل مشكلة كبيرة**: الحسابات، والـ cart، والـ auth.
+<div align="right"><a href="#week-25">← Week 25</a> · <a href="#top">Top ↑</a> · <a href="#week-27">Week 27 →</a></div>
 
 ---
 
 <a id="week-27"></a>
 
-## الأسبوع 27: Performance و Accessibility
+## Week 27 · Performance & Accessibility
 
-**الهدف:** تخلي الأبلكيشن سريع، وكل الناس تقدر تستخدمه.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=lVpbayS9UUM&list=PLNknCqb-phEjLVnCbtVTJnWYml0zRvt5Y&index=1"><img src="https://img.youtube.com/vi/lVpbayS9UUM/mqdefault.jpg" width="320" alt="Web Accessibility 101" /></a>
+<br /><sub><b>Ahmed Saber · Web Accessibility 101</b> · 2.5 h</sub>
 
-**Performance:**
-- إزاي Vue بتتتبع التغييرات وبتعمل re-render
-- Vue DevTools Performance
-- `v-once` و `v-memo`، و `shallowRef`
-- `computed` vs method من ناحية الأداء
-- Lazy Loading للـ routes والـ components (`defineAsyncComponent`)
-- Core Web Vitals: LCP، و INP، و CLS
-- Lighthouse
-- الصور وحجم الـ Bundle
+</td>
+<td valign="top">
 
-**Accessibility:**
-- ليه الـ a11y مهمة
-- Semantic HTML في Vue
-- الكيبورد و Focus Management (خصوصًا مع تغيير الـ route)
-- ARIA (وإمتى **متستخدموش**)
-- Color Contrast و Screen Readers
+**Goal:** make your app fast, and usable by everyone.
 
-### المصادر
+**Performance:** how Vue tracks changes & re-renders · Vue DevTools performance · `v-once`, `v-memo`, `shallowRef` · computed vs method · lazy routes & `defineAsyncComponent` · Core Web Vitals (LCP, INP, CLS) · Lighthouse · images & bundle size
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [Ahmed Saber: Web Accessibility 101](https://www.youtube.com/playlist?list=PLNknCqb-phEjLVnCbtVTJnWYml0zRvt5Y) | 2.5 ساعة |
-| الأساسي | [Performance - vuejs.org](https://vuejs.org/guide/best-practices/performance.html) | إنجليزي |
-| الأساسي | [Accessibility - vuejs.org](https://vuejs.org/guide/best-practices/accessibility.html) | إنجليزي |
-| مرجع | [Learn Performance - web.dev](https://web.dev/learn/performance) · [Web Vitals](https://web.dev/articles/vitals) | |
-| مرجع | [Learn Accessibility - web.dev](https://web.dev/learn/accessibility) | |
-| أداة | [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) · [WAVE](https://wave.webaim.org/) | |
+**Accessibility:** semantic HTML in Vue · keyboard & focus management (especially on route change) · ARIA (and when **not** to use it) · contrast · screen readers
 
-### التاسك: Audit وتحسين مشروع
+**Read:** [Performance · vuejs.org](https://vuejs.org/guide/best-practices/performance.html) · [Accessibility · vuejs.org](https://vuejs.org/guide/best-practices/accessibility.html) · [Learn Performance](https://web.dev/learn/performance) · [Web Vitals](https://web.dev/articles/vitals) · [Learn Accessibility](https://web.dev/learn/accessibility)
 
-اختار أكبر مشروع عملته في المستوى ده (غالبًا الـ Dashboard أو الـ Cart):
+**Tools:** [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) · [WAVE](https://wave.webaim.org/)
 
-1. شغّل **Lighthouse** (Mobile) وخد Screenshot **قبل**
-2. افتح **Vue DevTools** ودوّر على components بتعمل render كتير من غير داعي
-3. اعمل **Lazy Loading** للصفحات
-4. حسّن الصور
-5. **a11y:** جرّب الأبلكيشن بالكيبورد بس، وصلّح أي حاجة مش شغالة. شغّل WAVE وصلّح الأخطاء
-6. خد Screenshot **بعد**
-7. اكتب في الـ README جدول: **المشكلة، و عملت إيه، و النتيجة قبل وبعد**
+</td>
+</tr>
+</table>
 
-**التسليم:** على الداشبورد: لينك الـ Repo (فيه الـ README بالجدول) + Screenshots قبل وبعد.
+#### Task · Audit & improve
 
-### تحدي إضافي
+On your biggest project from this level:
 
-شغّل الأبلكيشن بـ **Screen Reader** (NVDA على Windows، أو VoiceOver على Mac، أو TalkBack على Android) وحاول تستخدمه وعينك مقفولة لمدة 5 دقايق. اكتب إيه اللي حسيت بيه.
+1. Run **Lighthouse** (mobile) and save a **before** screenshot
+2. Use **Vue DevTools** to find components rendering too often
+3. Lazy-load pages
+4. Optimize images
+5. **a11y:** use the app keyboard-only and fix what breaks; run WAVE and fix its errors
+6. Save an **after** screenshot
+7. In the README, a table: **problem → fix → before / after**
+
+> [!TIP]
+> **Bonus:** use your app with a **screen reader** (NVDA, VoiceOver, or TalkBack) for 5 minutes with your eyes closed. Write down how it felt.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف إزاي Vue بتعرف إن component محتاج يتحدث
-- [ ] أعرف إمتى `shallowRef` بيفيد (داتا كبيرة مش هتتعدل جواها)
-- [ ] أعرف يعني إيه LCP و INP و CLS
-- [ ] أقدر أقرا تقرير Lighthouse وأعرف أبدأ منين
-- [ ] الأبلكيشن بتاعي شغال بالكيبورد كله
-- [ ] أعرف إن "**No ARIA is better than bad ARIA**"
+- [ ] I know how Vue decides a component needs to update
+- [ ] I know when `shallowRef` helps (big data you won't mutate deeply)
+- [ ] I know what LCP, INP, and CLS mean
+- [ ] I can read a Lighthouse report and know where to start
+- [ ] My app works fully with the keyboard
+- [ ] I know "**no ARIA is better than bad ARIA**"
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** optimizing without measuring · `<div @click>` instead of `<button>`.
 
-- **إنك تحسّن من غير ما تقيس.** افتح Lighthouse و DevTools الأول.
-- **`<div @click>` بدل `<button>`.** مش هيشتغل بالكيبورد، والـ Screen Reader مش هيعرف إنه زرار.
+> [!NOTE]
+> **Mentor tip:** **measure before you optimize.** Most beginner performance problems are huge images and code that loads before it's needed, not the framework.
 
-> **نصيحة منتور:** **قيس قبل ما تحسّن.** أغلب مشاكل الـ performance اللي بتشوفها في مشاريع المبتدئين جاية من صور كبيرة وحاجات بتتحمّل مش محتاجينها، مش من الـ framework.
+<div align="right"><a href="#week-26">← Week 26</a> · <a href="#top">Top ↑</a> · <a href="#week-28">Week 28 →</a></div>
 
 ---
 
 <a id="week-28"></a>
 
-## الأسبوع 28: Nuxt، الأساسيات والـ Routing
+## Week 28 · Nuxt: Basics & Routing
 
-**الهدف:** تفهم Nuxt بيضيف إيه على Vue، وتبني صفحات بالـ File-based Routing.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=q3T_NLWcZBo&list=PLzjSlWqF2aTcdEs97QvAU13E07llvv3UO&index=1"><img src="https://img.youtube.com/vi/q3T_NLWcZBo/mqdefault.jpg" width="320" alt="Learn Nuxt 3 in Arabic" /></a>
+<br /><sub><b>Vuejs Wisdom · Nuxt 3, 1 → 6</b> · 46 min</sub>
 
-- يعني إيه Meta-framework، وليه Nuxt
-- CSR vs SSR vs SSG
-- إنشاء مشروع وفهم هيكل الملفات
-- **Pages و Routes** (الـ routing بالملفات)
-- Dynamic Routes
-- **Layouts** و Components (و Auto-imports)
-- `NuxtLink`
-- Assets
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** understand what Nuxt adds to Vue and build pages with file-based routing.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [Vuejs Wisdom: Nuxt 3 من 1 لـ 6](https://www.youtube.com/watch?v=q3T_NLWcZBo&list=PLzjSlWqF2aTcdEs97QvAU13E07llvv3UO&index=1) | 46 دقيقة |
-| الأساسي | [Nuxt: Introduction](https://nuxt.com/docs/getting-started/introduction) | إنجليزي. كمّل منها Installation و Directory Structure و Routing |
+**Topics:** what a meta-framework is · CSR vs SSR vs SSG · setup & directory structure · **pages & routes** · dynamic routes · **layouts** & components · auto-imports · `NuxtLink` · assets
 
-> **عن Nuxt 4:** الكورس بـ Nuxt 3، والنسخة الحالية **Nuxt 4**. الفرق الأساسي اللي هيقابلك إن كود الأبلكيشن بقى جوا فولدر `app/` (يعني `app/pages/` بدل `pages/`). أغلب الباقي زي ما هو. لو حاجة مشتغلتش زي الفيديو، الـ docs هي المرجع.
+**Read:** [Nuxt intro](https://nuxt.com/docs/getting-started/introduction), then Installation, Directory Structure, Routing
 
-### التاسك: Blog بـ Nuxt
+</td>
+</tr>
+</table>
 
-ابدأ مشروع Blog (هتكمله الأسبوع الجاي):
+> [!NOTE]
+> The course uses Nuxt 3; current is **Nuxt 4**. The main difference: app code now lives in `app/` (`app/pages/` instead of `pages/`). Most else is the same. When something differs, trust the docs.
 
-- `/`: الرئيسية، فيها آخر البوستات
-- `/blog`: كل البوستات
-- `/blog/[slug]`: صفحة البوست
-- `/about`
-- Layout `default` فيه Navbar و Footer، و Layout `blog` فيه sidebar
-- البوستات حاليًا في ملف `data.ts` (array of objects)
-- TypeScript و Tailwind
+#### Task · A blog in Nuxt
 
-**التسليم:** على الداشبورد: لينك الـ Repo.
+Start a blog (you'll finish it next week):
 
-### تحدي إضافي
+- `/` latest posts · `/blog` all posts · `/blog/[slug]` a post · `/about`
+- A `default` layout with navbar and footer, a `blog` layout with a sidebar
+- Posts in `data.ts` for now
+- TypeScript + Tailwind
 
-اكتب البوستات كملفات **Markdown** واعرضها باستخدام [Nuxt Content](https://content.nuxt.com/).
+> [!TIP]
+> **Bonus:** write posts as **Markdown** with [Nuxt Content](https://content.nuxt.com/).
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف الفرق بين CSR و SSR و SSG، وإمتى كل واحد مناسب
-- [ ] أعرف إزاي الملفات بتتحول لـ routes في Nuxt
-- [ ] أعرف يعني إيه Auto-imports، وليه مش محتاج أعمل import لـ `ref` أو للـ components
-- [ ] أقدر أعمل dynamic route وآخد الـ params
+- [ ] I know CSR vs SSR vs SSG and when each fits
+- [ ] I know how files become routes in Nuxt
+- [ ] I know what auto-imports are and why I don't import `ref` or components
+- [ ] I can build a dynamic route and read its params
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** setting up `vue-router` by hand (Nuxt does it from `pages`) · touching `window` or `localStorage` anywhere. Code runs on the server first; use them inside `onMounted` or `<ClientOnly>`.
 
-- **إنك تعمل `vue-router` بإيدك في Nuxt.** Nuxt بيعمل الـ routing لوحده من فولدر `pages`.
-- **إنك تستخدم `window` أو `localStorage` في أي حتة.** الكود بيشتغل على السيرفر الأول، وهناك مفيش `window`. استخدمهم جوا `onMounted` أو `<ClientOnly>`.
+> [!NOTE]
+> **Mentor tip:** Nuxt feels like magic at first (auto-imports and more). Read Directory Structure in the docs and you'll see where everything comes from.
 
-> **نصيحة منتور:** Nuxt في الأول هيحسسك إن فيه "سحر" كتير (Auto-imports وغيره). اقرا Directory Structure في الـ docs وهتفهم كل حاجة جاية منين.
+<div align="right"><a href="#week-27">← Week 27</a> · <a href="#top">Top ↑</a> · <a href="#week-29">Week 29 →</a></div>
 
 ---
 
 <a id="week-29"></a>
 
-## الأسبوع 29: Nuxt، Data و SEO و Deploy + الشغل مع الـ AI
+## Week 29 · Nuxt: Data, SEO & Deploy + AI Workflow
 
-**الهدف:** تكمّل الـ Blog بداتا حقيقية و SEO وترفعه، وتتعلم إزاي تستخدم الـ AI كأداة شغل حقيقية.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=20WedKm6mcM&list=PLzjSlWqF2aTcdEs97QvAU13E07llvv3UO&index=7"><img src="https://img.youtube.com/vi/20WedKm6mcM/mqdefault.jpg" width="320" alt="Learn Nuxt 3 in Arabic part 2" /></a>
+<br /><sub><b>Vuejs Wisdom · Nuxt 3, 7 → 13</b> · 1 h</sub>
 
-**Nuxt:**
-- **Data Fetching:** `useFetch` و `useAsyncData`
-- Server Routes (`server/api/`)
-- **SEO و Meta** (`useSeoMeta`، و `useHead`)
-- Transitions
-- Plugins و Modules
-- صفحة الخطأ
-- **Middleware** (حماية الصفحات)
-- `useCookie` و `useState`
-- Deploy
+</td>
+<td valign="top">
 
-**الشغل مع الـ AI:**
-- إزاي تكتب prompt كويس لمهمة برمجية (السياق، والقيود، والمطلوب بالظبط)
-- استخدامه في: الـ boilerplate، والـ tests، وشرح كود مش فاهمه، و code review
-- **إزاي تراجع كود الـ AI:** متقبلش حاجة مش فاهمها، واختبر كل حاجة
-- الحاجات اللي الـ AI بيغلط فيها كتير: APIs قديمة (Vue 2 و Options API و Nuxt 2)، و packages مش موجودة، وحلول أعقد من اللازم
+**Goal:** finish the blog with real data and SEO, ship it, and learn to use AI as a real work tool.
 
-### المصادر
+**Nuxt:** **`useFetch` & `useAsyncData`** · server routes (`server/api/`) · **SEO & meta** (`useSeoMeta`, `useHead`) · transitions · plugins & modules · error page · **middleware** · `useCookie` & `useState` · deploy
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [Vuejs Wisdom: Nuxt 3 من 7 لـ 13](https://www.youtube.com/watch?v=20WedKm6mcM&list=PLzjSlWqF2aTcdEs97QvAU13E07llvv3UO&index=7) | ساعة |
-| مرجع | [Nuxt Docs](https://nuxt.com/docs/getting-started/introduction): Data Fetching، و SEO and Meta، و Deployment | |
-| مرجع | [GitHub Copilot Docs](https://docs.github.com/en/copilot) | |
+**AI workflow:** prompts with context, constraints, and a precise ask · AI for boilerplate, tests, explanations, reviews · **reviewing AI code**: never accept what you don't understand · common AI failures: outdated APIs (Vue 2, Options API, Nuxt 2), packages that don't exist, overcomplicated solutions
 
-### التاسك: تكملة الـ Blog + Deploy
+**Read:** [Nuxt docs](https://nuxt.com/docs/getting-started/introduction): Data Fetching, SEO and Meta, Deployment · [GitHub Copilot docs](https://docs.github.com/en/copilot)
 
-- البوستات تيجي من API (مثلًا [DummyJSON Posts](https://dummyjson.com/)) بـ `useFetch`
-- Server Route واحد على الأقل (`server/api/...`)
-- **SEO:** `useSeoMeta` لكل صفحة، وdynamic meta لصفحة البوست (العنوان والوصف من البوست نفسه)
-- صفحة خطأ مخصصة (`error.vue`)
-- صفحة `/dashboard` محمية بـ **Route Middleware**
-- Transitions بين الصفحات
-- **Deploy** على Vercel أو Netlify
-- Lighthouse SEO و Performance **90+**
+</td>
+</tr>
+</table>
 
-**مهمة الـ AI:**
-استخدم أي أداة AI عشان:
-1. تكتب tests لـ component واحد
-2. تعمل review لملف من ملفاتك
-3. تشرحلك حاجة في Nuxt مكنتش فاهمها
+#### Task · Ship the blog
 
-واكتب في ملف `AI_LOG.md`: كتبت إيه بالظبط (الـ prompt)، وهو رد بإيه، و**إيه اللي كان غلط أو محتاج تعديل في رده**.
+- Posts from an API (e.g. [DummyJSON posts](https://dummyjson.com/)) with `useFetch`
+- At least one server route (`server/api/...`)
+- **SEO:** `useSeoMeta` on every page; dynamic meta on posts
+- A custom `error.vue`
+- `/dashboard` protected by **route middleware**
+- Page transitions
+- **Deployed** on Vercel or Netlify, Lighthouse SEO & Performance **90+**
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live + ملف `AI_LOG.md`.
+**AI task:** use any AI tool to (1) write tests for one component, (2) review one of your files, (3) explain a Nuxt concept you didn't get. In `AI_LOG.md`, record the exact prompt, the answer, and **what was wrong or needed fixing**.
+
+**Submit** the repo, live link, and `AI_LOG.md`.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف الفرق بين `useFetch` و `$fetch`، وليه `$fetch` لوحده جوا الـ setup ممكن يعمل request مرتين
-- [ ] أعرف الكود بيشتغل فين: Server ولا Client ولا الاتنين
-- [ ] أقدر أعمل Server Route
-- [ ] أعرف إزاي أعمل SEO meta ديناميك
-- [ ] رفعت مشروع Nuxt Live
-- [ ] بقدر أراجع كود الـ AI وأمسك غلطه
+- [ ] I know `useFetch` vs `$fetch`, and why bare `$fetch` in setup can request twice
+- [ ] I know where code runs: server, client, or both
+- [ ] I can write a server route
+- [ ] I can generate dynamic SEO meta
+- [ ] I deployed a Nuxt app
+- [ ] I can review AI-written code and catch its mistakes
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** `$fetch` in setup instead of `useFetch` (one request on the server, another on the client) · asking AI to "build me a Nuxt blog" with no context gets you Nuxt 2 or the Options API. Give it the version, the API style, the file, and the exact ask.
 
-- **`$fetch` في الـ setup بدل `useFetch`.** هيتعمل request على السيرفر وتاني على الـ client.
-- **إنك تطلب من الـ AI "اعملّي blog بـ Nuxt".** ممكن يطلعلك كود Nuxt 2 أو Options API. ادّيله سياق: النسخة، و Composition API، والملف اللي إنت فيه، والمطلوب بالظبط.
+> [!NOTE]
+> **Mentor tip:** AI won't take your job. A developer who uses AI *well* might. The difference is catching its mistakes, which takes the fundamentals you spent 28 weeks building.
 
-> **نصيحة منتور:** الـ AI مش هياخد شغلك. **المبرمج اللي بيعرف يستخدم الـ AI كويس** هو اللي ممكن ياخده. والفرق إن الأول بيعرف يمسك أغلاطه، لأنه فاهم الأساسيات اللي إنت قضيت 28 أسبوع تتعلمها.
+<div align="right"><a href="#week-28">← Week 28</a> · <a href="#top">Top ↑</a> · <a href="#week-30">Week 30 →</a></div>
 
 ---
 
 <a id="week-30"></a>
 
-## الأسبوع 30: مشروع التخرج
+## Week 30 · Graduation Project
 
-**الهدف:** تبني أبلكيشن كامل يبقى **أقوى حاجة في الـ Portfolio بتاعك**.
+<div align="center">
 
-### المشروع: اختار فكرة
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:059669,50:6366F1,100:A855F7&height=100&text=Graduation%20Project&fontSize=38&fontColor=ffffff&animation=twinkling" width="100%" alt="Graduation Project" />
 
-| الفكرة | تفاصيل |
-| :--- | :--- |
-| **E-commerce** | منتجات، وفلاتر، وبحث، وCart، وCheckout (وهمي)، وصفحة طلبات |
-| **Admin Dashboard** | Charts، وجداول بـ Pagination و Sort و Filter، و CRUD كامل، و Dark Mode |
-| **Learning Platform** | كورسات، ودروس، وتقدّم المستخدم، وكويزات |
-| **Job Board** | وظايف، وفلاتر، وصفحة شركة، وحفظ الوظايف، وتقديم |
-| **Event Platform لـ CIS** | إيفنتات، وتسجيل، وتذاكر بـ QR Code، وصفحة للأدمن |
-| **فكرتك إنت** | اتكلم مع المنتور الأول |
+</div>
 
-### المتطلبات
+**Goal:** build the strongest piece in your portfolio.
 
-| المتطلب | التفاصيل |
-| :--- | :--- |
-| **التقنيات** | **Nuxt** أو **Vue + Vite**، و TypeScript، و Tailwind |
-| **الصفحات** | 5 صفحات على الأقل، منهم dynamic routes |
-| **State** | Pinia للـ Client State، و TanStack Query (أو `useFetch` في Nuxt) للـ Server State |
-| **Auth** | Login و Register (ممكن وهمي أو بـ API زي DummyJSON)، و Protected Routes |
-| **Forms** | فورم واحد معقد على الأقل بـ validation |
-| **Testing** | 10 tests على الأقل (Unit + Component) |
-| **Performance** | Lighthouse **90+** في الأربع خانات |
-| **Accessibility** | شغال بالكيبورد بالكامل |
-| **Responsive** | Mobile First |
-| **Git** | Branches و Pull Requests، و commits واضحة |
-| **Deploy** | Live على Vercel أو Netlify |
-| **README** | Screenshots أو GIF، ولينك Live، والتقنيات وليه اخترتها، وإزاي تشغّله، والتحديات اللي قابلتك، وإيه اللي هتضيفه لو عندك وقت |
+| Idea | Scope |
+| :-- | :-- |
+| **E-commerce** | Products, filters, search, cart, mock checkout, orders |
+| **Admin dashboard** | Charts, sortable / filterable / paginated tables, full CRUD, dark mode |
+| **Learning platform** | Courses, lessons, progress tracking, quizzes |
+| **Job board** | Jobs, filters, company pages, saved jobs, applications |
+| **CIS event platform** | Events, registration, QR tickets, admin panel |
+| **Your idea** | Pitch it to your mentor first |
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live + فيديو Demo (2-3 دقايق) بتشرح فيه المشروع.
+| Requirement | Details |
+| :-- | :-- |
+| **Stack** | **Nuxt** or **Vue + Vite**, TypeScript, Tailwind |
+| **Pages** | 5+, including dynamic routes |
+| **State** | Pinia for client state; TanStack Query (or `useFetch` in Nuxt) for server state |
+| **Auth** | Login & register (mock or DummyJSON), protected routes |
+| **Forms** | At least one complex validated form |
+| **Testing** | 10+ tests (unit + component) |
+| **Performance** | Lighthouse **90+** in all four |
+| **Accessibility** | Fully keyboard-usable |
+| **Responsive** | Mobile first |
+| **Git** | Branches, PRs, clear commits |
+| **Deploy** | Live on Vercel or Netlify |
+| **README** | Screenshots or GIF, live link, stack & why, setup, challenges, what's next |
+
+**Submit** the repo, live link, and a **2-3 minute demo video**.
 
 <details>
-<summary><b>Checklist آخر الرودماب</b></summary>
+<summary><b>Final exit checklist</b></summary>
 
 <br />
 
-- [ ] أقدر أبني أبلكيشن Vue أو Nuxt كامل من الصفر لوحدي
-- [ ] بكتب TypeScript بشكل طبيعي
-- [ ] بعرف أختار الأداة الصح للمشكلة (State، و Fetching، و Styling)
-- [ ] بكتب tests للحاجات المهمة
-- [ ] بفكر في الـ Performance والـ Accessibility من الأول، مش في الآخر
-- [ ] GitHub بتاعي فيه 3 مشاريع كبيرة على الأقل Live، وبـ README محترم
-- [ ] بستخدم الـ AI كأداة، وبعرف أمسك أغلاطه
+- [ ] I can build a full Vue or Nuxt app from scratch on my own
+- [ ] TypeScript feels natural
+- [ ] I pick the right tool for each problem (state, fetching, styling)
+- [ ] I test what matters
+- [ ] I think about performance and accessibility from the start
+- [ ] My GitHub has 3+ big, live projects with proper READMEs
+- [ ] I use AI as a tool and catch its mistakes
 
 </details>
 
-> **نصيحة منتور:** مشروع واحد **كامل ومتعوب عليه** أحسن من 10 مشاريع tutorial. لما تقدّم على شغل، الـ interviewer هيفتح المشروع ده، وهيسألك "ليه عملت كده؟" في كل حتة. فخليك عارف إجابة كل سؤال.
+> [!NOTE]
+> **Mentor tip:** one **finished, polished** project beats ten tutorial clones. Interviewers will open it and ask "why did you do it this way?" everywhere. Know every answer.
+
+<div align="right"><a href="#week-29">← Week 29</a> · <a href="#top">Top ↑</a></div>
 
 ---
 
-## خلصت الرودماب. إيه بعد كده؟
+<div align="center">
 
-**مبروك.** إنت عملت حاجة أغلب الناس اللي بيبدأوا بيبطّلوا في نصها.
+## You finished the roadmap.
 
-الخطوات الجاية:
+You did what most people who start quit halfway through.
 
-1. **Portfolio:** اعمل موقع شخصي بـ Nuxt فيه مشاريعك
-2. **Open Source:** Vue و Nuxt مجتمعاتهم مرحبة جدًا بالمساهمين الجداد، فدوّر على issues عليها `good first issue`
-3. **اتعلم Backend بسيط:** Server Routes في Nuxt مع Database، أو Laravel لو حابب (Vue و Laravel ثنائي مشهور جدًا)
-4. **قدّم على Internships** حتى لو حاسس إنك مش جاهز. إنت جاهز أكتر ما إنت فاكر.
-5. **علّم غيرك:** اكتب بوست عن حاجة اتعلمتها، أو ساعد حد في المستوى الأول. **مفيش طريقة تتعلم بيها أحسن من إنك تشرح.**
+</div>
 
-**[الرجوع للخريطة](README.md)**
+| Next | |
+| :-- | :-- |
+| **Portfolio** | Build a personal site in Nuxt showing your projects |
+| **Open source** | Vue and Nuxt communities welcome newcomers; look for `good first issue` |
+| **Some backend** | Nuxt server routes with a database, or Laravel (a classic pair with Vue) |
+| **Apply** | Internships, even if you don't feel ready. You're more ready than you think. |
+| **Teach** | Write about what you learned, or help someone in Level 1. Nothing teaches like explaining. |
+
+<div align="center">
+
+<a href="README.md"><img src="https://img.shields.io/badge/←_Back_to_the_Roadmap-6366F1?style=for-the-badge" alt="Back to the roadmap" /></a>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:34D399,100:059669&height=110&section=footer" width="100%" alt="" />
 
 </div>

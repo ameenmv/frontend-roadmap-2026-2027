@@ -1,767 +1,726 @@
+<a id="top"></a>
+
 <div align="center">
 
-<h1>المستوى التاني: Intermediate</h1>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:CA8A04,100:EAB308&height=200&section=header&text=Level%202%20%C2%B7%20Intermediate&fontSize=52&fontColor=ffffff&fontAlignY=38&animation=fadeIn&desc=JavaScript%20%C2%B7%20DOM%20%C2%B7%20Async%20%C2%B7%20Tooling%20%C2%B7%20TypeScript&descSize=18&descAlignY=60" width="100%" alt="Level 2 Intermediate" />
 
-<p><strong>JavaScript · DOM · Async · APIs · How JS Works · npm & Vite · TypeScript</strong></p>
+<img src="https://skillicons.dev/icons?i=js,ts,nodejs,npm,vite,git,github" alt="JavaScript TypeScript Node npm Vite Git GitHub" />
 
-<p>
-  <img src="https://img.shields.io/badge/Weeks-9_→_18-CA8A04?style=for-the-badge" alt="Weeks 9-18" />
-  <img src="https://img.shields.io/badge/Main_Source-Elzero_Web_School-111827?style=for-the-badge" alt="Elzero" />
-</p>
+<br /><br />
+
+<img src="https://img.shields.io/badge/Weeks-9_→_18-CA8A04?style=for-the-badge" alt="Weeks 9-18" />
+<img src="https://img.shields.io/badge/Video-~23_h-EAB308?style=for-the-badge" alt="About 23 hours of video" />
+<img src="https://img.shields.io/badge/Main_Source-Elzero_Web_School-111827?style=for-the-badge" alt="Elzero Web School" />
+
+<br /><br />
+
+[Roadmap](README.md) · [Beginner](01-beginner.md) · **Intermediate** · [React](03-react.md) · [Vue](03-vue.md) · [Tracker](TRACKER.md)
 
 </div>
 
-<div dir="rtl">
-
-> **[الرجوع للخريطة](README.md)** · [المستوى الأول](01-beginner.md) · المستوى التاني · [React](03-react.md) · [Vue](03-vue.md)
-
 ---
 
-## الحكاية
+If HTML is the skeleton and CSS is the skin, **JavaScript is the brain.**
 
-لو HTML هو الهيكل و CSS هو الشكل، فـ **JavaScript هي الروح**.
+This is **the most important level** in the roadmap. Everything you do in React or Vue later *is* JavaScript. Strong JS makes frameworks easy; weak JS makes every error a mystery. That's why this level gets **10 weeks**, the longest of all.
 
-المستوى ده هو **أهم مستوى في الرودماب كلها**. كل اللي هتعمله في React أو Vue بعد كده هو JavaScript. فلو JS عندك قوية، الـ framework هيبقى سهل جدًا. ولو ضعيفة، هتقضي وقتك كله تايه ومش فاهم الـ error جاي منين.
+| Week | Topic | You ship |
+| :--: | :-- | :-- |
+| [9](#week-9) | JavaScript basics | A set of problems |
+| [10](#week-10) | Arrays, loops, functions, scope | A grade calculator |
+| [11](#week-11) | Higher-order functions, objects, destructuring | Student data analysis |
+| [12](#week-12) | DOM, BOM, Local Storage | An expense tracker |
+| [13](#week-13) | Map, Set, dates, modules | A modular to-do app |
+| [14](#week-14) | Async JavaScript & Fetch | A weather app |
+| [15](#week-15) | How JavaScript works inside | A quiz app with classes |
+| [16](#week-16) | npm, Vite, Git branching | Weather app on Vite + PRs |
+| [17](#week-17) | TypeScript | Weather app in TypeScript |
+| [18](#week-18) | **Project 2** | An API-driven app in TS |
 
-عشان كده المستوى ده **10 أسابيع**، أطول مستوى في الرودماب، ومفيهوش استعجال.
-
-| الأسبوع | الموضوع | التاسك |
-| :---: | :--- | :--- |
-| 9 | [أساسيات JavaScript](#week-9) | مجموعة Problems |
-| 10 | [Arrays و Loops و Functions و Scope](#week-10) | Grade Calculator |
-| 11 | [Higher Order Functions و Objects و Destructuring](#week-11) | تحليل داتا طلبة |
-| 12 | [DOM و BOM و Local Storage](#week-12) | Expense Tracker |
-| 13 | [Map و Set و Dates و Modules](#week-13) | To-Do App متقسم Modules |
-| 14 | [Async JavaScript و Fetch API](#week-14) | Weather App |
-| 15 | [إزاي JavaScript شغالة من جوا](#week-15) | Quiz App بالـ Classes |
-| 16 | [npm و Vite و Git Branching](#week-16) | نقل المشروع لـ Vite + Pull Requests |
-| 17 | [TypeScript](#week-17) | تحويل المشروع لـ TypeScript |
-| 18 | [**مشروع المستوى التاني**](#week-18) | أبلكيشن بيكلم API بـ TypeScript |
-
-> **عن كورس Elzero JavaScript:** الكورس 19.5 ساعة في 188 فيديو. هنمشي عليه بالترتيب تقريبًا على مدار 7 أسابيع، وبعدين TypeScript. ومتنساش تكليفات كل جزء على [elzero.org](https://elzero.org/study/javascript-bootcamp-2021-study-plan/).
+> [!NOTE]
+> The Elzero JavaScript course is 19.5 h across 188 videos. We follow it mostly in order over 7 weeks, then TypeScript. Every part has assignments on the [study plan](https://elzero.org/study/javascript-bootcamp-2021-study-plan/).
 
 ---
 
 <a id="week-9"></a>
 
-## الأسبوع 9: أساسيات JavaScript
+## Week 9 · JavaScript Basics
 
-**الهدف:** تكتب برامج صغيرة بـ JS فيها متغيرات وعمليات وشروط، وتعرف تقرا الـ Console.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=GM6dQBmc-Xg&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=1"><img src="https://img.youtube.com/vi/GM6dQBmc-Xg/mqdefault.jpg" width="320" alt="Elzero JavaScript #001" /></a>
+<br /><sub><b>Elzero · JavaScript #001 → #039</b> · 4 h</sub>
 
-- JS بتشتغل فين، وإزاي تربطها بالصفحة (`<script>`، و `defer`)
-- Console methods
-- Data Types و `typeof`
-- `var` vs `let` vs `const`
-- Strings و Template Literals
-- Operators و Type Coercion
-- Numbers و Math Object
-- String Methods
-- Comparison و Logical Operators
-- `if` و ternary و `??` و `switch`
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** write small programs with variables, operators, and conditions, and read the Console.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [Elzero: Learn JavaScript من #001 لـ #039](https://www.youtube.com/watch?v=GM6dQBmc-Xg&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=1) | 4 ساعات |
-| تكليفات | Elzero: [01-09](https://elzero.org/javascript-bootcamp-assignments-lesson-from-001-to-009/) · [10-17](https://elzero.org/javascript-bootcamp-assignments-lesson-from-010-to-017/) · [18-22](https://elzero.org/javascript-bootcamp-assignments-lesson-from-018-to-022/) · [23-26](https://elzero.org/javascript-bootcamp-assignments-lesson-from-023-to-026/) · [27-30](https://elzero.org/javascript-bootcamp-assignments-lesson-from-027-to-030/) · [31-32](https://elzero.org/javascript-bootcamp-assignments-lesson-from-031-to-032/) · [33-37](https://elzero.org/javascript-bootcamp-assignments-lesson-from-033-to-037/) · [38-39](https://elzero.org/javascript-bootcamp-assignments-lesson-from-038-to-039/) | |
-| البديل | [The Modern JavaScript Tutorial - javascript.info](https://javascript.info) | إنجليزي، **أحسن مرجع مكتوب لـ JS** |
-| مرجع | [JavaScript Guide - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) | |
+**Topics:** where JS runs (`<script>`, `defer`) · console · data types & `typeof` · `var` / `let` / `const` · strings & template literals · operators & type coercion · numbers & `Math` · string methods · comparison & logic · `if`, ternary, `??`, `switch`
 
-### التاسك: Problems
+**Practice:** Elzero [01-09](https://elzero.org/javascript-bootcamp-assignments-lesson-from-001-to-009/) · [10-17](https://elzero.org/javascript-bootcamp-assignments-lesson-from-010-to-017/) · [18-22](https://elzero.org/javascript-bootcamp-assignments-lesson-from-018-to-022/) · [23-26](https://elzero.org/javascript-bootcamp-assignments-lesson-from-023-to-026/) · [27-30](https://elzero.org/javascript-bootcamp-assignments-lesson-from-027-to-030/) · [31-32](https://elzero.org/javascript-bootcamp-assignments-lesson-from-031-to-032/) · [33-37](https://elzero.org/javascript-bootcamp-assignments-lesson-from-033-to-037/) · [38-39](https://elzero.org/javascript-bootcamp-assignments-lesson-from-038-to-039/)
 
-اعمل ملف `week-9.js` فيه حل المسائل دي (كل مسألة function منفصلة، واطبع النتيجة في الـ Console):
+**Read:** **[javascript.info](https://javascript.info)** (the best written JS reference) · [JS Guide · MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 
-1. **حاسبة BMI:** تاخد الوزن والطول، وترجع الرقم والتصنيف (نحيف، طبيعي، زيادة، سمنة)
-2. **Even or Odd:** رقم، وترجع "زوجي" أو "فردي"، ولو مش رقم ترجع رسالة خطأ
-3. **أكبر رقم من 3:** من غير `Math.max`
-4. **تحويل درجة الحرارة:** Celsius لـ Fahrenheit والعكس
-5. **Grade:** درجة من 100، وترجع التقدير (A, B, C, D, F) بـ `switch`
-6. **Palindrome:** كلمة، وترجع `true` لو بتتقري من الناحيتين زي بعض (`level`, `racecar`)
-7. **Capitalize:** `"hello world"` تبقى `"Hello World"`
+</td>
+</tr>
+</table>
 
-**التسليم:** على الداشبورد: لينك الـ Repo.
+#### Task · Problem set
 
-### تحدي إضافي
+In `week-9.js`, one function per problem, results printed to the Console:
 
-اعمل **لعبة تخمين رقم** بـ `prompt` و `alert`: الكمبيوتر يختار رقم من 1 لـ 100، وإنت تخمن، وهو يقولك "أكبر" أو "أصغر". (هتحتاج loop، فاتفرج على أول فيديو في الـ Loops لو حابب.)
+1. **BMI** from weight and height, with a category
+2. **Even or odd**, with an error message for non-numbers
+3. **Largest of three** without `Math.max`
+4. **Celsius ↔ Fahrenheit**
+5. **Letter grade** (A-F) from a score, using `switch`
+6. **Palindrome** check (`level`, `racecar`)
+7. **Capitalize** `"hello world"` → `"Hello World"`
+
+> [!TIP]
+> **Bonus:** a number-guessing game with `prompt` and `alert`. The computer picks 1-100 and answers "higher" or "lower". You'll need a loop, so peek at the first loops video.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف ليه `const` هي الـ default، وإمتى أستخدم `let`، وليه منستخدمش `var`
-- [ ] أعرف الفرق بين `==` و `===`، وليه دايمًا `===`
-- [ ] أعرف ليه `"5" + 3` بتطلع `"53"` و `"5" - 3` بتطلع `2`
-- [ ] أعرف الفرق بين `||` و `??`
-- [ ] أعرف إيه الـ Falsy Values في JS (فيه 8 منهم)
-- [ ] حليت تكليفات Elzero بتاعة الدروس 1 لـ 39
+- [ ] I know why `const` is the default, when to use `let`, and why not `var`
+- [ ] I know `==` vs `===`
+- [ ] I know why `"5" + 3` is `"53"` but `"5" - 3` is `2`
+- [ ] I know `||` vs `??`
+- [ ] I can list JavaScript's falsy values (there are 8)
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** watching without typing (JS can't be learned by watching) · ignoring red in the Console. An error is a message telling you exactly where to look.
 
-- **إنك تتفرج من غير ما تكتب.** JS بالذات مستحيل تتعلمها بالفرجة. اكتب كل سطر في الفيديو، وغيّر فيه، وبوّظه، وشوف إيه اللي هيحصل.
-- **إنك تتجاهل اللون الأحمر في الـ Console.** الـ error مش عدو، دي رسالة بتقولك المشكلة فين بالظبط.
+> [!NOTE]
+> **Mentor tip:** this week looks easy. Don't rush it. Type coercion and falsy values are behind half the weird bugs you'll ever hit.
 
-> **نصيحة منتور:** الأسبوع ده هيبان سهل، بس متستعجلش. الـ Type Coercion والـ Falsy Values بالذات هيرجعولك في كل bug غريب هتقابله في حياتك.
+<div align="right"><a href="#top">Top ↑</a> · <a href="#week-10">Week 10 →</a></div>
 
 ---
 
 <a id="week-10"></a>
 
-## الأسبوع 10: Arrays و Loops و Functions و Scope
+## Week 10 · Arrays, Loops, Functions & Scope
 
-**الهدف:** تتعامل مع ليستات داتا، وتكرر حاجات، وتقسم الكود لـ functions نضيفة.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=MLVJhya1CV0&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=40"><img src="https://img.youtube.com/vi/MLVJhya1CV0/mqdefault.jpg" width="320" alt="Elzero JavaScript #040" /></a>
+<br /><sub><b>Elzero · JavaScript #040 → #070</b> · 3 h</sub>
 
-- Arrays: إضافة، وحذف، وبحث، وترتيب، و `slice` vs `splice`
-- Loops: `for`، و `for...of`، و `while`، و `break` و `continue`
-- Functions: parameters، و `return`، و default و rest parameters
-- Anonymous Functions و Arrow Functions
-- **Scope:** Global، و Local، و Block، و Lexical
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** work with lists of data, repeat work, and split code into clean functions.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [Elzero: Learn JavaScript من #040 لـ #070](https://www.youtube.com/watch?v=MLVJhya1CV0&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=40) | 3 ساعات |
-| تكليفات | Elzero: [40-47](https://elzero.org/javascript-bootcamp-assignments-lesson-from-040-to-047/) · [48-53](https://elzero.org/javascript-bootcamp-assignments-lesson-from-048-to-053/) · [54-56](https://elzero.org/javascript-bootcamp-assignments-lesson-from-054-to-056/) · [57-63](https://elzero.org/javascript-bootcamp-assignments-lesson-from-057-to-063/) · [64-70](https://elzero.org/javascript-bootcamp-assignments-lesson-from-064-to-070/) | |
-| تدريب | [30 Days of JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript) (Days 5, 6, 7) | تمارين كتير ومتدرجة |
-| مرجع | [javascript.info: Functions](https://javascript.info/function-basics) · [Arrays](https://javascript.info/array) | |
+**Topics:** arrays (add, remove, search, sort, `slice` vs `splice`) · `for`, `for...of`, `while`, `break`, `continue` · functions, `return`, default & rest params · anonymous & arrow functions · **scope**: global, local, block, lexical
 
-### التاسك: Grade Calculator
+**Practice:** Elzero [40-47](https://elzero.org/javascript-bootcamp-assignments-lesson-from-040-to-047/) · [48-53](https://elzero.org/javascript-bootcamp-assignments-lesson-from-048-to-053/) · [54-56](https://elzero.org/javascript-bootcamp-assignments-lesson-from-054-to-056/) · [57-63](https://elzero.org/javascript-bootcamp-assignments-lesson-from-057-to-063/) · [64-70](https://elzero.org/javascript-bootcamp-assignments-lesson-from-064-to-070/) · [30 Days of JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript) (days 5-7)
 
-اعمل array فيه 10 طلبة، كل طالب array فيه `[name, grade]`. واكتب functions:
+**Read:** [Functions](https://javascript.info/function-basics) · [Arrays](https://javascript.info/array) · javascript.info
 
-1. `getAverage(students)`: متوسط الدرجات
-2. `getTopStudent(students)`: أعلى طالب
-3. `getFailed(students)`: الطلبة اللي أقل من 50
-4. `sortByGrade(students)`: ترتيب تنازلي **من غير ما تغيّر الـ array الأصلي**
-5. `printReport(students)`: تطبع تقرير شكله حلو في الـ Console فيه اسم كل طالب ودرجته وتقديره
+</td>
+</tr>
+</table>
 
-**ممنوع** `map`، و `filter`، و `reduce` الأسبوع ده (لسه جايين). Loops بس.
+#### Task · Grade calculator
 
-**التسليم:** على الداشبورد: لينك الـ Repo.
+An array of 10 students, each `[name, grade]`. Write:
 
-### تحدي إضافي
+1. `getAverage(students)`
+2. `getTopStudent(students)`
+3. `getFailed(students)`: grades under 50
+4. `sortByGrade(students)`: descending, **without mutating the original**
+5. `printReport(students)`: a nicely formatted Console report with grades and letters
 
-اكتب function بتطبع **هرم نجوم** بعدد أدوار تختاره:
+**No `map`, `filter`, or `reduce` yet.** Loops only.
 
-```text
-    *
-   ***
-  *****
- *******
-```
+> [!TIP]
+> **Bonus:** print a star pyramid with any number of rows.
+> ```text
+>    *
+>   ***
+>  *****
+> ```
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف الفرق بين `slice` و `splice`، وأنهي واحدة بتغيّر الـ array الأصلي
-- [ ] أعرف الفرق بين `for...of` و `for...in`
-- [ ] أعرف الفرق بين function بترجع قيمة وfunction بتطبع
-- [ ] أعرف الفرق بين Arrow Function والـ function العادية (في الكتابة على الأقل لحد دلوقتي)
-- [ ] أعرف يعني إيه Block Scope، وليه `let` جوا `{}` مش بتتشاف برا
+- [ ] I know `slice` vs `splice`, and which one mutates
+- [ ] I know `for...of` vs `for...in`
+- [ ] I know returning a value vs printing it
+- [ ] I know how arrow functions differ from regular functions, at least in syntax
+- [ ] I know what block scope means
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** functions that do five things · a missing `return`, so you get `undefined` · names like `x`, `arr`, `temp`.
 
-- **function بتعمل 5 حاجات.** كل function تعمل **حاجة واحدة** واسمها يقول هي بتعملها إيه.
-- **إنك تنسى `return`.** وبعدين تستغرب ليه النتيجة `undefined`.
-- **أسماء متغيرات زي `x`, `arr`, `temp`.** سمّيها `students`, `topStudent`, `averageGrade`.
+> [!NOTE]
+> **Mentor tip:** wrote the same code twice? It should be a function.
 
-> **نصيحة منتور:** لو بتكتب نفس الكود مرتين، يبقى المفروض يبقى function.
+<div align="right"><a href="#week-9">← Week 9</a> · <a href="#top">Top ↑</a> · <a href="#week-11">Week 11 →</a></div>
 
 ---
 
 <a id="week-11"></a>
 
-## الأسبوع 11: Higher Order Functions و Objects و Destructuring
+## Week 11 · Higher-Order Functions, Objects & Destructuring
 
-**الهدف:** تتعامل مع داتا حقيقية (Array of Objects) بالطريقة اللي بيكتب بيها أي Frontend Developer محترف.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=hTUsHXxEvHc&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=71"><img src="https://img.youtube.com/vi/hTUsHXxEvHc/mqdefault.jpg" width="320" alt="Elzero JavaScript #071" /></a>
+<br /><sub><b>Elzero · JavaScript #071 → #085</b> · 1.5 h</sub>
 
-- **Higher Order Functions:** `map`، و `filter`، و `reduce`، و `forEach`
-- **Objects:** إنشاء، و Dot vs Bracket Notation، و Nested Objects
-- `this` (مقدمة)
-- `Object.create` و `Object.assign`
-- **Destructuring:** Arrays، و Objects، و Function Parameters
-- **Spread Syntax** `...`
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** handle real data (arrays of objects) the way professional frontend devs do.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [Elzero: Learn JavaScript من #071 لـ #085](https://www.youtube.com/watch?v=hTUsHXxEvHc&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=71) | 1.5 ساعة |
-| الأساسي | [Elzero: Destructuring من #115 لـ #122](https://www.youtube.com/watch?v=tR6VARwdmzA&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=115)، و[Spread Syntax #132](https://www.youtube.com/watch?v=D9UdBHoAOzg&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=132) | 44 دقيقة |
-| تكليفات | Elzero: [71-78](https://elzero.org/javascript-bootcamp-assignments-lesson-from-071-to-078/) · [79-85](https://elzero.org/javascript-bootcamp-assignments-lesson-from-079-to-085/) · [115-122](https://elzero.org/javascript-bootcamp-assignments-lesson-from-115-to-122/) | |
-| مرجع | [javascript.info: Array methods](https://javascript.info/array-methods) · [Destructuring](https://javascript.info/destructuring-assignment) | |
+**Topics:** **`map`, `filter`, `reduce`, `forEach`** · objects, dot vs bracket notation, nesting · intro to `this` · `Object.create` & `Object.assign` · **destructuring** · **spread** `...`
 
-### التاسك: تحليل داتا طلبة
+**Also watch:** [Elzero · Destructuring #115 → #122](https://www.youtube.com/watch?v=tR6VARwdmzA&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=115) + [Spread #132](https://www.youtube.com/watch?v=D9UdBHoAOzg&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=132) · 44 min
 
-خد الـ Array ده (أو اعمل واحد شبهه فيه 15 طالب):
+**Practice:** Elzero [71-78](https://elzero.org/javascript-bootcamp-assignments-lesson-from-071-to-078/) · [79-85](https://elzero.org/javascript-bootcamp-assignments-lesson-from-079-to-085/) · [115-122](https://elzero.org/javascript-bootcamp-assignments-lesson-from-115-to-122/)
+
+**Read:** [Array methods](https://javascript.info/array-methods) · [Destructuring](https://javascript.info/destructuring-assignment) · javascript.info
+
+</td>
+</tr>
+</table>
+
+#### Task · Student data analysis
 
 ```js
 const students = [
   { id: 1, name: "Ahmed", age: 20, track: "frontend", grades: [85, 90, 78], active: true },
   { id: 2, name: "Sara", age: 21, track: "backend", grades: [92, 88, 95], active: true },
   { id: 3, name: "Omar", age: 19, track: "frontend", grades: [60, 45, 70], active: false },
-  // ...
+  // ...15 students total
 ];
 ```
 
-واكتب **من غير أي loop عادي** (`map`، و `filter`، و `reduce` بس):
+Using **only `map`, `filter`, `reduce`** (no plain loops):
 
-1. أسماء الطلبة الـ active بس
-2. كل طالب ومعاه متوسط درجاته (object جديد فيه `average`)
-3. عدد الطلبة في كل track: `{ frontend: 6, backend: 5, ... }` بـ `reduce`
-4. أعلى طالب في كل track
-5. Function بتاخد `{ name, track }` كـ parameter بـ destructuring وترجع جملة ترحيب
-6. ضيف طالب جديد **من غير ما تغيّر الـ array الأصلي** (spread)
+1. Names of active students
+2. Each student with an `average` field (new objects)
+3. Count per track `{ frontend: 6, backend: 5 }` with `reduce`
+4. Top student per track
+5. A greeting function that destructures `{ name, track }` in its parameters
+6. Add a student **without mutating** the array (spread)
 
-**التسليم:** على الداشبورد: لينك الـ Repo.
-
-### تحدي إضافي
-
-اكتب `myMap` و `myFilter` بنفسك: functions بتعمل نفس اللي `map` و `filter` بيعملوه، بس من غير ما تستخدمهم.
+> [!TIP]
+> **Bonus:** write your own `myMap` and `myFilter` without using the built-ins.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف الفرق بين `map` و `forEach` (واحدة بترجع array جديد والتانية لأ)
-- [ ] أقدر أكتب `reduce` من غير ما أبص على حاجة
-- [ ] أعرف إمتى أستخدم `obj.key` وإمتى `obj[key]`
-- [ ] أعرف إن الـ spread بيعمل **shallow copy** بس، وده معناه إيه
-- [ ] بقرا كود فيه destructuring ومش بستغربه
+- [ ] I know `map` vs `forEach`
+- [ ] I can write a `reduce` without looking
+- [ ] I know when to use `obj.key` vs `obj[key]`
+- [ ] I know spread makes a **shallow** copy, and what that means
+- [ ] Destructured code doesn't confuse me anymore
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** an arrow function with `{}` but no `return` inside `map` gives you an array of `undefined` · mutating the original object inside `map`. In React and Vue, not mutating is the law.
 
-- **`map` من غير `return`** في arrow function فيها `{}`. هترجعلك array كله `undefined`.
-- **إنك تعدّل في الـ object الأصلي جوا `map`.** المفروض ترجّع object جديد. ده هيبقى **قانون** في React و Vue.
+> [!NOTE]
+> **Mentor tip:** you'll write `map`, `filter`, `reduce`, destructuring, and spread **every day** in React and Vue. If this week isn't 100% clear, take two extra days.
 
-> **نصيحة منتور:** `map`، و `filter`، و `reduce`، والـ destructuring، والـ spread هتكتبهم **كل يوم** في React و Vue. لو الأسبوع ده مش واضح 100%، خد يومين زيادة، وده مش تأخير.
+<div align="right"><a href="#week-10">← Week 10</a> · <a href="#top">Top ↑</a> · <a href="#week-12">Week 12 →</a></div>
 
 ---
 
 <a id="week-12"></a>
 
-## الأسبوع 12: DOM و BOM و Local Storage
+## Week 12 · DOM, BOM & Local Storage
 
-**الهدف:** تخلي الصفحة تتفاعل: تضيف وتمسح عناصر، وترد على الضغطات، وتحفظ الداتا حتى لو المستخدم قفل المتصفح.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=AOabnOI4vOQ&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=86"><img src="https://img.youtube.com/vi/AOabnOI4vOQ/mqdefault.jpg" width="320" alt="Elzero JavaScript #086" /></a>
+<br /><sub><b>Elzero · JavaScript #086 → #114</b> · 3.5 h</sub>
 
-- **DOM:** يعني إيه، و Select Elements، و Get/Set Content و Attributes
-- Create و Append و Remove Elements
-- **Events:** `addEventListener`، و Form Validation، و `preventDefault`
-- `classList` و Styling
-- DOM Traversing
-- **BOM:** `setTimeout` و `setInterval`، و `location`، و `history`، و scroll
-- **Local Storage** و Session Storage
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** make pages interactive: add and remove elements, respond to clicks, and keep data after the browser closes.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [Elzero: Learn JavaScript من #086 لـ #114](https://www.youtube.com/watch?v=AOabnOI4vOQ&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=86) | 3.5 ساعة |
-| تكليفات | Elzero: [86-93](https://elzero.org/javascript-bootcamp-assignments-lesson-from-086-to-093/) · [94-101](https://elzero.org/javascript-bootcamp-assignments-lesson-from-094-to-101/) · [102-110](https://elzero.org/javascript-bootcamp-assignments-lesson-from-102-to-110/) · [111-114](https://elzero.org/javascript-bootcamp-assignments-lesson-from-111-to-114/) | |
-| تطبيق | Elzero: [Create Tabs](https://www.youtube.com/watch?v=pnLm4ga_P6k&list=PLDoPjvoNmBAycCXz5d9WvqlmykUIys5e8&index=27) · [Image Slider](https://www.youtube.com/watch?v=QmPXb-RHy5s&list=PLDoPjvoNmBAycCXz5d9WvqlmykUIys5e8&index=7) · [Countdown Timer](https://www.youtube.com/watch?v=eFsiOTJrrE8&list=PLDoPjvoNmBAycCXz5d9WvqlmykUIys5e8&index=16) | اختار واحد وابنيه |
-| مرجع | [Introduction to the DOM - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) | |
-| مرجع | [Window.localStorage - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) | |
+**Topics:** **DOM** (select, read/write content & attributes, create, append, remove) · **events** (`addEventListener`, form validation, `preventDefault`) · `classList` · DOM traversal · **BOM** (`setTimeout`, `setInterval`, `location`, `history`, scroll) · **Local** & Session Storage
 
-### التاسك: Expense Tracker
+**Build one:** Elzero [Tabs](https://www.youtube.com/watch?v=pnLm4ga_P6k&list=PLDoPjvoNmBAycCXz5d9WvqlmykUIys5e8&index=27) · [Image Slider](https://www.youtube.com/watch?v=QmPXb-RHy5s&list=PLDoPjvoNmBAycCXz5d9WvqlmykUIys5e8&index=7) · [Countdown Timer](https://www.youtube.com/watch?v=eFsiOTJrrE8&list=PLDoPjvoNmBAycCXz5d9WvqlmykUIys5e8&index=16)
 
-اعمل أبلكيشن لتسجيل المصاريف:
+**Practice:** Elzero [86-93](https://elzero.org/javascript-bootcamp-assignments-lesson-from-086-to-093/) · [94-101](https://elzero.org/javascript-bootcamp-assignments-lesson-from-094-to-101/) · [102-110](https://elzero.org/javascript-bootcamp-assignments-lesson-from-102-to-110/) · [111-114](https://elzero.org/javascript-bootcamp-assignments-lesson-from-111-to-114/)
 
-- فورم فيه: الوصف، والمبلغ، والنوع (أكل، مواصلات، كورسات، ...)، والتاريخ
-- **Validation:** مفيش حقل فاضي، والمبلغ رقم موجب. اعرض الأخطاء **جوا الصفحة** مش `alert`
-- كل مصروف يظهر في لستة، وجنبه زرار حذف
-- **إجمالي المصاريف** بيتحدث لوحده
-- Filter بالنوع (`select`)
-- **كل حاجة بتتحفظ في Local Storage**: اعمل refresh والداتا تفضل موجودة
+**Read:** [Intro to the DOM · MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) · [localStorage · MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live.
+</td>
+</tr>
+</table>
 
-### تحدي إضافي
+#### Task · Expense tracker
 
-- زرار **Edit** لكل مصروف
-- استخدم **Event Delegation**: event listener واحد على اللستة كلها بدل listener لكل زرار
+- A form: description, amount, category (food, transport, courses...), date
+- **Validation** with errors shown **in the page**, not `alert`
+- A list of expenses with a delete button each
+- A **total** that updates automatically
+- Filter by category (`select`)
+- **Everything persists in Local Storage.** Refresh and it's still there.
+
+> [!TIP]
+> **Bonus:** an **edit** button · **event delegation**: one listener on the list instead of one per button.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف الفرق بين `querySelector` و `querySelectorAll`، وإيه اللي بيرجعه كل واحد
-- [ ] أعرف الفرق بين `innerHTML` و `textContent`، وليه `innerHTML` ممكن تبقى خطر
-- [ ] أعرف يعني إيه Event Delegation، وليه مفيدة
-- [ ] أعرف إن Local Storage بيخزن **strings بس**، وإزاي أخزن array أو object
-- [ ] أعرف الفرق بين Local Storage و Session Storage
+- [ ] I know `querySelector` vs `querySelectorAll` and what each returns
+- [ ] I know `innerHTML` vs `textContent`, and why `innerHTML` can be dangerous
+- [ ] I know what event delegation is and why it helps
+- [ ] I know Local Storage only stores strings, and how to store arrays and objects
+- [ ] I know Local vs Session Storage
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** putting user input into `innerHTML` (someone types `<img src=x onerror=alert(1)>` and it runs) · treating the DOM as your data. Keep **an array in JS** as the source of truth and redraw from it. That's exactly what React and Vue do.
 
-- **إنك تحط داتا المستخدم جوا `innerHTML` من غير تفكير.** لو حد كتب `<img src=x onerror=alert(1)>` في الفورم، هيتنفذ. استخدم `textContent` أو `createElement`.
-- **إن الـ UI يبقى هو مصدر الداتا.** خلي عندك **array في JS** هي الأصل، وكل ما تتغير ارسم الـ UI منها من جديد. (ده بالظبط اللي React و Vue بيعملوه.)
+> [!NOTE]
+> **Mentor tip:** get "**data in an array, UI drawn from it**" this week and you already understand half of React and Vue.
 
-> **نصيحة منتور:** لو فهمت فكرة "**الداتا في array، والـ UI بيترسم منها**" الأسبوع ده، يبقى إنت فهمت 50% من React و Vue قبل ما تبدأهم.
+<div align="right"><a href="#week-11">← Week 11</a> · <a href="#top">Top ↑</a> · <a href="#week-13">Week 13 →</a></div>
 
 ---
 
 <a id="week-13"></a>
 
-## الأسبوع 13: Map و Set و Dates و Modules
+## Week 13 · Map, Set, Dates & Modules
 
-**الهدف:** تعرف أدوات JS الحديثة، وتقسم الكود بتاعك على ملفات بشكل منظم.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=lsirOGbdWYA&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=123"><img src="https://img.youtube.com/vi/lsirOGbdWYA/mqdefault.jpg" width="320" alt="Elzero JavaScript #123" /></a>
+<br /><sub><b>Elzero · JavaScript #123 → #133</b> · 1.5 h</sub>
 
-- **Set** و **Map** (وإمتى تستخدمهم بدل Array و Object)
-- WeakSet و WeakMap (مقدمة)
-- `Array.from`، و `some`، و `every`
-- Date و Time
-- Generators (مقدمة، مش هتستخدمها كتير)
-- **ES Modules:** `import` و `export`، و Named vs Default
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** use modern JS tools and organize your code across files.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [Elzero: Map و Set من #123 لـ #133](https://www.youtube.com/watch?v=lsirOGbdWYA&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=123) | 1.5 ساعة |
-| الأساسي | [Elzero: Date و Generators و Modules من #159 لـ #168](https://www.youtube.com/watch?v=G5Ql9pQFxJA&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=159) | 51 دقيقة |
-| تكليفات | Elzero: [123-133](https://elzero.org/javascript-bootcamp-assignments-lesson-from-123-to-133/) · [159-168](https://elzero.org/javascript-bootcamp-assignments-lesson-from-159-to-168/) | |
-| تطبيق | [Elzero: To-Do App With Local Storage](https://www.youtube.com/watch?v=ylsFXMHpFUQ&list=PLDoPjvoNmBAycCXz5d9WvqlmykUIys5e8&index=22) | ابنيه، وبعدين اعمل التاسك |
-| مرجع | [JavaScript modules - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) | |
+**Topics:** **Set** & **Map** (and when to use them over arrays and objects) · WeakSet & WeakMap · `Array.from`, `some`, `every` · dates & times · generators (intro) · **ES modules**: `import` / `export`, named vs default
 
-### التاسك: To-Do App متقسم Modules
+**Also watch:** [Elzero · Dates, generators & modules #159 → #168](https://www.youtube.com/watch?v=G5Ql9pQFxJA&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=159) · 51 min
 
-اعمل To-Do App، بس المرة دي **منظم**:
+**Build first:** [Elzero · To-Do App with Local Storage](https://www.youtube.com/watch?v=ylsFXMHpFUQ&list=PLDoPjvoNmBAycCXz5d9WvqlmykUIys5e8&index=22)
+
+**Practice:** Elzero [123-133](https://elzero.org/javascript-bootcamp-assignments-lesson-from-123-to-133/) · [159-168](https://elzero.org/javascript-bootcamp-assignments-lesson-from-159-to-168/)
+
+**Read:** [JavaScript modules · MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+
+</td>
+</tr>
+</table>
+
+#### Task · Modular to-do app
 
 ```text
 todo-app/
 ├── index.html
 ├── css/style.css
 └── js/
-    ├── main.js        ← نقطة البداية
-    ├── storage.js     ← save و load من Local Storage
-    ├── todos.js       ← add, remove, toggle, edit
-    └── ui.js          ← رسم اللستة في الصفحة
+    ├── main.js      → entry point
+    ├── storage.js   → save / load
+    ├── todos.js     → add, remove, toggle, edit
+    └── ui.js        → render the list
 ```
 
-- إضافة، وحذف، وتعليم كـ "خلصت"، وتعديل
-- Filters: الكل، و اللي لسه، و اللي خلص
-- عدّاد "فاضل X مهام"
-- تاريخ إنشاء كل مهمة بشكل مقروء ("من 3 ساعات" أو "13 نوفمبر")
+- Add, delete, complete, and edit tasks
+- Filters: all, active, done
+- An "X tasks left" counter
+- A readable creation date ("3 hours ago" or "Nov 13")
 - `<script type="module">`
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live.
-
-### تحدي إضافي
-
-- **Drag & Drop** لترتيب المهام (ابحث عن HTML Drag and Drop API)
-- اتفرج على [Regular Expressions من #134 لـ #146](https://www.youtube.com/watch?v=V-8vs_teVlo&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=134) (ساعة)، واعمل validation لعنوان المهمة
+> [!TIP]
+> **Bonus:** drag & drop to reorder (HTML Drag and Drop API) · watch [Regex #134 → #146](https://www.youtube.com/watch?v=V-8vs_teVlo&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=134) (1 h) and validate task titles.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف إمتى أستخدم `Set` (قيم مش متكررة)، وإمتى `Map` (keys من أي نوع)
-- [ ] أعرف الفرق بين `export default` و `export`
-- [ ] أعرف ليه الـ modules مش بتشتغل لو فتحت الملف بـ double click (لازم Live Server)
-- [ ] كل ملف في المشروع عنده مسؤولية واحدة واضحة
+- [ ] I know when to use `Set` (unique values) and `Map` (any-type keys)
+- [ ] I know `export default` vs `export`
+- [ ] I know why modules fail when opened by double-click
+- [ ] Each file in my project has one clear job
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** a 500-line `main.js` · circular imports (`a.js` imports `b.js`, which imports `a.js`).
 
-- **ملف `main.js` فيه 500 سطر.** لو الملف طويل لدرجة إنك بتعمل scroll كتير عشان تلاقي حاجة، قسّمه.
-- **Circular imports:** `a.js` بيعمل import من `b.js` و `b.js` بيعمل import من `a.js`. ده بيعمل مشاكل غريبة.
+> [!NOTE]
+> **Mentor tip:** how you split files today is how you'll split components tomorrow. Ask, "what is this file responsible for?"
 
-> **نصيحة منتور:** طريقة تقسيمك للملفات النهارده هي نفس طريقة تقسيم الـ components بكرة في React و Vue. فكّر: "الملف ده مسؤول عن إيه؟"
+<div align="right"><a href="#week-12">← Week 12</a> · <a href="#top">Top ↑</a> · <a href="#week-14">Week 14 →</a></div>
 
 ---
 
 <a id="week-14"></a>
 
-## الأسبوع 14: Async JavaScript و Fetch API
+## Week 14 · Async JavaScript & Fetch
 
-**الهدف:** تجيب داتا حقيقية من الإنترنت وتعرضها في صفحتك.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=VA_AROETZ58&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=169"><img src="https://img.youtube.com/vi/VA_AROETZ58/mqdefault.jpg" width="320" alt="Elzero JavaScript #169" /></a>
+<br /><sub><b>Elzero · JavaScript #169 → #188</b> · 2 h</sub>
 
-- JSON: Parse و Stringify
-- يعني إيه API
-- Synchronous vs Asynchronous
-- **Call Stack، و Web APIs، و Event Loop**
-- AJAX و XHR (للفهم بس)
-- Callback Hell
-- **Promises:** `then`، و `catch`، و `finally`
-- **Fetch API**
-- `Promise.all`، و `allSettled`، و `race`
-- **Async / Await**
-- Error Handling بـ `try / catch`
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** fetch real data from the internet and show it on your page.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [Elzero: Learn JavaScript من #169 لـ #188](https://www.youtube.com/watch?v=VA_AROETZ58&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=169) | ساعتين |
-| تكليفات | Elzero: [169-178](https://elzero.org/javascript-bootcamp-assignments-lesson-from-169-to-178/) · [179-188](https://elzero.org/javascript-bootcamp-assignments-lesson-from-179-to-188/) | |
-| تطبيق | Elzero: [Fetch GitHub Repositories](https://www.youtube.com/watch?v=uCKCSO8vkiU&list=PLDoPjvoNmBAycCXz5d9WvqlmykUIys5e8&index=6) · [Currency API](https://www.youtube.com/watch?v=wZ90BnBbRsg&list=PLDoPjvoNmBAycCXz5d9WvqlmykUIys5e8&index=4) | |
-| مرجع | [Using the Fetch API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) | |
-| مرجع | [Asynchronous JavaScript - MDN](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Async_JS) | |
-| مرجع | [Event loop - javascript.info](https://javascript.info/event-loop) | |
+**Topics:** JSON · what an API is · sync vs async · **call stack, Web APIs, event loop** · AJAX & XHR (for understanding) · callback hell · **Promises** · **Fetch** · `Promise.all` / `allSettled` / `race` · **async / await** · `try / catch`
 
-### التاسك: Weather App
+**Build one:** Elzero [GitHub Repos Fetcher](https://www.youtube.com/watch?v=uCKCSO8vkiU&list=PLDoPjvoNmBAycCXz5d9WvqlmykUIys5e8&index=6) · [Currency API](https://www.youtube.com/watch?v=wZ90BnBbRsg&list=PLDoPjvoNmBAycCXz5d9WvqlmykUIys5e8&index=4)
 
-اعمل أبلكيشن طقس باستخدام [Open-Meteo API](https://open-meteo.com/) (مجاني ومحتاجش API key):
+**Practice:** Elzero [169-178](https://elzero.org/javascript-bootcamp-assignments-lesson-from-169-to-178/) · [179-188](https://elzero.org/javascript-bootcamp-assignments-lesson-from-179-to-188/)
 
-- Input تكتب فيه اسم مدينة، والأبلكيشن يجيب الإحداثيات من الـ Geocoding API بتاعهم، وبعدين الطقس
-- اعرض: درجة الحرارة الحالية، والحالة، والرطوبة، والرياح، وتوقعات الـ 7 أيام الجاية
-- **3 حالات لازم تبقى واضحة:** Loading (spinner)، و Error (مدينة مش موجودة أو النت فاصل)، و Success
-- `async / await` و `try / catch` (مفيش `.then` الأسبوع ده)
-- آخر مدينة دورت عليها تتحفظ في Local Storage وتظهر أول ما تفتح
+**Read:** [Using Fetch · MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) · [Async JS · MDN](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Async_JS) · [Event loop · javascript.info](https://javascript.info/event-loop)
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live.
+</td>
+</tr>
+</table>
 
-### تحدي إضافي
+#### Task · Weather app
 
-- زرار "**موقعي الحالي**" باستخدام `navigator.geolocation`
-- **Debounce** للـ input: متبعتش request مع كل حرف، استنى المستخدم يبطّل كتابة 500ms
+Use [Open-Meteo](https://open-meteo.com/) (free, no API key):
+
+- Type a city → geocode it → fetch the weather
+- Current temperature, conditions, humidity, wind, and a 7-day forecast
+- **Three clear states:** loading (spinner), error (city not found / offline), success
+- `async / await` + `try / catch` only, no `.then`
+- Remember the last city in Local Storage
+
+> [!TIP]
+> **Bonus:** a "**my location**" button with `navigator.geolocation` · **debounce** the input (wait 500 ms after typing stops).
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أقدر أشرح الـ Event Loop بالرسم لحد مش فاهمه
-- [ ] أعرف ليه `console.log` اللي بعد `setTimeout(fn, 0)` بيطبع الأول
-- [ ] أعرف إن `fetch` **مش** بيرمي error لو الـ status كان 404 أو 500، وإزاي أتعامل مع ده (`response.ok`)
-- [ ] أعرف الفرق بين `Promise.all` و `Promise.allSettled`
-- [ ] أقدر أفتح تاب Network وأشوف الـ request والـ response بتاعه
+- [ ] I can draw the event loop for someone who doesn't get it
+- [ ] I know why code after `setTimeout(fn, 0)` runs first
+- [ ] I know `fetch` **doesn't** throw on 404 or 500, and how to check `response.ok`
+- [ ] I know `Promise.all` vs `Promise.allSettled`
+- [ ] I can inspect requests and responses in the Network tab
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** a missing `await`, so you get `Promise {<pending>}` · no error handling (networks fail, APIs go down, users typo) · no loading state, so users click 10 times.
 
-- **إنك تنسى `await`.** وتلاقي `Promise {<pending>}` بدل الداتا.
-- **إنك متتعاملش مع الـ error.** النت هيفصل، والـ API هيقع، والمستخدم هيكتب غلط. الأبلكيشن لازم ميقعش.
-- **إنك متعرضش Loading.** المستخدم بيدوس على الزرار ومفيش حاجة بتحصل لمدة ثانيتين، فهيدوس 10 مرات.
+> [!NOTE]
+> **Mentor tip:** async trips up everyone. Watch the event loop videos twice and draw it on paper. It clicks.
 
-> **نصيحة منتور:** Async هو أكتر موضوع بيوقّع الناس في JS. لو حاسس إنك مش فاهم، ده طبيعي جدًا. اتفرج على فيديوهات الـ Event Loop مرتين، وارسمه على ورقة. هيوضح.
+<div align="right"><a href="#week-13">← Week 13</a> · <a href="#top">Top ↑</a> · <a href="#week-15">Week 15 →</a></div>
 
 ---
 
 <a id="week-15"></a>
 
-## الأسبوع 15: إزاي JavaScript شغالة من جوا
+## Week 15 · How JavaScript Works Inside
 
-**الهدف:** تفهم الحاجات اللي "بتحصل من ورا الستارة": Closures، و `this`، و Prototypes، و Classes. ودي اللي بتتسأل في كل Interview.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=uv5OULDiCXg&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=147"><img src="https://img.youtube.com/vi/uv5OULDiCXg/mqdefault.jpg" width="320" alt="Elzero JavaScript #147" /></a>
+<br /><sub><b>Elzero · JavaScript OOP #147 → #158</b> · 1 h</sub>
 
-- **OOP:** Constructor Functions و **Classes**
-- Static، و Inheritance (`extends`، و `super`)، و Encapsulation (`#private`)
-- **Prototypes** و Prototype Chain
-- Object Descriptors
-- **Closures**
-- **`this`** بالتفصيل: في function عادية، وفي arrow function، وفي method، و `call` و `apply` و `bind`
-- Hoisting
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** understand what happens behind the curtain: closures, `this`, prototypes, classes. The stuff every interview asks.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [Elzero: OOP من #147 لـ #158](https://www.youtube.com/watch?v=uv5OULDiCXg&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=147) | ساعة |
-| تكليفات | Elzero: [147-158](https://elzero.org/javascript-bootcamp-assignments-lesson-from-147-to-158/) | |
-| الأساسي | [Closures - javascript.info](https://javascript.info/closure) | إنجليزي، **لازم تقراه** |
-| مرجع | [Closures - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) · [this - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) | |
-| مرجع | [Inheritance and the prototype chain - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain) | |
-| تطبيق | [Elzero: Quiz Application](https://www.youtube.com/watch?v=T5QyLcmcMJ4&list=PLDoPjvoNmBAycCXz5d9WvqlmykUIys5e8&index=5) | |
+**Topics:** constructor functions & **classes** · static, inheritance (`extends`, `super`), private fields (`#`) · **prototype chain** · property descriptors · **closures** · **`this`** in every context, `call` / `apply` / `bind` · hoisting
 
-### التاسك: Quiz App بالـ Classes
+**Must read:** **[Closures · javascript.info](https://javascript.info/closure)**
 
-اعمل أبلكيشن Quiz عن JavaScript (أسئلة إنت كاتبها عن اللي اتعلمته):
+**Build first:** [Elzero · Quiz App](https://www.youtube.com/watch?v=T5QyLcmcMJ4&list=PLDoPjvoNmBAycCXz5d9WvqlmykUIys5e8&index=5)
 
-- `class Question` (السؤال، والاختيارات، والإجابة الصح، و method `isCorrect(answer)`)
-- `class Quiz` (لستة الأسئلة، والسؤال الحالي، والسكور، و methods: `next()`، و `answer()`، و `isFinished()`)
-- `class QuizUI` مسؤول عن الرسم بس
-- **Timer** لكل سؤال (15 ثانية) معمول بـ **closure**
-- شاشة نتيجة في الآخر فيها الإجابات الصح والغلط
-- أعلى سكور يتحفظ في Local Storage
+**Practice:** Elzero [147-158](https://elzero.org/javascript-bootcamp-assignments-lesson-from-147-to-158/)
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live.
+**Read:** [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) · [this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) · [Prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain) · MDN
 
-### تحدي إضافي
+</td>
+</tr>
+</table>
 
-اعمل function اسمها `createCounter()` بترجع object فيه `increment`، و `decrement`، و `getValue`، والـ count نفسه **مستحيل** يتوصله من برا. (ده Closure، وده سؤال Interview مشهور.)
+#### Task · Quiz app with classes
+
+A JavaScript quiz with questions you write:
+
+- `class Question`: text, choices, answer, `isCorrect(answer)`
+- `class Quiz`: questions, current index, score, `next()`, `answer()`, `isFinished()`
+- `class QuizUI`: rendering only
+- A 15-second **timer** per question, built with a **closure**
+- A results screen showing right and wrong answers
+- High score saved in Local Storage
+
+> [!TIP]
+> **Bonus:** `createCounter()` returning `increment`, `decrement`, `getValue`, where the count is **impossible** to reach from outside. A classic interview question.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أقدر أشرح Closure بمثال من دماغي
-- [ ] أعرف `this` بتشاور على إيه في كل حالة من الأربع حالات
-- [ ] أعرف ليه الـ arrow functions مش ليها `this` خاص بيها
-- [ ] أعرف إن الـ `class` في JS هي syntax أحلى للـ prototypes
-- [ ] أعرف يعني إيه Hoisting، والفرق بين `var` و `let` فيه
+- [ ] I can explain a closure with my own example
+- [ ] I know what `this` points to in each of the four cases
+- [ ] I know why arrow functions have no `this` of their own
+- [ ] I know `class` is nicer syntax over prototypes
+- [ ] I know hoisting and how `var` and `let` differ there
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** memorizing the closure definition without being able to write one · god classes. One class, one job.
 
-- **إنك تحفظ تعريف الـ Closure من غير ما تفهمه.** لو مش قادر تكتب مثال من دماغك، يبقى لسه.
-- **Class فيها كل حاجة.** نفس قاعدة الـ functions: كل class مسؤولية واحدة.
+> [!NOTE]
+> **Mentor tip:** every frontend interview asks about closures, `this`, and the event loop. Come back to this week before every interview.
 
-> **نصيحة منتور:** الأسبوع ده مش هيبان مهم دلوقتي، بس كل Technical Interview لـ Frontend هيسألك في Closures و `this` و Event Loop. ذاكره كويس وارجعله تاني قبل أي interview.
+<div align="right"><a href="#week-14">← Week 14</a> · <a href="#top">Top ↑</a> · <a href="#week-16">Week 16 →</a></div>
 
 ---
 
 <a id="week-16"></a>
 
-## الأسبوع 16: npm و Vite و Git Branching
+## Week 16 · npm, Vite & Git Branching
 
-**الهدف:** تشتغل زي ما الشركات بتشتغل بالظبط: مشروع Vite، و packages من npm، و Branches، و Pull Requests.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=n43bagVuJPU&list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF&index=10"><img src="https://img.youtube.com/vi/n43bagVuJPU/mqdefault.jpg" width="320" alt="Elzero Git #10" /></a>
+<br /><sub><b>Elzero · Git #07-08 + #10 → #20</b> · 1.5 h</sub>
 
-**الأدوات:**
-- Node.js و npm: يعني إيه package، و `package.json`، و `dependencies` vs `devDependencies`، و `npm scripts`
-- ليه محتاجين Bundler، وإيه هو **Vite**
-- `npm create vite@latest`، و `npm run dev`، و `npm run build`
-- Environment Variables في Vite (`import.meta.env`)
-- **ESLint** و **Prettier**
+</td>
+<td valign="top">
 
-**Git:**
-- Configurations و SSH Keys
-- **Branching و Merging**
-- **Pull Requests**
-- Stash، و Restore، و Reset
-- `.gitignore` (ومتنساش `node_modules`)
-- Tags و Releases
+**Goal:** work the way companies do: a Vite project, npm packages, branches, and pull requests.
 
-### المصادر
+**Topics:** Node & npm, `package.json`, dependencies vs devDependencies, scripts · why bundlers exist · **Vite** (`create`, `dev`, `build`, `import.meta.env`) · ESLint & Prettier · Git config & SSH keys · **branching & merging** · **pull requests** · stash, restore, reset · `.gitignore` · tags & releases
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [Elzero: Learn Git and GitHub #07 و #08](https://www.youtube.com/watch?v=NWnWIpoFVyU&list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF&index=7)، و[من #10 لـ #20](https://www.youtube.com/watch?v=n43bagVuJPU&list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF&index=10) | 1.5 ساعة |
-| تدريب | [Learn Git Branching](https://learngitbranching.js.org/) | تفاعلي، **أحسن طريقة تفهم بيها الـ branches** |
-| الأساسي | [Vite: Getting Started](https://vite.dev/guide/) | إنجليزي، قصير |
-| مرجع | [About npm](https://docs.npmjs.com/about-npm) | |
-| مرجع | [Pro Git Book](https://git-scm.com/book/en/v2) | مرجع كامل ومجاني |
+**Play:** **[Learn Git Branching](https://learngitbranching.js.org/)** (the best way to *see* branches)
 
-### التاسك: نقل الـ Weather App لـ Vite + Pull Requests
+**Read:** [Vite guide](https://vite.dev/guide/) · [About npm](https://docs.npmjs.com/about-npm) · [Pro Git book](https://git-scm.com/book/en/v2)
 
-1. اعمل مشروع Vite جديد (Vanilla JS) وانقل فيه الـ Weather App بتاع الأسبوع 14
-2. قسّمه modules زي ما عملت في الأسبوع 13
-3. سطّب package من npm واستخدمها (مثلًا [`dayjs`](https://www.npmjs.com/package/dayjs) لتنسيق التواريخ)
-4. ظبّط ESLint و Prettier
-5. **الشغل كله بـ branches:**
-   - `main` هو اللي شغال دايمًا
-   - كل feature في branch: `feature/vite-setup`، و `feature/forecast-chart`، ...
-   - اعمل **Pull Request** لكل branch، واكتب فيه وصف لإنت عملت إيه، واعمله merge
-6. Deploy على Vercel أو Netlify، وخلي الـ deploy يحصل **لوحده** مع كل push على `main`
+</td>
+</tr>
+</table>
 
-**التسليم:** على الداشبورد: لينك الـ Repo (لازم يبان فيه 3 Pull Requests على الأقل) + لينك الـ Live.
+#### Task · Move the weather app to Vite + PRs
 
-### تحدي إضافي
+1. New Vite project (vanilla JS); move your week 14 weather app in
+2. Split it into modules
+3. Install and use an npm package (e.g. [`dayjs`](https://www.npmjs.com/package/dayjs) for dates)
+4. Set up ESLint and Prettier
+5. **All work on branches** (`feature/vite-setup`, `feature/forecast`...), each merged through a **pull request** with a description
+6. Auto-deploy to Vercel or Netlify on every push to `main`
 
-- خلّص المستويات الـ Main كلها في Learn Git Branching
-- اعمل **merge conflict** بإيدك (عدّل نفس السطر في branchين) وحلّه
+**Submit** the repo (3+ PRs visible) and the live link.
+
+> [!TIP]
+> **Bonus:** finish the Main levels of Learn Git Branching · create a merge conflict on purpose and resolve it.
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف `package.json` فيه إيه، والفرق بين `dependencies` و `devDependencies`
-- [ ] أعرف ليه `node_modules` مش بيترفع على GitHub، وإزاي حد تاني يشغّل المشروع
-- [ ] أعرف الفرق بين `npm run dev` و `npm run build`
-- [ ] أقدر أعمل branch، وأشتغل عليه، وأعمل PR، وأعمل merge
-- [ ] أقدر أحل merge conflict بسيط
+- [ ] I know what's in `package.json`
+- [ ] I know why `node_modules` isn't committed, and how others install deps
+- [ ] I know `npm run dev` vs `npm run build`
+- [ ] I can branch, work, open a PR, and merge
+- [ ] I can resolve a simple merge conflict
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** committing `node_modules` · API keys in code (use `.env` and `.gitignore` it; and remember **nothing in frontend code is truly secret**) · working directly on `main`.
 
-- **إنك ترفع `node_modules`.** أول سطر في `.gitignore`.
-- **إنك ترفع API keys في الكود.** أي حاجة سرية تبقى في `.env`، و `.env` في `.gitignore`. (ومعلومة مهمة: أي حاجة في الـ Frontend، حتى لو في `.env`، **المستخدم يقدر يشوفها**. فمفيش Secret حقيقي في الـ Frontend.)
-- **إنك تشتغل على `main` على طول.** حتى لو لوحدك، اتعود على الـ branches.
+> [!NOTE]
+> **Mentor tip:** day one at any company: "here's the repo, make a branch, open a PR." People who can do that on day one stand out.
 
-> **نصيحة منتور:** أول يوم في أي شركة، هيدّوك repo وهيقولولك "اعمل branch وابعت PR". اللي بيعرف يعمل ده من أول يوم بيبان مختلف جدًا.
+<div align="right"><a href="#week-15">← Week 15</a> · <a href="#top">Top ↑</a> · <a href="#week-17">Week 17 →</a></div>
 
 ---
 
 <a id="week-17"></a>
 
-## الأسبوع 17: TypeScript
+## Week 17 · TypeScript
 
-**الهدف:** تكتب JavaScript بـ Types، فتمسك الأخطاء وإنت بتكتب الكود قبل ما المستخدم يمسكها.
+<table>
+<tr>
+<td width="340" valign="top">
 
-### المواضيع
+<a href="https://www.youtube.com/watch?v=yUndnE-2osg&list=PLDoPjvoNmBAy532K9M_fjiAmrJ0gkCyLJ&index=1"><img src="https://img.youtube.com/vi/yUndnE-2osg/mqdefault.jpg" width="320" alt="Elzero TypeScript #01" /></a>
+<br /><sub><b>Elzero · TypeScript #01 → #38</b> · 3.5 h</sub>
 
-- يعني إيه TypeScript، وليه الشركات بتستخدمها
-- `tsconfig.json` و Strict Mode
-- Type Annotations: primitives، و arrays، و functions، و objects
-- `any` (وليه منستخدمهاش) و `unknown`
-- **Type Aliases** و **Interfaces** (والفرق بينهم)
-- Literal Types و **Union** و Intersection
-- Tuples، و Enums، و `void`، و `never`
-- Type Assertions
-- Classes في TS: Access Modifiers، و Abstract Classes
-- **Generics**
+</td>
+<td valign="top">
 
-### المصادر
+**Goal:** write JavaScript with types, so mistakes get caught as you type, not by your users.
 
-| النوع | المصدر | المدة |
-| :--- | :--- | :---: |
-| الأساسي | [Elzero: Learn TypeScript من #01 لـ #38](https://www.youtube.com/watch?v=yUndnE-2osg&list=PLDoPjvoNmBAy532K9M_fjiAmrJ0gkCyLJ&index=1) | 3.5 ساعة |
-| تكليفات | Elzero: [01-11](https://elzero.org/typescript-assignments-lessons-from-1-to-11/) · [12-21](https://elzero.org/typescript-assignments-lessons-from-12-to-21/) · [22-31](https://elzero.org/typescript-assignments-lessons-from-22-to-31/) · [32-38](https://elzero.org/typescript-assignments-lessons-from-32-to-38/) | |
-| البديل | [Beginners TypeScript - Total TypeScript](https://www.totaltypescript.com/tutorials/beginners-typescript) | إنجليزي، تمارين تفاعلية مجانية |
-| مرجع | [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html) | |
-| مرجع | [TypeScript Playground](https://www.typescriptlang.org/play) | جرّب فيه أي حاجة من غير ما تعمل مشروع |
+**Topics:** why TS · `tsconfig` & strict mode · annotations · `any` vs `unknown` · **type aliases & interfaces** · literal, **union** & intersection types · tuples, enums, `void`, `never` · assertions · TS classes & access modifiers · **generics**
 
-> **ملاحظة:** Elzero بيستخدم `tsc` مباشرة. ده كويس للتعلم، بس في الشغل الحقيقي Vite بيتعامل مع TS لوحده (`npm create vite@latest` واختار **Vanilla + TypeScript**).
+**Practice:** Elzero [01-11](https://elzero.org/typescript-assignments-lessons-from-1-to-11/) · [12-21](https://elzero.org/typescript-assignments-lessons-from-12-to-21/) · [22-31](https://elzero.org/typescript-assignments-lessons-from-22-to-31/) · [32-38](https://elzero.org/typescript-assignments-lessons-from-32-to-38/) · [Total TypeScript beginner exercises](https://www.totaltypescript.com/tutorials/beginners-typescript)
 
-### التاسك: تحويل المشروع لـ TypeScript
+**Read:** [TS Handbook](https://www.typescriptlang.org/docs/handbook/intro.html) · [TS Playground](https://www.typescriptlang.org/play)
 
-خد الـ Weather App (نسخة Vite من الأسبوع 16)، وحوّله لـ TypeScript:
+</td>
+</tr>
+</table>
 
-- `strict: true` في `tsconfig.json`
-- **مفيش ولا `any`** في المشروع كله
-- اعمل `interface` أو `type` لكل response جاي من الـ API
-- كل function ليها types للـ parameters والـ return
-- Generic function واحدة على الأقل (مثلًا `fetchJson<T>(url: string): Promise<T>`)
-- `npm run build` يعدّي من غير ولا error
+> [!NOTE]
+> Elzero uses `tsc` directly, which is great for learning. In real projects Vite handles TS for you: `npm create vite@latest` → **Vanilla + TypeScript**.
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live.
+#### Task · Weather app in TypeScript
 
-### تحدي إضافي
+- `strict: true`
+- **Zero `any`** in the whole project
+- An `interface` or `type` for every API response
+- Typed parameters and return values on every function
+- At least one generic, e.g. `fetchJson<T>(url: string): Promise<T>`
+- `npm run build` passes with no errors
 
-استخدم **Discriminated Union** للـ state بتاع الصفحة:
-
-```ts
-type State =
-  | { status: "idle" }
-  | { status: "loading" }
-  | { status: "success"; data: Weather }
-  | { status: "error"; message: string };
-```
-
-وشوف إزاي TS بيمنعك تقرا `data` وإنت في حالة `loading`.
+> [!TIP]
+> **Bonus:** model page state as a **discriminated union** and watch TS stop you from reading `data` while `loading`.
+> ```ts
+> type State =
+>   | { status: "loading" }
+>   | { status: "success"; data: Weather }
+>   | { status: "error"; message: string };
+> ```
 
 <details>
-<summary><b>Checklist آخر الأسبوع</b></summary>
+<summary><b>Exit checklist</b></summary>
 
 <br />
 
-- [ ] أعرف الفرق بين `type` و `interface`، وإمتى أستخدم كل واحد
-- [ ] أعرف الفرق بين `any` و `unknown`
-- [ ] أقدر أكتب Generic function بسيطة
-- [ ] أعرف إن TypeScript **بتختفي** في الـ build، ومش بتعمل أي حماية وقت التشغيل
-- [ ] بقرا الـ error بتاع TS وأفهمه
+- [ ] I know `type` vs `interface`
+- [ ] I know `any` vs `unknown`
+- [ ] I can write a simple generic function
+- [ ] I know TS disappears at build time and gives no runtime safety
+- [ ] I can read a TS error and understand it
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** `as any` to silence errors (that's unplugging the smoke alarm) · annotating what TS already infers (`const name: string = "Ahmed"`).
 
-- **`as any` عشان الـ error يسكت.** إنت كده بتقفل الـ smoke detector عشان صوته عالي.
-- **إنك تكتب types لكل حاجة حتى اللي TS عارفها لوحده.** `const name: string = "Ahmed"` مالهاش لازمة. سيب الـ **Type Inference** يشتغل.
+> [!NOTE]
+> **Mentor tip:** week one with TS feels slow and nagging. Two weeks later you won't want to write JS without it.
 
-> **نصيحة منتور:** أول أسبوع مع TypeScript هتحس إنها بتبطّأك وبتطلعلك errors على الفاضي. بعد أسبوعين هتحس إنك مش قادر تكتب من غيرها. اصبر عليها.
+<div align="right"><a href="#week-16">← Week 16</a> · <a href="#top">Top ↑</a> · <a href="#week-18">Week 18 →</a></div>
 
 ---
 
 <a id="week-18"></a>
 
-## الأسبوع 18: مشروع المستوى التاني
+## Week 18 · Project 2: API App in TypeScript
 
-**الهدف:** تبني أبلكيشن كامل بيكلم API حقيقي، بـ TypeScript و Vite، لوحدك.
+<div align="center">
 
-### المشروع: اختار فكرة
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:CA8A04,100:EAB308&height=90&text=Milestone%20Project%202&fontSize=34&fontColor=ffffff&animation=twinkling" width="100%" alt="Milestone Project 2" />
 
-| الفكرة | الـ API | الصعوبة |
-| :--- | :--- | :---: |
-| **Movies Explorer:** بحث، وتفاصيل فيلم، وقائمة مفضلة | [TMDB API](https://www.themoviedb.org/documentation/api) (محتاج API key مجاني) | متوسط |
-| **Countries Explorer:** كل الدول، وبحث، و Filter بالقارة، وصفحة تفاصيل فيها الدول اللي جنبها | [REST Countries](https://restcountries.com/) | متوسط |
-| **Mini Store:** منتجات، وبحث، و Filter، و Cart بيتحفظ | [DummyJSON](https://dummyjson.com/) | متوسط+ |
-| **GitHub Profile Finder:** بروفايل وrepos وترتيبها وأكتر لغات مستخدمة | [GitHub REST API](https://docs.github.com/en/rest) | متوسط+ |
-| **فكرتك إنت** | أي API عام | اتكلم مع المنتور |
+</div>
 
-### المتطلبات
+**Goal:** build a complete app on a real API, with TypeScript and Vite, on your own.
 
-| المتطلب | التفاصيل |
-| :--- | :--- |
-| **التقنيات** | Vite + TypeScript (`strict`) + CSS أو Tailwind. **مفيش frameworks** |
-| **الصفحات** | صفحة رئيسية فيها لستة + صفحة أو Modal للتفاصيل |
-| **البحث والفلترة** | بحث بـ debounce + filter واحد على الأقل |
-| **الحالات** | Loading و Error و Empty State ("مفيش نتايج") واضحين |
-| **Local Storage** | المفضلة أو الـ Cart أو آخر بحث |
-| **التنظيم** | Modules متقسمة صح (`api/`، و `ui/`، و `types/`، و `utils/`) |
-| **Responsive** | شغال كويس على الموبايل |
-| **Git** | Branches و Pull Requests، ومفيش شغل مباشر على `main` |
-| **Deploy** | Vercel أو Netlify، والـ API key (لو فيه) في Environment Variables |
-| **README** | صورة، ولينك Live، والتقنيات، وإزاي تشغّله local، وإيه اللي اتعلمته |
+| Idea | API | Level |
+| :-- | :-- | :--: |
+| **Movies Explorer**: search, details, favorites | [TMDB](https://www.themoviedb.org/documentation/api) (free key) | ●●○ |
+| **Countries Explorer**: search, filter by region, neighbors | [REST Countries](https://restcountries.com/) | ●●○ |
+| **Mini Store**: products, search, filters, cart | [DummyJSON](https://dummyjson.com/) | ●●● |
+| **GitHub Profile Finder**: profile, repos, top languages | [GitHub REST API](https://docs.github.com/en/rest) | ●●● |
+| **Your idea** | Any public API | Talk to your mentor |
 
-**التسليم:** على الداشبورد: لينك الـ Repo + لينك الـ Live.
+| Requirement | Details |
+| :-- | :-- |
+| **Stack** | Vite + TypeScript (`strict`) + CSS or Tailwind. **No frameworks.** |
+| **Pages** | A list view + a details page or modal |
+| **Search & filter** | Debounced search + at least one filter |
+| **States** | Loading, error, and empty ("no results") |
+| **Persistence** | Favorites, cart, or last search in Local Storage |
+| **Structure** | `api/`, `ui/`, `types/`, `utils/` |
+| **Responsive** | Works well on phones |
+| **Git** | Branches + PRs, no direct commits to `main` |
+| **Deploy** | Vercel or Netlify; API keys in environment variables |
+| **README** | Screenshot, live link, stack, how to run, what you learned |
 
-### تحدي إضافي
-
-- **Pagination** أو **Infinite Scroll**
-- **URL State:** البحث والفلتر يتحفظوا في الـ URL (`?q=egypt&region=africa`)، فلو بعت اللينك لحد يشوف نفس النتايج
-- **Dark Mode** بيتحفظ
+> [!TIP]
+> **Bonus:** pagination or infinite scroll · **URL state** (`?q=egypt&region=africa`) so shared links show the same results · persistent dark mode.
 
 <details>
-<summary><b>Checklist آخر المستوى التاني</b></summary>
+<summary><b>Level 2 exit checklist</b></summary>
 
 <br />
 
-- [ ] أقدر أبني أبلكيشن تفاعلي كامل بـ JS من غير framework
-- [ ] بفهم Async و Promises، ومش بتلخبط فيهم
-- [ ] بقسّم الكود modules بشكل منطقي
-- [ ] بكتب TypeScript ومش بستخدم `any`
-- [ ] بشتغل بـ Git Branches و Pull Requests بشكل طبيعي
-- [ ] لما يحصل bug، بعرف أفتح DevTools (Console و Network و Sources) وألاقيه
+- [ ] I can build a full interactive app in plain JS
+- [ ] Async and Promises don't confuse me
+- [ ] I split code into modules logically
+- [ ] I write TypeScript without `any`
+- [ ] Branches and PRs feel normal
+- [ ] When a bug appears, I find it with DevTools (Console, Network, Sources)
 
 </details>
 
-### أخطاء شائعة
+> [!WARNING]
+> **Pitfalls:** an idea too big to finish (small and complete beats big and half-broken) · building all the UI first. Get the API calls working in the Console, then build the UI.
 
-- **إنك تختار فكرة كبيرة جدًا.** أبلكيشن صغير وكامل وشغال أحسن 100 مرة من أبلكيشن كبير ونصه مش شغال.
-- **إنك تكتب كل الكود في الآخر.** اعمل الـ API calls الأول واتأكد إنها شغالة في الـ Console، وبعدين الـ UI.
+> [!NOTE]
+> **Mentor tip:** you now know more JavaScript than many people who've used React for a year, because most people jump straight to a framework.
 
-> **نصيحة منتور:** إنت دلوقتي عارف JavaScript أكتر من ناس كتير بتشتغل React بقالها سنة. ده مش كلام تحفيز، ده لأن أغلب الناس بتقفز على الـ framework على طول. الأساس اللي بنيته ده هو اللي هيفرق معاك في كل حاجة جاية.
+<div align="right"><a href="#week-17">← Week 17</a> · <a href="#top">Top ↑</a></div>
 
 ---
 
-## خلصت المستوى التاني؟
+<div align="center">
 
-إنت دلوقتي بتكتب JavaScript و TypeScript وبتبني أبلكيشنز حقيقية. بس أكيد لاحظت إن كل ما المشروع يكبر، تحديث الـ UI بإيدك مع كل تغيير في الداتا بيبقى متعب وملخبط.
+### Level 2 done.
 
-ده بالظبط المشكلة اللي React و Vue اتعملوا عشان يحلوها.
+You've noticed: as apps grow, updating the UI by hand every time data changes gets painful. That's exactly what React and Vue solve.
 
-**اختار طريقك:**
+**Pick your path** ([not sure?](README.md#levels))
 
-| [**React**](03-react.md) | [**Vue**](03-vue.md) |
-| :---: | :---: |
-| React · Router · Redux Toolkit / Zustand · TanStack Query · Testing · **Next.js** | Vue 3 · Vue Router · Pinia · TanStack Query · Testing · **Nuxt** |
+<a href="03-react.md"><img src="https://img.shields.io/badge/React_→_Next.js-0891B2?style=for-the-badge&logo=react&logoColor=white" alt="React track" /></a>
+<a href="03-vue.md"><img src="https://img.shields.io/badge/Vue_→_Nuxt-059669?style=for-the-badge&logo=vuedotjs&logoColor=white" alt="Vue track" /></a>
 
-مش عارف تختار؟ ارجع لـ [المقارنة في الصفحة الرئيسية](README.md#react-ولا-vue).
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:EAB308,100:CA8A04&height=110&section=footer" width="100%" alt="" />
 
 </div>
