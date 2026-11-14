@@ -132,7 +132,7 @@ timeline
 <tr>
 <td width="25%" valign="top">
 
-<a href="01-beginner.md"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:EA580C,100:F59E0B&height=70&text=Beginner&fontSize=26&fontColor=ffffff" width="100%" alt="Beginner" /></a>
+<a href="01-beginner.md"><img src="https://img.shields.io/badge/Beginner-EA580C?style=for-the-badge&logo=html5&logoColor=white" height="34" alt="Beginner" /></a>
 
 **Weeks 1-8** · ~23 h video
 
@@ -143,7 +143,7 @@ HTML · Git · CSS · Flexbox · Grid · Responsive · Tailwind
 </td>
 <td width="25%" valign="top">
 
-<a href="02-intermediate.md"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:CA8A04,100:EAB308&height=70&text=Intermediate&fontSize=26&fontColor=ffffff" width="100%" alt="Intermediate" /></a>
+<a href="02-intermediate.md"><img src="https://img.shields.io/badge/Intermediate-CA8A04?style=for-the-badge&logo=javascript&logoColor=white" height="34" alt="Intermediate" /></a>
 
 **Weeks 9-18** · ~23 h video
 
@@ -154,7 +154,7 @@ JavaScript · DOM · Async · JS internals · npm · Vite · TypeScript
 </td>
 <td width="25%" valign="top">
 
-<a href="03-react.md"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:0891B2,100:22D3EE&height=70&text=React&fontSize=26&fontColor=ffffff" width="100%" alt="React" /></a>
+<a href="03-react.md"><img src="https://img.shields.io/badge/React-0891B2?style=for-the-badge&logo=react&logoColor=white" height="34" alt="React" /></a>
 
 **Weeks 19-30** · ~29 h video
 
@@ -165,7 +165,7 @@ React · Router · Redux Toolkit · Zustand · TanStack Query · Vitest · Next.
 </td>
 <td width="25%" valign="top">
 
-<a href="03-vue.md"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:059669,100:34D399&height=70&text=Vue&fontSize=26&fontColor=ffffff" width="100%" alt="Vue" /></a>
+<a href="03-vue.md"><img src="https://img.shields.io/badge/Vue-059669?style=for-the-badge&logo=vuedotjs&logoColor=white" height="34" alt="Vue" /></a>
 
 **Weeks 19-30** · ~15 h video
 
