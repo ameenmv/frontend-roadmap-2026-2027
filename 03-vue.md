@@ -58,10 +58,13 @@ Vue is known as the easiest framework to start with: templates look like the HTM
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=Vne-X1taBfI&list=PLzjSlWqF2aTdehPN-zFc1TKcH8eNVn1JV&index=1"><img src="https://img.youtube.com/vi/Vne-X1taBfI/mqdefault.jpg" width="320" alt="Vuejs Wisdom Vue 3 lesson 1" /></a>
-<br /><sub><b>Vuejs Wisdom · Vue 3, 1 → 15</b> · 2 h</sub>
+<br /><b>Vuejs Wisdom · Vue 3, 1 → 15</b>
+<br />2 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Vuejs Wisdom · Vue 3, 1 → 15](https://www.youtube.com/watch?v=Vne-X1taBfI&list=PLzjSlWqF2aTdehPN-zFc1TKcH8eNVn1JV&index=1) · **2 h**
 
 **Goal:** understand how Vue binds data to HTML, and use the core directives.
 
@@ -123,10 +126,13 @@ Rebuild your week 8 landing page in Vue:
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=scY-dpK_Sl8&list=PLzjSlWqF2aTcUoouMnE9BTCvSxfrmcaQC&index=1"><img src="https://img.youtube.com/vi/scY-dpK_Sl8/mqdefault.jpg" width="320" alt="Vuejs Wisdom Composition API lesson 1" /></a>
-<br /><sub><b>Vuejs Wisdom · Composition API 1 → 6 + 8</b> · 57 min</sub>
+<br /><b>Vuejs Wisdom · Composition API 1 → 6 + 8</b>
+<br />57 min
 
 </td>
 <td valign="top">
+
+**Watch:** [Vuejs Wisdom · Composition API 1 → 6 + 8](https://www.youtube.com/watch?v=scY-dpK_Sl8&list=PLzjSlWqF2aTcUoouMnE9BTCvSxfrmcaQC&index=1) · **57 min**
 
 **Goal:** write modern Vue and split the app into components that talk to each other.
 
@@ -189,10 +195,13 @@ A 3-step course application form:
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=0GO4UunMALc&list=PLzjSlWqF2aTcUoouMnE9BTCvSxfrmcaQC&index=11"><img src="https://img.youtube.com/vi/0GO4UunMALc/mqdefault.jpg" width="320" alt="Vuejs Wisdom Composition API lesson 11" /></a>
-<br /><sub><b>Vuejs Wisdom · Composition 11 → 13</b> · 24 min</sub>
+<br /><b>Vuejs Wisdom · Composition 11 → 13</b>
+<br />24 min
 
 </td>
 <td valign="top">
+
+**Watch:** [Vuejs Wisdom · Composition 11 → 13](https://www.youtube.com/watch?v=0GO4UunMALc&list=PLzjSlWqF2aTcUoouMnE9BTCvSxfrmcaQC&index=11) · **24 min**
 
 **Goal:** load data from an API, share data across distant components, and write logic you can reuse.
 
@@ -251,10 +260,13 @@ If your Project 2 was a movies app, rebuild it in Vue. Otherwise build one now w
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=_Ppqm08EUfs&list=PLzjSlWqF2aTdehPN-zFc1TKcH8eNVn1JV&index=40"><img src="https://img.youtube.com/vi/_Ppqm08EUfs/mqdefault.jpg" width="320" alt="Vuejs Wisdom Vue Router" /></a>
-<br /><sub><b>Vuejs Wisdom · Vue Router 40 → 54</b> · 2 h</sub>
+<br /><b>Vuejs Wisdom · Vue Router 40 → 54</b>
+<br />2 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Vuejs Wisdom · Vue Router 40 → 54](https://www.youtube.com/watch?v=_Ppqm08EUfs&list=PLzjSlWqF2aTdehPN-zFc1TKcH8eNVn1JV&index=40) · **2 h**
 
 **Goal:** build a multi-page app with no full page reloads.
 
@@ -315,10 +327,13 @@ Extend your movies app (or start fresh):
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=QSBs0ceChnI&list=PLzjSlWqF2aTcUoouMnE9BTCvSxfrmcaQC&index=15"><img src="https://img.youtube.com/vi/QSBs0ceChnI/mqdefault.jpg" width="320" alt="Vuejs Wisdom Todo App" /></a>
-<br /><sub><b>Vuejs Wisdom · Todo App, Composition 15 → 16</b> · 54 min · optional</sub>
+<br /><b>Vuejs Wisdom · Todo App, Composition 15 → 16</b>
+<br />54 min · optional
 
 </td>
 <td valign="top">
+
+**Watch:** [Vuejs Wisdom · Todo App, Composition 15 → 16](https://www.youtube.com/watch?v=QSBs0ceChnI&list=PLzjSlWqF2aTcUoouMnE9BTCvSxfrmcaQC&index=15) · **54 min · optional**
 
 **Goal:** know the ways to style Vue, and use a component library wisely.
 
@@ -374,10 +389,13 @@ A "**Component Gallery**" page with **Tailwind** + your chosen library:
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=0e4D2ZJRe1E&list=PLfDx4cQoUNOZgZ5Lee5Lbj6jXlmCcupsm&index=1"><img src="https://img.youtube.com/vi/0e4D2ZJRe1E/mqdefault.jpg" width="320" alt="Pinia tutorial in Arabic" /></a>
-<br /><sub><b>Algorithm Academy · Pinia 1 → 7</b> · 50 min</sub>
+<br /><b>Algorithm Academy · Pinia 1 → 7</b>
+<br />50 min
 
 </td>
 <td valign="top">
+
+**Watch:** [Algorithm Academy · Pinia 1 → 7](https://www.youtube.com/watch?v=0e4D2ZJRe1E&list=PLfDx4cQoUNOZgZ5Lee5Lbj6jXlmCcupsm&index=1) · **50 min**
 
 **Goal:** manage shared state in a large app with Vue's official store.
 
@@ -436,10 +454,13 @@ A small store on [DummyJSON products](https://dummyjson.com/):
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=KIS-MJfuPDY&list=PLejc1JbD4ZFRubkv6hV2D3r3eDoXTGHcF&index=1"><img src="https://img.youtube.com/vi/KIS-MJfuPDY/mqdefault.jpg" width="320" alt="TanStack Query concepts in Arabic" /></a>
-<br /><sub><b>kimz codes · TanStack Query concepts 1 → 19</b> · 2 h</sub>
+<br /><b>kimz codes · TanStack Query concepts 1 → 19</b>
+<br />2 h
 
 </td>
 <td valign="top">
+
+**Watch:** [kimz codes · TanStack Query concepts 1 → 19](https://www.youtube.com/watch?v=KIS-MJfuPDY&list=PLejc1JbD4ZFRubkv6hV2D3r3eDoXTGHcF&index=1) · **2 h**
 
 **Goal:** handle server data professionally: caching, refetching, mutations.
 
@@ -499,10 +520,13 @@ Manage products or posts on [DummyJSON](https://dummyjson.com/):
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=hDZjJPPsWJw&list=PLDQ11FgmbqQOFLSRv-Ya39CchDjP1BLju&index=2"><img src="https://img.youtube.com/vi/hDZjJPPsWJw/mqdefault.jpg" width="320" alt="Testing concepts in Arabic" /></a>
-<br /><sub><b>Index Academy · Testing concepts 01 → 05</b> · 41 min</sub>
+<br /><b>Index Academy · Testing concepts 01 → 05</b>
+<br />41 min
 
 </td>
 <td valign="top">
+
+**Watch:** [Index Academy · Testing concepts 01 → 05](https://www.youtube.com/watch?v=hDZjJPPsWJw&list=PLDQ11FgmbqQOFLSRv-Ya39CchDjP1BLju&index=2) · **41 min**
 
 **Goal:** write tests that prove your code works and catch what breaks when you change it later.
 
@@ -566,10 +590,13 @@ On your week 24 shopping cart:
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=lVpbayS9UUM&list=PLNknCqb-phEjLVnCbtVTJnWYml0zRvt5Y&index=1"><img src="https://img.youtube.com/vi/lVpbayS9UUM/mqdefault.jpg" width="320" alt="Web Accessibility 101" /></a>
-<br /><sub><b>Ahmed Saber · Web Accessibility 101</b> · 2.5 h</sub>
+<br /><b>Ahmed Saber · Web Accessibility 101</b>
+<br />2.5 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Ahmed Saber · Web Accessibility 101](https://www.youtube.com/watch?v=lVpbayS9UUM&list=PLNknCqb-phEjLVnCbtVTJnWYml0zRvt5Y&index=1) · **2.5 h**
 
 **Goal:** make your app fast, and usable by everyone.
 
@@ -633,10 +660,13 @@ On your biggest project from this level:
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=q3T_NLWcZBo&list=PLzjSlWqF2aTcdEs97QvAU13E07llvv3UO&index=1"><img src="https://img.youtube.com/vi/q3T_NLWcZBo/mqdefault.jpg" width="320" alt="Learn Nuxt 3 in Arabic" /></a>
-<br /><sub><b>Vuejs Wisdom · Nuxt 3, 1 → 6</b> · 46 min</sub>
+<br /><b>Vuejs Wisdom · Nuxt 3, 1 → 6</b>
+<br />46 min
 
 </td>
 <td valign="top">
+
+**Watch:** [Vuejs Wisdom · Nuxt 3, 1 → 6](https://www.youtube.com/watch?v=q3T_NLWcZBo&list=PLzjSlWqF2aTcdEs97QvAU13E07llvv3UO&index=1) · **46 min**
 
 **Goal:** understand what Nuxt adds to Vue and build pages with file-based routing.
 
@@ -694,10 +724,13 @@ Start a blog (you'll finish it next week):
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=20WedKm6mcM&list=PLzjSlWqF2aTcdEs97QvAU13E07llvv3UO&index=7"><img src="https://img.youtube.com/vi/20WedKm6mcM/mqdefault.jpg" width="320" alt="Learn Nuxt 3 in Arabic part 2" /></a>
-<br /><sub><b>Vuejs Wisdom · Nuxt 3, 7 → 13</b> · 1 h</sub>
+<br /><b>Vuejs Wisdom · Nuxt 3, 7 → 13</b>
+<br />1 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Vuejs Wisdom · Nuxt 3, 7 → 13](https://www.youtube.com/watch?v=20WedKm6mcM&list=PLzjSlWqF2aTcdEs97QvAU13E07llvv3UO&index=7) · **1 h**
 
 **Goal:** finish the blog with real data and SEO, ship it, and learn to use AI as a real work tool.
 

@@ -56,10 +56,13 @@ You'll learn React, then the tools every real React project uses, and finish wit
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=T9DTxrQ1BU0&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=3"><img src="https://img.youtube.com/vi/T9DTxrQ1BU0/mqdefault.jpg" width="320" alt="Tarmeez React lesson 1" /></a>
-<br /><sub><b>Tarmeez · React lessons 1 → 20</b> · 4 h</sub>
+<br /><b>Tarmeez · React lessons 1 → 20</b>
+<br />4 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Tarmeez · React lessons 1 → 20](https://www.youtube.com/watch?v=T9DTxrQ1BU0&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=3) · **4 h**
 
 **Goal:** think in React: everything is a component, and components talk through props.
 
@@ -120,10 +123,13 @@ Rebuild your week 8 landing page in React + TypeScript:
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=rnVI3UKcKQA&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=25"><img src="https://img.youtube.com/vi/rnVI3UKcKQA/mqdefault.jpg" width="320" alt="Tarmeez React lesson 21" /></a>
-<br /><sub><b>Tarmeez · React lessons 21 → 40</b> · 3.5 h</sub>
+<br /><b>Tarmeez · React lessons 21 → 40</b>
+<br />3.5 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Tarmeez · React lessons 21 → 40](https://www.youtube.com/watch?v=rnVI3UKcKQA&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=25) · **3.5 h**
 
 **Goal:** make components remember things and react to the user.
 
@@ -189,10 +195,13 @@ A 3-step course application form:
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=nalt9TkgOlE&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=48"><img src="https://img.youtube.com/vi/nalt9TkgOlE/mqdefault.jpg" width="320" alt="Tarmeez React lesson 44" /></a>
-<br /><sub><b>Tarmeez · React lessons 44 → 51</b> · 1.5 h</sub>
+<br /><b>Tarmeez · React lessons 44 → 51</b>
+<br />1.5 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Tarmeez · React lessons 44 → 51](https://www.youtube.com/watch?v=nalt9TkgOlE&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=48) · **1.5 h**
 
 **Goal:** share data between distant components and load data from an API.
 
@@ -251,10 +260,13 @@ If your Project 2 was a movies app, rebuild it in React. Otherwise build one now
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=bkj8obp1XmA&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=55"><img src="https://img.youtube.com/vi/bkj8obp1XmA/mqdefault.jpg" width="320" alt="Tarmeez React lesson 52" /></a>
-<br /><sub><b>Tarmeez · React lessons 52 → 58</b> · 1.5 h</sub>
+<br /><b>Tarmeez · React lessons 52 → 58</b>
+<br />1.5 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Tarmeez · React lessons 52 → 58](https://www.youtube.com/watch?v=bkj8obp1XmA&list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&index=55) · **1.5 h**
 
 **Goal:** build a multi-page app with no full page reloads.
 
@@ -316,10 +328,13 @@ Extend your movies app (or start fresh):
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=T9iM1LVNKec&list=PLdnrjoDUmGZ8Q9Dq9ebR9v1xEgqJ6tcfx&index=11"><img src="https://img.youtube.com/vi/T9iM1LVNKec/mqdefault.jpg" width="320" alt="React 19 and Tailwind 4 landing page" /></a>
-<br /><sub><b>Triangles · React 19 + Tailwind 4 landing page → Vercel</b> · 1 h</sub>
+<br /><b>Triangles · React 19 + Tailwind 4 landing page → Vercel</b>
+<br />1 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Triangles · React 19 + Tailwind 4 landing page → Vercel](https://www.youtube.com/watch?v=T9iM1LVNKec&list=PLdnrjoDUmGZ8Q9Dq9ebR9v1xEgqJ6tcfx&index=11) · **1 h**
 
 **Goal:** know the ways to style React, and use a component library wisely.
 
@@ -377,10 +392,13 @@ A "**Component Gallery**" page built with **Tailwind + shadcn/ui**:
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=G3jSV8p9li0&list=PLxRKoQzM5m3J6gDMz-_eqLvxIR6UH0Pf7&index=1"><img src="https://img.youtube.com/vi/G3jSV8p9li0/mqdefault.jpg" width="320" alt="Redux Toolkit in Arabic" /></a>
-<br /><sub><b>Simple Arab Code · Redux Toolkit 1 → 13</b> · 2.5 h</sub>
+<br /><b>Simple Arab Code · Redux Toolkit 1 → 13</b>
+<br />2.5 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Simple Arab Code · Redux Toolkit 1 → 13](https://www.youtube.com/watch?v=G3jSV8p9li0&list=PLxRKoQzM5m3J6gDMz-_eqLvxIR6UH0Pf7&index=1) · **2.5 h**
 
 **Goal:** manage complex, shared state in a large app.
 
@@ -441,10 +459,13 @@ A small store on [DummyJSON products](https://dummyjson.com/):
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=KIS-MJfuPDY&list=PLejc1JbD4ZFRubkv6hV2D3r3eDoXTGHcF&index=1"><img src="https://img.youtube.com/vi/KIS-MJfuPDY/mqdefault.jpg" width="320" alt="TanStack Query in Arabic" /></a>
-<br /><sub><b>kimz codes · TanStack Query 1 → 19</b> · 2 h</sub>
+<br /><b>kimz codes · TanStack Query 1 → 19</b>
+<br />2 h
 
 </td>
 <td valign="top">
+
+**Watch:** [kimz codes · TanStack Query 1 → 19](https://www.youtube.com/watch?v=KIS-MJfuPDY&list=PLejc1JbD4ZFRubkv6hV2D3r3eDoXTGHcF&index=1) · **2 h**
 
 **Goal:** handle server data professionally: caching, refetching, mutations.
 
@@ -507,10 +528,13 @@ Manage products or posts on [DummyJSON](https://dummyjson.com/):
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=hDZjJPPsWJw&list=PLDQ11FgmbqQOFLSRv-Ya39CchDjP1BLju&index=2"><img src="https://img.youtube.com/vi/hDZjJPPsWJw/mqdefault.jpg" width="320" alt="React Testing in Arabic" /></a>
-<br /><sub><b>Index Academy · React Testing 01 → 15</b> · 2.5 h</sub>
+<br /><b>Index Academy · React Testing 01 → 15</b>
+<br />2.5 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Index Academy · React Testing 01 → 15](https://www.youtube.com/watch?v=hDZjJPPsWJw&list=PLDQ11FgmbqQOFLSRv-Ya39CchDjP1BLju&index=2) · **2.5 h**
 
 **Goal:** write tests that prove your code works and catch what breaks when you change it later.
 
@@ -572,10 +596,13 @@ On your week 24 shopping cart:
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=lVpbayS9UUM&list=PLNknCqb-phEjLVnCbtVTJnWYml0zRvt5Y&index=1"><img src="https://img.youtube.com/vi/lVpbayS9UUM/mqdefault.jpg" width="320" alt="Web Accessibility 101" /></a>
-<br /><sub><b>Ahmed Saber · Web Accessibility 101</b> · 2.5 h</sub>
+<br /><b>Ahmed Saber · Web Accessibility 101</b>
+<br />2.5 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Ahmed Saber · Web Accessibility 101](https://www.youtube.com/watch?v=lVpbayS9UUM&list=PLNknCqb-phEjLVnCbtVTJnWYml0zRvt5Y&index=1) · **2.5 h**
 
 **Goal:** make your app fast, and usable by everyone.
 
@@ -641,10 +668,13 @@ On your biggest project from this level:
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=P6n44p4k9U8&list=PLSDhifuM5C420tyw98jx-ZesncZVtOyPB&index=1"><img src="https://img.youtube.com/vi/P6n44p4k9U8/mqdefault.jpg" width="320" alt="Next.js course 2026" /></a>
-<br /><sub><b>Saad Al-Sattouf · Next.js 2026, 1 → 12</b> · 1.5 h</sub>
+<br /><b>Saad Al-Sattouf · Next.js 2026, 1 → 12</b>
+<br />1.5 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Saad Al-Sattouf · Next.js 2026, 1 → 12](https://www.youtube.com/watch?v=P6n44p4k9U8&list=PLSDhifuM5C420tyw98jx-ZesncZVtOyPB&index=1) · **1.5 h**
 
 **Goal:** understand what Next.js adds to React and build pages with the App Router.
 
@@ -701,10 +731,13 @@ Start a blog (you'll finish it next week):
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=cTNbmYbEa9w&list=PLSDhifuM5C420tyw98jx-ZesncZVtOyPB&index=13"><img src="https://img.youtube.com/vi/cTNbmYbEa9w/mqdefault.jpg" width="320" alt="Next.js course 2026 part 2" /></a>
-<br /><sub><b>Saad Al-Sattouf · Next.js 2026, 13 → 20</b> · 1 h</sub>
+<br /><b>Saad Al-Sattouf · Next.js 2026, 13 → 20</b>
+<br />1 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Saad Al-Sattouf · Next.js 2026, 13 → 20](https://www.youtube.com/watch?v=cTNbmYbEa9w&list=PLSDhifuM5C420tyw98jx-ZesncZVtOyPB&index=13) · **1 h**
 
 **Goal:** finish the blog with real data and SEO, ship it, and learn to use AI as a real work tool.
 

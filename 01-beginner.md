@@ -44,10 +44,13 @@ You'll build the **look**: pages that mean something (HTML), look good (CSS), wo
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=6QAELgirvjs&list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji&index=1"><img src="https://img.youtube.com/vi/6QAELgirvjs/mqdefault.jpg" width="320" alt="Elzero HTML #01" /></a>
-<br /><sub><b>Elzero · HTML #01 → #18</b> · 2 h</sub>
+<br /><b>Elzero · HTML #01 → #18</b>
+<br />2 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Elzero · HTML #01 → #18](https://www.youtube.com/watch?v=6QAELgirvjs&list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji&index=1) · **2 h**
 
 **Goal:** write a full HTML page from scratch and know what every tag does.
 
@@ -107,10 +110,13 @@ Build `index.html` about yourself. **HTML only, no CSS.**
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=xlQwlfvrDuI&list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji&index=19"><img src="https://img.youtube.com/vi/xlQwlfvrDuI/mqdefault.jpg" width="320" alt="Elzero HTML #19" /></a>
-<br /><sub><b>Elzero · HTML #19 → #37</b> · 2 h</sub>
+<br /><b>Elzero · HTML #19 → #37</b>
+<br />2 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Elzero · HTML #19 → #37](https://www.youtube.com/watch?v=xlQwlfvrDuI&list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji&index=19) · **2 h**
 
 **Goal:** write meaningful HTML, build a full form, and put your work live on GitHub.
 
@@ -173,10 +179,13 @@ A sign-up page for a CIS workshop or hackathon:
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=X1ulCwyhCVM&list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe&index=1"><img src="https://img.youtube.com/vi/X1ulCwyhCVM/mqdefault.jpg" width="320" alt="Elzero CSS #01" /></a>
-<br /><sub><b>Elzero · CSS #01 → #29</b> · 3.5 h</sub>
+<br /><b>Elzero · CSS #01 → #29</b>
+<br />3.5 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Elzero · CSS #01 → #29](https://www.youtube.com/watch?v=X1ulCwyhCVM&list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe&index=1) · **3.5 h**
 
 **Goal:** control any element's colors, fonts, spacing, and background.
 
@@ -235,10 +244,13 @@ Turn your week 1 page into a centered **profile card**:
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=-q5IyjKkKSc&list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe&index=30"><img src="https://img.youtube.com/vi/-q5IyjKkKSc/mqdefault.jpg" width="320" alt="Elzero CSS #30" /></a>
-<br /><sub><b>Elzero · CSS #30 → #53</b> · 3.5 h</sub>
+<br /><b>Elzero · CSS #30 → #53</b>
+<br />3.5 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Elzero · CSS #30 → #53](https://www.youtube.com/watch?v=-q5IyjKkKSc&list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe&index=30) · **3.5 h**
 
 **Goal:** understand how elements take up space, and lay out anything in one direction with Flexbox.
 
@@ -296,10 +308,13 @@ Turn your week 1 page into a centered **profile card**:
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=2v9ZhqX6YOk&list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe&index=54"><img src="https://img.youtube.com/vi/2v9ZhqX6YOk/mqdefault.jpg" width="320" alt="Elzero CSS #54" /></a>
-<br /><sub><b>Elzero · CSS #54 → #82</b> · 4 h</sub>
+<br /><b>Elzero · CSS #54 → #82</b>
+<br />4 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Elzero · CSS #54 → #82](https://www.youtube.com/watch?v=2v9ZhqX6YOk&list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe&index=54) · **4 h**
 
 **Goal:** build two-dimensional layouts with Grid and bring pages to life with motion.
 
@@ -359,10 +374,13 @@ Layout only, no functionality needed:
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=F9FAcVwSV4c&list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe&index=83"><img src="https://img.youtube.com/vi/F9FAcVwSV4c/mqdefault.jpg" width="320" alt="Elzero CSS #83" /></a>
-<br /><sub><b>Elzero · CSS #83 → #88</b> · 1 h</sub>
+<br /><b>Elzero · CSS #83 → #88</b>
+<br />1 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Elzero · CSS #83 → #88](https://www.youtube.com/watch?v=F9FAcVwSV4c&list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe&index=83) · **1 h**
 
 **Goal:** every page you build looks right on phone, tablet, and laptop.
 
@@ -421,10 +439,13 @@ Layout only, no functionality needed:
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=QJEd-99TA_A&list=PLdnrjoDUmGZ8Q9Dq9ebR9v1xEgqJ6tcfx&index=1"><img src="https://img.youtube.com/vi/QJEd-99TA_A/mqdefault.jpg" width="320" alt="Tailwind CSS 4 course" /></a>
-<br /><sub><b>Triangles · Tailwind CSS 4</b> · 3.5 h</sub>
+<br /><b>Triangles · Tailwind CSS 4</b>
+<br />3.5 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Triangles · Tailwind CSS 4](https://www.youtube.com/watch?v=QJEd-99TA_A&list=PLdnrjoDUmGZ8Q9Dq9ebR9v1xEgqJ6tcfx&index=1) · **3.5 h**
 
 **Goal:** write CSS much faster with utility classes, and see why most React and Vue projects use Tailwind.
 

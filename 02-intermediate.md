@@ -51,10 +51,13 @@ This is **the most important level** in the roadmap. Everything you do in React 
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=GM6dQBmc-Xg&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=1"><img src="https://img.youtube.com/vi/GM6dQBmc-Xg/mqdefault.jpg" width="320" alt="Elzero JavaScript #001" /></a>
-<br /><sub><b>Elzero · JavaScript #001 → #039</b> · 4 h</sub>
+<br /><b>Elzero · JavaScript #001 → #039</b>
+<br />4 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Elzero · JavaScript #001 → #039](https://www.youtube.com/watch?v=GM6dQBmc-Xg&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=1) · **4 h**
 
 **Goal:** write small programs with variables, operators, and conditions, and read the Console.
 
@@ -115,10 +118,13 @@ In `week-9.js`, one function per problem, results printed to the Console:
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=MLVJhya1CV0&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=40"><img src="https://img.youtube.com/vi/MLVJhya1CV0/mqdefault.jpg" width="320" alt="Elzero JavaScript #040" /></a>
-<br /><sub><b>Elzero · JavaScript #040 → #070</b> · 3 h</sub>
+<br /><b>Elzero · JavaScript #040 → #070</b>
+<br />3 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Elzero · JavaScript #040 → #070](https://www.youtube.com/watch?v=MLVJhya1CV0&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=40) · **3 h**
 
 **Goal:** work with lists of data, repeat work, and split code into clean functions.
 
@@ -184,10 +190,13 @@ An array of 10 students, each `[name, grade]`. Write:
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=hTUsHXxEvHc&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=71"><img src="https://img.youtube.com/vi/hTUsHXxEvHc/mqdefault.jpg" width="320" alt="Elzero JavaScript #071" /></a>
-<br /><sub><b>Elzero · JavaScript #071 → #085</b> · 1.5 h</sub>
+<br /><b>Elzero · JavaScript #071 → #085</b>
+<br />1.5 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Elzero · JavaScript #071 → #085](https://www.youtube.com/watch?v=hTUsHXxEvHc&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=71) · **1.5 h**
 
 **Goal:** handle real data (arrays of objects) the way professional frontend devs do.
 
@@ -258,10 +267,13 @@ Using **only `map`, `filter`, `reduce`** (no plain loops):
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=AOabnOI4vOQ&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=86"><img src="https://img.youtube.com/vi/AOabnOI4vOQ/mqdefault.jpg" width="320" alt="Elzero JavaScript #086" /></a>
-<br /><sub><b>Elzero · JavaScript #086 → #114</b> · 3.5 h</sub>
+<br /><b>Elzero · JavaScript #086 → #114</b>
+<br />3.5 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Elzero · JavaScript #086 → #114](https://www.youtube.com/watch?v=AOabnOI4vOQ&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=86) · **3.5 h**
 
 **Goal:** make pages interactive: add and remove elements, respond to clicks, and keep data after the browser closes.
 
@@ -321,10 +333,13 @@ Using **only `map`, `filter`, `reduce`** (no plain loops):
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=lsirOGbdWYA&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=123"><img src="https://img.youtube.com/vi/lsirOGbdWYA/mqdefault.jpg" width="320" alt="Elzero JavaScript #123" /></a>
-<br /><sub><b>Elzero · JavaScript #123 → #133</b> · 1.5 h</sub>
+<br /><b>Elzero · JavaScript #123 → #133</b>
+<br />1.5 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Elzero · JavaScript #123 → #133](https://www.youtube.com/watch?v=lsirOGbdWYA&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=123) · **1.5 h**
 
 **Goal:** use modern JS tools and organize your code across files.
 
@@ -395,10 +410,13 @@ todo-app/
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=VA_AROETZ58&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=169"><img src="https://img.youtube.com/vi/VA_AROETZ58/mqdefault.jpg" width="320" alt="Elzero JavaScript #169" /></a>
-<br /><sub><b>Elzero · JavaScript #169 → #188</b> · 2 h</sub>
+<br /><b>Elzero · JavaScript #169 → #188</b>
+<br />2 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Elzero · JavaScript #169 → #188](https://www.youtube.com/watch?v=VA_AROETZ58&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=169) · **2 h**
 
 **Goal:** fetch real data from the internet and show it on your page.
 
@@ -459,10 +477,13 @@ Use [Open-Meteo](https://open-meteo.com/) (free, no API key):
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=uv5OULDiCXg&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=147"><img src="https://img.youtube.com/vi/uv5OULDiCXg/mqdefault.jpg" width="320" alt="Elzero JavaScript #147" /></a>
-<br /><sub><b>Elzero · JavaScript OOP #147 → #158</b> · 1 h</sub>
+<br /><b>Elzero · JavaScript OOP #147 → #158</b>
+<br />1 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Elzero · JavaScript OOP #147 → #158](https://www.youtube.com/watch?v=uv5OULDiCXg&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&index=147) · **1 h**
 
 **Goal:** understand what happens behind the curtain: closures, `this`, prototypes, classes. The stuff every interview asks.
 
@@ -526,10 +547,13 @@ A JavaScript quiz with questions you write:
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=n43bagVuJPU&list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF&index=10"><img src="https://img.youtube.com/vi/n43bagVuJPU/mqdefault.jpg" width="320" alt="Elzero Git #10" /></a>
-<br /><sub><b>Elzero · Git #07-08 + #10 → #20</b> · 1.5 h</sub>
+<br /><b>Elzero · Git #07-08 + #10 → #20</b>
+<br />1.5 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Elzero · Git #07-08 + #10 → #20](https://www.youtube.com/watch?v=n43bagVuJPU&list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF&index=10) · **1.5 h**
 
 **Goal:** work the way companies do: a Vite project, npm packages, branches, and pull requests.
 
@@ -589,10 +613,13 @@ A JavaScript quiz with questions you write:
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=yUndnE-2osg&list=PLDoPjvoNmBAy532K9M_fjiAmrJ0gkCyLJ&index=1"><img src="https://img.youtube.com/vi/yUndnE-2osg/mqdefault.jpg" width="320" alt="Elzero TypeScript #01" /></a>
-<br /><sub><b>Elzero · TypeScript #01 → #38</b> · 3.5 h</sub>
+<br /><b>Elzero · TypeScript #01 → #38</b>
+<br />3.5 h
 
 </td>
 <td valign="top">
+
+**Watch:** [Elzero · TypeScript #01 → #38](https://www.youtube.com/watch?v=yUndnE-2osg&list=PLDoPjvoNmBAy532K9M_fjiAmrJ0gkCyLJ&index=1) · **3.5 h**
 
 **Goal:** write JavaScript with types, so mistakes get caught as you type, not by your users.
 

@@ -254,10 +254,13 @@ ChatGPT, Claude, Copilot and Cursor are powerful. Used too early, they leave you
 <td width="340" valign="top">
 
 <a href="https://www.youtube.com/watch?v=TnMNDQHB33Q"><img src="https://img.youtube.com/vi/TnMNDQHB33Q/mqdefault.jpg" width="320" alt="How the internet works" /></a>
-<br /><sub><b>How the Internet Works</b> · Ghareeb Elshaikh · 13 min</sub>
+<br /><b>How the Internet Works</b>
+<br />Ghareeb Elshaikh · 13 min
 
 </td>
 <td valign="top">
+
+**Watch:** [How the Internet Works](https://www.youtube.com/watch?v=TnMNDQHB33Q) · **Ghareeb Elshaikh · 13 min**
 
 **Goal:** understand what happens when you type `google.com`, and get your machine ready to code.
 
